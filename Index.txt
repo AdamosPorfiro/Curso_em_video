@@ -1,0 +1,85 @@
+De onde vem o python?
+# 1982 holando capital, cwi centro de matematica, onde foram criadas varias lp, e foi lá que python iniciou, Guido van hossum, programador que trabalhou no porjeto de lp ABC, e em 1989 ele criou a proposta que veio a se tornar o python, a idéia era criar uma linguagem de programação simples e objetiva, o nome python é em homenagem a um programa de tv chamado, monte python, porém, um dos representantes da lp.py é cobra python.
+
+# Em 1995 ele veio aos EUA e começou a ensinar as pessoas a programar, em 2001 criaram uma fundação chamada de python software foudation (PSF) sem fins lucrativos.
+
+# A linguagem python evoluiu tanto que atualmente ela vem instalada em sistemas operacionais como padrão e são usadas em muitas funcionalidades desses sistemas.
+
+# Muito usado em raspberrry pi -> Para fins educacionais, RPI - mini computador que permite programar e criar funcionalidades e aplicações em diversas areas.
+
+#Em 2005 a 2013 Guido van hossum começou a trabalhar no google e atualmente trabalha no dropbox.
+
+O que o python é e quais suas caracteristicas?
+# É uma lp de proposito geral, isso quer dizer que ele é usado para uma diversidade de aplicações, mobile, desktop, produtos, eletronicos, filmes, funcionalidades e afins.
+
+->caracteristica importante é que python é multiplataforma;
+->batteries included - Já vem em sua essencia com uma diversidade de funcionalidades e bibliotecas;
+->python é um software livre;
+->python exige organização, pois ela é um tipo de lp organizada;
+->python é orientada a objeto;
+-> Programar em python é facil e intuitivo.
+
+Zen of python - filosofia python
+-Bonito é melhor que feio;
+-Explicíto é melhor que implícito;
+-Simples é melhor que complexo;
+-Complexo é melhor que complicado;
+-Linear é melhor do que aninhado;
+-Esparso é melhor que denso;
+-Legibilidade conta;
+-Casos especiais não são o bastante para quebrar as regras;
+-Ainda que praticidade vença a pureza;
+-Erros nunca devem passar sileciosamente, a menos que sejam explicitamente silenciados;
+-Diante da ambiguidade, recuse a tentação de adivinhar;
+-Embora esse modo possa não ser óbvio a princípio a menos que seja holândes;
+-Agora é melhor que nunca;
+Embora nunca frequentemente seja melhor que já;
+-Se a implementalçao é dificil de explicar, é uma má idéia;
+-Se a implementação é facil de explicar, pode ser uma boa idéia;
+-Namespaces são uma grande idéia - vamos ter mais dessas!
+
+Principais areas de atuação
+
+Python consegue fazer calculos enormes, devido a isso é muito usado em: 
+-IA
+-Biotecnologia
+-Computação 3D
+
+Quem usa python?
+- Zope;
+- Globo;
+- Air canada;
+- BitTorrent;
+- Google;
+- Youtube;
+- Nasa;
+- Industrial light & magic (Computação gráfica);
+- Autodesk (Utiliza py para ferramentas)
+- Blender
+- Gimp
+- Arduino (Pode programar em py)
+- Raspbarry
+
+Jogos como:
+- Eve online;
+- Jewel(mobile);
+- Civilization 4;
+- Battlefield 2;
+- Frets on fire.
+
+Como o python funciona?
+-> Grande maiorias das linguagens funcionam dessa forma:
+
+Toda linguagem do mundo real para ser entendido pela linguagem de maquina, computador, deve ser traduzido para o computador utilizando um interpretador para que a computador entendaessa linguagem, quem ajuda a interpretar, o que voicê dz para a maquina é o python e outras linguagens de programação;
+
+Como instalar python?
+- Mac ele já vem instalado, como saber?
+# Abra o terminal shell;
+# Digite python --version (Para saber a versão instalada);
+# python (Abre a interpretador);
+
+- Instalação windows:
+python.org - dowload;
+# Selecionar opção python 3, versão mais recente;
+
+
