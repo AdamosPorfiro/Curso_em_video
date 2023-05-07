@@ -19,11 +19,13 @@ Metodo 5 Q's:
 -> Receber os dados e mostra uma mensagem de boas-vindas de acordo com os dados digitados
 
 5 - Qual é a sequencia de passos a serem feitas?
+
+Pseudocódigo:
 # 1 - input = nome_usuario
-print (nome_usuario, mensagem de boas vindas)
+# 2 - print (nome_usuario, mensagem de boas vindas)
 
 Código final abaixo:
 '''
-print('=====Desafio 1=====')
+print('===== Desafio 1 =====')
 nome = input('Qual é o seu nome?  ')
 print ('Olá '+nome+', é um prazer conhece-lo(a), seja bem vindo(a)')
