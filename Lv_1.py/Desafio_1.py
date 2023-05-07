@@ -22,6 +22,7 @@ Metodo 5 Q's:
 # 1 - input = nome_usuario
 print (nome_usuario, mensagem de boas vindas)
 
+Código final abaixo:
 '''
 print('=====Desafio 1=====')
 nome = input('Qual é o seu nome?  ')
