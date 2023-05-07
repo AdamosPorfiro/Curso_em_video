@@ -26,4 +26,4 @@ Código final abaixo:
 '''
 print('=====Desafio 1=====')
 nome = input('Qual é o seu nome?  ')
-print (nome+', é um prazer conhece-lo(a), seja bem vindo(a)')
+print ('Olá '+nome+', é um prazer conhece-lo(a), seja bem vindo(a)')
