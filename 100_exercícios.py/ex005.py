@@ -30,6 +30,4 @@ Metodo 5 Q's
 print ('=' * 6,'Exercicio 5','='*6,'\n')
 
 n1 = int(input('Digite um numero inteiro para exibir o seu sucessor e antecessor\n'))
-s = (n1 + 1)
-a = (n1 - 1)
-print('\nO sucessor do número {} é: {:-^15}'.format(n1, s), '\nO antecessor do número  {} é: {:-^15}'.format(n1, a))
+print('\nO sucessor do número {} é: {:-^15}'.format(n1, n1 + 1), '\nO antecessor do número  {} é: {:-^15}'.format(n1, n1 - 1))
