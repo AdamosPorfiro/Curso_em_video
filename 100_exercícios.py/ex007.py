@@ -1,5 +1,5 @@
 '''
-===== Desafio 3 =====
+===== Exercício 7 =====
 
 Desenvolva um programa que leia as duas notas de um aluno, calcule e mostre sua média.
 
@@ -11,7 +11,7 @@ Metodo 5 Q's
 
 2 - O que deve ser feito com esses dados?
  -> Deve calcular e mostrar sua média.
-     Para calcular a media você soma o conjunto de numero e divide pela quantidade de numeros que possem no conjunto Ex.: 2+5+6+7=20/4=5
+    Para calcular a media você soma o conjunto de numero e divide pela quantidade de numeros que possem no conjunto Ex.: 2+5+6+7=20/4=5
 
 3 - Quais são as restrições desse problema?
  -> Média geralmente trabalha com numero reais de preferência.
@@ -26,7 +26,7 @@ print A sua média é: ().
 
 '''
 
-print('=' * 6, 'Desafio 3', '=' * 6)
-nota1 = int(input('\nDigite a primeira nota:\n'))
-nota2 = int(input('\nDigite a segunda nota:\n'))
-print ('\nA sua média é: {}'.format((nota1 + nota2)/2))
+print ('=' * 6, 'Exercicio 7', '=' * 6)
+nota1 = int(input('\nDigite a primeira nota\n'))
+nota2 = int(input('\nDigite a segunda nota\n'))
+print ('A sua média é: {}'.format((nota1 + nota2)/2))
