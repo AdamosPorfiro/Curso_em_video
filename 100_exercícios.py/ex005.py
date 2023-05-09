@@ -27,7 +27,7 @@ Metodo 5 Q's
 
 '''
 
-print ('=' * 6,'Exercicio 5','='*6,'\n')
+print ('=' * 6,'Exercicio 5','='*6)
 
-n1 = int(input('Digite um numero inteiro para exibir o seu sucessor e antecessor\n'))
+n1 = int(input('\nDigite um numero inteiro para exibir o seu sucessor e antecessor\n'))
 print('\nO sucessor do número {} é: {:-^15}'.format(n1, n1 + 1), '\nO antecessor do número  {} é: {:-^15}'.format(n1, n1 - 1))

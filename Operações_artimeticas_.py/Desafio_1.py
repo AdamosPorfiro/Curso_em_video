@@ -26,6 +26,6 @@ Metodo 5 Q's
     -> print numero sucessor de n_inteiro é s e antecessor é a
 
 '''
-print ('=' * 6,'Desafio 1','=' * 6,'\n')
-n1 = int(input('Digite um numero inteiro para saber o seu sucessor e antecessor\n'))
+print ('=' * 6,'Desafio 1','=' * 6)
+n1 = int(input('\nDigite um numero inteiro para saber o seu sucessor e antecessor\n'))
 print ('\nO sucessor de {} é: {:=^15}'.format(n1, n1 + 1),'\nE o antecessor de {} é: {:=^15}'.format(n1, n1 - 1))
