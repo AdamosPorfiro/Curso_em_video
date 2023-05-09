@@ -1,5 +1,5 @@
 '''
-===== Desafio 2 =====
+===== Exercício 2 =====
 
 Crie um programa que leia um numero e mostre o seu dobro, triplo e a raiz quadrada.
 
@@ -23,6 +23,6 @@ Metodo dos 5Q's
 
 '''
 
-print ('=' * 8, 'Desafio 2', '=' * 8)
-n1 = int(input('\nDigite um número para calcular o dobro, triplo e raiz quadrada\n'))
-print('\nO dobro de {} = {}\n'.format(n1, n1 * 2) + 'O triplo de {} = {} \n'.format(n1, n1 * 3) + 'A raiz quadrada de {} = {} '.format(n1, n1 ** 2))
+print('=' * 8, 'Exercicio 6', '=' * 6)
+n1 = int(input('\nDigite um número para calcular o dobro, triplo e a raiz quadrada\n'))
+print ('\nO dobro de {} = {}\n'.format(n1, n1 * 2) + 'O triplo de {} = {}\n'. format(n1, n1 * 3) + 'A raiz quadrada de {} = {}'.format(n1, n1 ** 2))
