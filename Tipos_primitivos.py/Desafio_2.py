@@ -17,6 +17,8 @@ print ('Os dados digitados foram escritos um titulo (Capitalizado)?', n1.istitle
 print ('Os dados digitados são caracteres imprimiveis?', n1.isprintable())
 '''
 # Utilizando função format
+print('===== Desafio 2 =====')
+
 n1 = input('Digite algo: ')
 print ('{} é alfabeticos?'.format(n1), n1.isalpha())
 print('{} é numerico?'.format(n1), n1.isalnum())
