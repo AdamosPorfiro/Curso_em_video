@@ -3,4 +3,25 @@
 
 Crie um programa que leia um numero e mostre o seu dobro, triplo e a raiz quadrada.
 
+Metodo dos 5Q's
+
+1 - Quais são os dados de entrada?
+ -> input numero.
+
+2 - O que devo fazer com esses dados?
+ -> Deve ler um numero e exibir o dobro, triplo e a raiz quadrada desse numero.
+
+3 - Quais são as restrições desse problema?
+ -> Nenhuma
+
+4 - Qual é o resultado esperado?
+  -> Exibir o dobro, triplo e a raiz quadrada do dado de entrada
+
+5 - Quais são os passos para se alcançar o resultado esperado?
+#1 - input numero
+#2 - d = numero * 2
+#3 - t = numero * 3
+#4 - r = numero ** 2
+#5 - print O dobro do numero é: r O triplo do numero é: t A raiz quadrada do numero é: r
+
 '''
