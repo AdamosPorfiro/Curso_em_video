@@ -1,6 +1,6 @@
 '''
 
-===== Desafio 5 =====
+===== Exercício 9 =====
 
 Faça um programa que leia um numero inteiro qualquer e mostre na tela a sua tabuada.
 
@@ -25,7 +25,7 @@ Metodo 5 Q's
 
 '''
 
-print('=' * 23, 'Desafio 5','=' * 23,'\n' , ' ' * 16, 'Conversor de tabuada')
+print('=' * 23, 'Exercício 9','=' * 23,'\n' , ' ' * 16, 'Conversor de tabuada')
 n1 = int(input('\nDigite um numero para ter a tabuada de 1 a 10 desse numero\n'))
 
 print('\n1 x {} = {}'.format(n1, 1 * n1))
