@@ -1,5 +1,5 @@
 '''
-===== Desafio 6 =====
+===== Exercicio 10 =====
 
 Crie um programa que mostre quanto dinheiro uma pessoa tem na carteira e quantos dolares ela pode comprar.
 Considere: U$ 1.00 = R$ 3.27
@@ -25,7 +25,8 @@ Analise critica:
 #2  print dinheiro_carteira / 3.27
 
 '''
-print('=' * 20, 'Desafio 6', '=' * 20,'\n', ' ' * 8 ,'Conversor de real para dolar')
+
+print('=' * 19, 'Exercício 10', '=' * 19,'\n', ' ' * 9 ,'Conversor de real para dolar')
 d1 = float(input('\nQuanto dinheiro você possui para converter em dolar?\n'))
 print ('\nVocê possui: R${} reais.\nPode adquirir: U${:.2f} dólares'.format(d1, d1 / 3.27))
-print('=' * 51)
+print('=' * 50)
