@@ -1,6 +1,6 @@
 '''
 
-===== Desafio 7 =====
+===== Exercício 11 =====
 
 Faça um programa que leia a largura e altura  de uma parede em metros, calcule a sua area e a 
 quantidade de tinta necessaria para pinta-la, sabendo que cada 1 litro de tinta pinta uma area de 2m².
@@ -31,9 +31,8 @@ Metodo 5 Q's
 #3 print altura + largura / 2 = quantidade de tinta necessaria para pintar a area desejada.
 
 '''
-
-print('=' * 30, 'Desafio 7', '=' * 30,'\n', ' ' * 15, 'Calculadora de tintas M²')
+print('=' * 30, 'Exercício 11', '=' * 30,'\n',' ' * 25, 'Calculadora de tinta M²')
 a1 = float(input('\nDigite a largura da parede\n'))
 l1 = float(input('\nDigite a altura da parede\n'))
-print('\nÁ area total da parede é de: {} metros\nA quantidade de tinta necessaria para pinta-lá é de: {} litros de tinta'.format(a1 + l1, (a1 + l1) /2))
-print('=' * 72)
+print('\nO tamanho total da area da parede é de {} metros.\nA quantidade de tinta necessario para está area é de: {} litros de tinta.'.format(a1 + l1, (a1 + l1)/2))
+print('=' * 73)
