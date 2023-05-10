@@ -1,6 +1,6 @@
 '''
 
-===== Desafio 9 =====
+===== Exercício 13 =====
 
 Faça um programa que leia o salario de um funcionario e mostre o seu novo salario, com 15% de aumento.
 
@@ -30,7 +30,7 @@ Metodo dos 5 Q's
 #2 print salario é: salario * 15 / 100 + salario
 
 '''
-print('=' * 20, 'Desafio 9', '=' * 20, '\n','Calculadora de 15 porcento de aumento no salario')
+print('=' * 18, 'Exercício 13', '=' * 19, '\n','Calculadora de 15 porcento de aumento no salario')
 s1 = float(input('\nDigite o seu salario mensal\n'))
 print('\nO seu novo salario é: R$ {:.2f}'.format((s1 * 15) / 100 + s1))
 print('=' * 51)
