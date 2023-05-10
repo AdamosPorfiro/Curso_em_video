@@ -1,6 +1,6 @@
 '''
 
-===== Desafio 8 =====
+===== Exercício 12 =====
 
 Faça um programa que leia o preço de um produto e mostre o seu novo preço, com 5% de desconto.
 
@@ -28,8 +28,8 @@ Metodo dos 5 Q's
 #2 print preço_produto * 5 / 100 = Preço_com_desconto
 
 '''
-print('=' * 19, 'Desafio 8', '=' * 19)
+print('=' * 19, 'Exercício 12', '=' * 19)
 v1 = float(input('\nDigite o preço do produto para calcular o desconto\n'))
 desconto = ((v1*5)/100)
 print('\nO desconto é de: 5%\nO valor do desconto em reais é de: R${:.2f}\nO preço do produto com desconto é de:R${:.2f}'.format(desconto, v1 - desconto))
-print('=' * 49)
+print('=' * 52)
