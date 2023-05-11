@@ -29,5 +29,4 @@ Metodo 5 Q's
 
 print ('=' * 25, 'Exercicio 5' , '=' * 25)
 n1 = int(input('\nDigite um numero inteiro para exibir o seu sucessor e antecessor\nnumero:'))
-print('\nO sucessor do número {} é: {}\nO antecessor do número  {} é: {}'.format(n1, (n1 + 1), n1, (n1 - 1)))
-print('=' * 63)
+print('\nO sucessor do número {} é: {}\nO antecessor do número  {} é: {}'.format(n1, (n1 + 1), n1, (n1 - 1)),'\n','=' * 63)

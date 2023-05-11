@@ -28,5 +28,4 @@ Metodo 5 Q's
 """
 print("=" * 26, "Desafio 1", "=" * 26)
 n1 = int(input("\nDigite um numero inteiro para saber o seu sucessor e antecessor\nnumero: "))
-print ('\nO sucessor de {} é: {}\nE o antecessor de {} é: {}'.format(n1, (n1 + 1), n1, (n1 - 1)))
-print("=" * 63)
+print ('\nO sucessor de {} é: {}\nE o antecessor de {} é: {}'.format(n1, (n1 + 1), n1, (n1 - 1)),'\n','=' * 63)

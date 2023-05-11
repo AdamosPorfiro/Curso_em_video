@@ -23,7 +23,6 @@ Metodo 5 Q's
 2 - print n1_m² * 10.000 e n1_m² * 10.000 * 100
 
 '''
-print('=' * 20, 'Desafio 4', '=' * 20)
-print (' ' * 3, 'Conversor de m² para centimetro e milimetro',' ' * 3)
-m1 = float(input('\nQuantos m² quer que sejam convertidos?\n'))
-print('\n{} m² é equivalente a {} cm que possui {} mm'.format(m1, m1 * 10000, m1 * 10000 * 10))
+print('=' * 22, 'Desafio 4', '=' * 22,'\n', ' ' * 2, 'Conversor de m² para centimetro e milimetro',' ' * 3)
+m1 = float(input('\nQuantos m² quer que sejam convertidos?\nM²: '))
+print('\n{} m² é equivalente a {} cm que possui {} mm'.format(m1, m1 * 10000, m1 * 10000 * 10)+'\n'+'=' * 54)
