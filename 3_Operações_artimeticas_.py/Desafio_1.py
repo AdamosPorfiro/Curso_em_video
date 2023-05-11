@@ -1,4 +1,4 @@
-'''
+"""
 ===== Desafio 1 =====
 
 Faça um programa que leita um numero inteiro e mostre o seu sucessor e o seu antecessor.
@@ -25,7 +25,8 @@ Metodo 5 Q's
     -> a = n_inteiro - 1
     -> print numero sucessor de n_inteiro é s e antecessor é a
 
-'''
-print ('=' * 6,'Desafio 1','=' * 6)
-n1 = int(input('\nDigite um numero inteiro para saber o seu sucessor e antecessor\n'))
-print ('\nO sucessor de {} é: {:=^15}'.format(n1, n1 + 1),'\nE o antecessor de {} é: {:=^15}'.format(n1, n1 - 1))
+"""
+print("=" * 26, "Desafio 1", "=" * 26)
+n1 = int(input("\nDigite um numero inteiro para saber o seu sucessor e antecessor\nnumero: "))
+print ('\nO sucessor de {} é: {}\nE o antecessor de {} é: {}'.format(n1, (n1 + 1), n1, (n1 - 1)))
+print("=" * 63)
