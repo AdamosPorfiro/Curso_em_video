@@ -1,8 +1,8 @@
 '''
 ===== Desafio 8 prosta =====
 
-Faça um programa permita o usuario digitar o valor do produto e o seu
-respectivo desconto e exiba para o usuario o valor final do produto com desconto.
+Faça um programa que permita o usuario digitar o valor do produto e o seu
+respectivo desconto e exiba o valor final do produto com o desconto.
 
 Analise criticamente:
 Supondo que um produto tenha o valor de R$ 50.0 reais e o seu desconto é de 10% o programa vai ler esses dois valores e calcular o valor final
@@ -40,5 +40,4 @@ print('\n','=' * 18, 'Calculadora de desconto', '=' * 18, '\n\nUse apenas numero
 v_p = float(input('\nDigite o valor do produto\nR$ '))
 v_d = float(input('\nDigite o desconto do produto\n'))
 v_f = (v_p * v_d / 100)
-print('O valor com desconto: R$ {:.2f}\nO valor sem desconto: R$ {}\nO valor do desconto: {}%'.format(v_p - v_f, v_p, v_d))
-print('=' * 62 )
+print('O valor com desconto: R$ {:.2f}\nO valor sem desconto: R$ {}\nO valor do desconto: {}%'.format(v_p - v_f, v_p, v_d), '\n', '=' * 62)
