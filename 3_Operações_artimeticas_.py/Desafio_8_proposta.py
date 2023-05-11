@@ -40,4 +40,4 @@ print('\n','=' * 18, 'Calculadora de desconto', '=' * 18, '\n\nUse apenas numero
 v_p = float(input('\nDigite o valor do produto\nR$ '))
 v_d = float(input('\nDigite o desconto do produto\n'))
 v_f = (v_p * v_d / 100)
-print('O valor com desconto: R$ {:.2f}\nO valor sem desconto: R$ {}\nO valor do desconto: {}%'.format(v_p - v_f, v_p, v_d), '\n', '=' * 62)
+print('O valor com desconto: R$ {:.2f}\nO valor sem desconto: R$ {}\nO valor do desconto: {}%'.format(v_p - v_f, v_p, v_d)+'\n', '=' * 62)

@@ -32,8 +32,7 @@ Metodo 5 Q's
 
 '''
 
-print('=' * 30, 'Desafio 7', '=' * 30,'\n', ' ' * 15, 'Calculadora de tintas M²')
+print('\n'+'=' * 30, 'Desafio 7', '=' * 30,'\n', ' ' * 20, 'Calculadora de tintas M²')
 a1 = float(input('\nDigite a largura da parede\n'))
 l1 = float(input('\nDigite a altura da parede\n'))
-print('\nÁ area total da parede é de: {} metros\nA quantidade de tinta necessaria para pinta-lá é de: {} litros de tinta'.format(a1 + l1, (a1 + l1) /2))
-print('=' * 72)
+print('\nÁ area total da parede é de: {} metros\nA quantidade de tinta necessaria para pinta-lá é de: {} litros de tinta'.format(a1 + l1, (a1 + l1) /2)+'\n'+'=' * 72)

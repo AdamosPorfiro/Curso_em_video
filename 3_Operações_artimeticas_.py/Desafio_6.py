@@ -25,7 +25,6 @@ Analise critica:
 #2  print dinheiro_carteira / 3.27
 
 '''
-print('=' * 20, 'Desafio 6', '=' * 20,'\n', ' ' * 8 ,'Conversor de real para dolar')
-d1 = float(input('\nQuanto dinheiro você possui para converter em dolar?\n'))
-print ('\nVocê possui: R${} reais.\nPode adquirir: U${:.2f} dólares'.format(d1, d1 / 3.27))
-print('=' * 51)
+print('\n'+'=' * 28, 'Desafio 6', '=' * 28,'\n', ' ' * 18 ,'Conversor de real para dolar','\nUsei apenas numero e ponto para separar os decimais. Ex.: R$ 500.70')
+d1 = float(input('\nQuanto dinheiro você possui para converter em dolar?\nR$ '))
+print ('\nVocê possui: R${} reais.\nPode adquirir: U${:.2f} dólares'.format(d1, d1 / 3.27)+'\n'+'=' * 67)
