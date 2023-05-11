@@ -25,4 +25,4 @@ Metodo dos 5Q's
 
 print ('=' * 25, 'Desafio 2', '=' * 25)
 n1 = int(input('\nDigite um número para calcular o dobro, triplo e raiz quadrada\n'))
-print('\nO dobro de {} = {}\nO triplo de {} = {}\nA raiz quadrada de {} = {}'.format(n1, (n1 * 2), n1, (n1 * 3), n1, (n1 ** 2)),'\n','=' * 61)
+print('\nO dobro de {} = {}\nO triplo de {} = {}\nA raiz quadrada de {} = {:.2f}'.format(n1, (n1 * 2), n1, (n1 * 3), n1, (n1 ** (1/2))),'\n','=' * 61)
