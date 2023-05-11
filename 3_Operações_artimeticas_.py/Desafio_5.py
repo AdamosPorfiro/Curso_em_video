@@ -25,17 +25,6 @@ Metodo 5 Q's
 
 '''
 
-print('=' * 23, 'Desafio 5','=' * 23,'\n' , ' ' * 16, 'Conversor de tabuada')
+print('\n'+'=' * 23, 'Desafio 5','=' * 23,'\n' , ' ' * 14, 'Calculadora de tabuada')
 n1 = int(input('\nDigite um numero para ter a tabuada de 1 a 10 desse numero\n'))
-
-print('\n1 x {} = {}'.format(n1, 1 * n1))
-print('2 x {} = {}'.format(n1, 2 * n1))
-print('3 x {} = {}'.format(n1, 3 * n1))
-print('4 x {} = {}'.format(n1, 4 * n1))
-print('5 x {} = {}'.format(n1, 5 * n1))
-print('6 x {} = {}'.format(n1, 6 * n1))
-print('7 x {} = {}'.format(n1, 7 * n1))
-print('8 x {} = {}'.format(n1, 8 * n1))
-print('9 x {} = {}'.format(n1, 9 * n1))
-print('10 x {} = {}'.format(n1, 10 * n1))
-print('=' * 58)
+print('\n{} x 1 = {}\n{} x 2 = {}\n{} x 3 = {}\n{} x 4 = {}\n{} x 5 = {}\n{} x 6 = {}\n{} x 7 = {}\n{} x 8 = {}\n{} x 9 = {}\n{} x 10 = {}'.format(n1, (n1 * 1), n1, (n1 * 2), n1, (n1 * 3), n1, (n1 * 4), n1, (n1 * 5), n1, (n1 * 6), n1, (n1 * 7), n1, (n1 * 8), n1, (n1 * 9), n1, (n1 * 10)),'\n'+'=' * 58)
