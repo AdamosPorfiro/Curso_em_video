@@ -26,7 +26,7 @@ print A sua média é: ().
 
 '''
 
-print ('=' * 6, 'Exercicio 7', '=' * 6)
-nota1 = int(input('\nDigite a primeira nota\n'))
-nota2 = int(input('\nDigite a segunda nota\n'))
-print ('A sua média é: {}'.format((nota1 + nota2)/2))
+print ('=' * 4, 'Exercicio 7', '=' * 4)
+nota1 = int(input('\nDigite a primeira nota\nNota 1: '))
+nota2 = int(input('\nDigite a segunda nota\nNota 2: '))
+print ('A sua média é: {}'.format((nota1 + nota2)/2),'\n'+'=' * 21)

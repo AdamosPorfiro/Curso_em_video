@@ -31,6 +31,5 @@ Metodo dos 5 Q's
 
 '''
 print('=' * 18, 'Exercício 13', '=' * 19, '\n','Calculadora de 15 porcento de aumento no salario')
-s1 = float(input('\nDigite o seu salario mensal\n'))
-print('\nO seu novo salario é: R$ {:.2f}'.format((s1 * 15) / 100 + s1))
-print('=' * 51)
+s1 = float(input('\nDigite o seu salario mensal\nR$: '))
+print('\nO seu novo salario é: R$ {:.2f}'.format((s1 * 15) / 100 + s1),'\n' + '=' * 51)

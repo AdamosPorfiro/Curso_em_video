@@ -31,7 +31,7 @@ Metodo 5 Q's
 #3 print altura + largura / 2 = quantidade de tinta necessaria para pintar a area desejada.
 
 '''
-print('=' * 30, 'Exercício 11', '=' * 30,'\n',' ' * 25, 'Calculadora de tinta M²')
+print('\n'+'=' * 30, 'Exercício 11', '=' * 30,'\n',' ' * 25, 'Calculadora de tinta M²')
 a1 = float(input('\nDigite a largura da parede\n'))
 l1 = float(input('\nDigite a altura da parede\n'))
 print('\nO tamanho total da area da parede é de {} metros.\nA quantidade de tinta necessario para está area é de: {} litros de tinta.'.format(a1 + l1, (a1 + l1)/2))

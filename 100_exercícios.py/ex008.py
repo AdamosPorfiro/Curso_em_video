@@ -25,5 +25,5 @@ Metodo 5 Q's
 '''
 print('=' * 20, 'Exercício 8', '=' * 20)
 print (' ' * 4, 'Conversor de m² para centimetro e milimetro',' ' * 4)
-m1 = float(input('\nQuantos m² quer que sejam convertidos?\n'))
+m1 = float(input('\nQuantos m² quer que sejam convertidos?\nM²: '))
 print('\n{} m² é equivalente a {} cm que possui {} mm'.format(m1, m1 * 10000, m1 * 10000 * 10))

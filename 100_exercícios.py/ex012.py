@@ -31,5 +31,4 @@ Metodo dos 5 Q's
 print('=' * 19, 'Exercício 12', '=' * 19)
 v1 = float(input('\nDigite o preço do produto para calcular o desconto\n'))
 desconto = ((v1*5)/100)
-print('\nO desconto é de: 5%\nO valor do desconto em reais é de: R${:.2f}\nO preço do produto com desconto é de:R${:.2f}'.format(desconto, v1 - desconto))
-print('=' * 52)
+print('\nO desconto é de: 5%\nO valor do desconto em reais é de: R${:.2f}\nO preço do produto com desconto é de:R${:.2f}'.format(desconto, v1 - desconto),'\n' + '=' * 52)
