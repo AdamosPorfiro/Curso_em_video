@@ -35,4 +35,4 @@ Metodo dos 5 Q's
 '''
 print('\n','=' * 1, 'Conversor de celsius para fahrenheit','=' * 1,'\n\n'+'Para separar os decimais use ponto Ex.: 31.5')
 g_c = float(input('\nDigite quantos graus celsius quer converter\nC°: '))
-print('\n{:.2f}c° graus celsius corresponde a {:.2f}f° fahrenheit'.format(g_c, g_c*9/5+32),'\n'+'=' * 51)
+print('\n{:.2f}c° graus celsius corresponde a {:.2f}f° fahrenheit'.format(g_c, ((g_c*9)/5)+32),'\n'+'=' * 51)
