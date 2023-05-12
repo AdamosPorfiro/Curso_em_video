@@ -22,7 +22,7 @@ O que são operações aritméticas?
 
 Ordem de precedência:
 
--> 1° A ser executado e resolvido () dentro de parenteses;
+->1° A ser executado e resolvido () dentro de parenteses;
 ->2° A ser executado e resolvido ** potência;
 ->3° A ser executado e resolvido * / // % multiplicação, divisão, divisão inteira, modulo(resto da divisão);
 ->4° A ser executado + - soma, subtração.
