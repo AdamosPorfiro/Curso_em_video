@@ -1,5 +1,5 @@
 '''
-===== Desafio 10 =====
+===== Exercício 10 =====
 
 Escreva um programa que converta graus celsius para fahrenheit 
 
