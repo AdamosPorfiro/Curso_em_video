@@ -16,6 +16,9 @@ pow -> Potência;
 sqrt -> Pra calcular raiz quadrada;
 factorial -> Calcula o fatorial de um numero.
 
+Aqui possui todas as funções e o seu objetivo:
+https://docs.python.org/pt-br/3/library/math.html?highlight=matematicos
+
 exemplo para importar apenas uma das funcionalidade: "from math import factorial" ou "from math import factorial, sqrt".
 
 '''
