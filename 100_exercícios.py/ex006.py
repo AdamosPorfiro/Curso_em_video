@@ -1,5 +1,5 @@
 '''
-===== Exercício 2 =====
+===== Exercício 6 =====
 
 Crie um programa que leia um numero e mostre o seu dobro, triplo e a raiz quadrada.
 

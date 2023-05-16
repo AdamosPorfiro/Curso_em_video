@@ -1,6 +1,6 @@
 '''
 
-===== Desafio 5 =====
+===== Exercicio 9 =====
 
 Faça um programa que leia um numero inteiro qualquer e mostre na tela a sua tabuada.
 
