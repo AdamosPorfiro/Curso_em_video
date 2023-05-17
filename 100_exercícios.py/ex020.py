@@ -1,38 +1,38 @@
 '''
-===== Exercício 20 =====
+===== Exercicio 21 =====
 
-Um professor quer sortear um dos seus alunos para apagar o quadro.
-Faça um programa que ajude ele, lendo o nome do escolhido.
-
-metodo dos 5 Q's
+O mesmo professor do desafio anterior quer sortear a ordem de apresentação de trabalhos dos alunos.
+Faça um programa que leia o nome dos quatro alunos e mostre a ordem sorteada.
 
 1 - Quais são os dados de entrada?
--> input nomes_de_alunos
+-> import biblioteca random a função shuflle
+-> input grupo_1
+-> input grupo_2
+-> input grupo_3
+-> input grupo_4
 
 2 - O que devo fazer com esses dados?
--> Usando a biblioteca radom e sua função choice vamos fazer com que o programa sorteie um dos nomes
-para apagar o quadro.
+-> Vai sortear a ordem de apresentação de quatro grupos de alunos e mostrar a ordem sorteada
 
-3 - Quais são as restrições do programa?
--> Apenas nomes strings 
+3 - Quais são as restrições desse problema?
+-> Iremos sortear uma ordem de elementos usando biblioteca shuffle
 
 4 - Qual o resultado esperado?
--> Que o programa sorteie um nome de uma lista de alunos para apagar o quadro.
+-> Exibir na tela a ordem sorteada
 
-5 - Quais são os passos necessario para se alcançar o resultado?
-1 - importar a biblioteca radom e função choice;
-2 - Variavel com os nomes do alunos;
-3 - print sorteando um dos nomes inseridos na variavel;
+5 - Quais são os passos para se alcançar o resultado?
+-> Importar a biblioteca choice e função shuffle
+-> Montar uma lista com os 4 grupos
+-> Print uma ordem aleatoria dos grupos usando a função shuffle
 
 '''
 
-from random import choice
-li_nomes = [] # Declaração de uma lista vazia;
-li_nomes.append("Adamos") #.append para armazenar elemento a lista;
-li_nomes.append("Alesson")
-li_nomes.append("Vilma")
-li_nomes.append("Antônio")
-li_nomes.append("Pâmela")
-li_nomes.append("João")
-li_nomes.append("Maria")
-print(choice(li_nomes)) # Função choice vai sortear um dos nomes da lista e exibir na tela;
+
+from random import choice, shuffle
+grupos = []
+grupos.append("grupo 1")
+grupos.append("grupo 2")
+grupos.append("grupo 3")
+grupos.append("grupo 4")
+shuffle(grupos)
+print(grupos)

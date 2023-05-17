@@ -1,38 +1,33 @@
 '''
-===== Exercicio 21 =====
+===== Desafio 7 =====
 
-O mesmo professor do desafio anterior quer sortear a ordem de apresentação de trabalhos dos alunos.
-Faça um programa que leia o nome dos quatro alunos e mostre a ordem sorteada.
+Faça um programa em python que abra e reproduza o áudio de um arquivo MP3.
+
+Metodo dos 5 Q's
 
 1 - Quais são os dados de entrada?
--> import biblioteca random a função shuflle
--> input grupo_1
--> input grupo_2
--> input grupo_3
--> input grupo_4
+-> imort biblioteca playsound
+-> input arquivo_mp3
 
 2 - O que devo fazer com esses dados?
--> Vai sortear a ordem de apresentação de quatro grupos de alunos e mostrar a ordem sorteada
+-> Abrir e reproduzir um aúdio de um arquivo mp3
 
-3 - Quais são as restrições desse problema?
--> Iremos sortear uma ordem de elementos usando biblioteca shuffle
+3 - Quais são as restrições do programa?
+-> Usando biblioteca playsound
+-> Arquivos mp3
 
 4 - Qual o resultado esperado?
--> Exibir na tela a ordem sorteada
+-> Abrir e reproduzir um aúdio de arquivo mp3
 
 5 - Quais são os passos para se alcançar o resultado?
--> Importar a biblioteca choice e função shuffle
--> Montar uma lista com os 4 grupos
--> Print uma ordem aleatoria dos grupos usando a função shuffle
+
+#1 Importar o biblioteca playsound
+#2 Criar variavel com o caminho correto do arquivo Ex.: Caminho = //user//file//.mp3
+#3 Usar a função playsound(Caminho)
+
 
 '''
-
-
-from random import choice, shuffle
-grupos = []
-grupos.append("grupo 1")
-grupos.append("grupo 2")
-grupos.append("grupo 3")
-grupos.append("grupo 4")
-shuffle(grupos)
-print(grupos)
+print('Reprodução aúdio - Righteous Brothers-Unchained Melody.mp3')
+from playsound import playsound
+caminho_arquivo = 'C:\\Users\\Ideal\\Documents\\GitHub\\Curso_em_video\\mp3\\Righteous Brothers-Unchained Melody.mp3'
+playsound(caminho_arquivo)
