@@ -27,12 +27,12 @@ Faça um programa que leia o nome dos quatro alunos e mostre a ordem sorteada.
 
 '''
 
-
-from random import choice, shuffle
-grupos = []
-grupos.append("grupo 1")
-grupos.append("grupo 2")
-grupos.append("grupo 3")
-grupos.append("grupo 4")
+print('\n'+ '=' * 6, 'Embaralhador de elementos', '=' * 6)
+from random import shuffle
+grupo1 = str(input('Digite nome do 1° grupo: '))
+grupo2 = str(input('Digite nome do 2° grupo: '))
+grupo3 = str(input('Digite nome do 3° grupo: '))
+grupo4 = str(input('Digite nome do 4° grupo: '))
+grupos = [grupo1, grupo2, grupo3, grupo4]
 shuffle(grupos)
-print(grupos)
+print(grupos,'\n' + '=' * 40)
