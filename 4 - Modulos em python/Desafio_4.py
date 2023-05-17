@@ -25,14 +25,11 @@ para apagar o quadro.
 3 - print sorteando um dos nomes inseridos na variavel;
 
 '''
-
+print('\n'+'=' * 13, 'Sorteador de nome','=' * 13, '\n')
 from random import choice
-li_nomes = [] # Declaração de uma lista vazia;
-li_nomes.append("Adamos") #.append para armazenar elemento a lista;
-li_nomes.append("Alesson")
-li_nomes.append("Vilma")
-li_nomes.append("Antônio")
-li_nomes.append("Pâmela")
-li_nomes.append("João")
-li_nomes.append("Maria")
-print(choice(li_nomes)) # Função choice vai sortear um dos nomes da lista e exibir na tela;
+nome1 = str(input('Digite primeiro nome: '))
+nome2 = str(input('Digite segundo nome: '))
+nome3 = str(input('Digite tercero nome: '))
+nome4 = str(input('Digite quarto nome: '))
+li_nomes = [nome1, nome2, nome3, nome4] # Declaração de uma lista vazia;
+print('\nO escolhido para apagar o quadro é: ', choice(li_nomes), '\n' + '=' * 45) # Função choice vai sortear um dos nomes da lista e exibir na tela;
