@@ -1,5 +1,5 @@
 '''
-===== Exercicio 17 =====
+===== Desafio 2 =====
 
 Faça um programa que leia o comprimento do cateto oposto e do cateto adjacente de um triangulo retangulo,
 calcule e mostre o comprimento da hipotenusa.
@@ -23,7 +23,8 @@ Metodo 5 Q's
 3 - Quais são as restrições do programa?
 -> Calculos de numero elevado a sua potência;
 -> Raiz quadrada;
--> Soma
+-> Soma;
+-> Decimais;
 
 4 - Qual é o resultado esperado?
 -> Exibir o comprimento da hipotenusa.
@@ -36,9 +37,10 @@ Metodo 5 Q's
 
 
 '''
+
 print('\n' + '=' * 8, 'Calculadora hipotenusa', '=' * 8)
-from math import sqrt
-c1 = int(input('Digite o cateto oposto\nCateto oposto: '))
-c2 = int(input('\nDigite o cateto adjacente\nCateto adjacente: '))
-resultado = (c1 * c1) + (c2 * c2)
-print('\nCateto oposto é: {}\nCateto adjacente é: {}\nComprimento da hipotenusa é: {:.2f}'.format(c1, c2, sqrt(resultado)),'\n' + '=' * 40)
+from math import hypot
+c1 = float(input('Digite o cateto oposto\nCateto oposto: '))
+c2 = float(input('\nDigite o cateto adjacente\nCateto adjacente: '))
+resultado = hypot(c1, c2)
+print('\nCateto oposto é: {}\nCateto adjacente é: {}\nComprimento da hipotenusa é: {:.2f}'.format(c1, c2, resultado),'\n' + '=' * 40)
