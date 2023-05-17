@@ -30,4 +30,10 @@ cosseno = 4 / 5 = 0.8;
 tangente = 3 / 4 = 0.75;
 
 '''
-
+print('Calculadora de seno, cosseno e tangente')
+from math import sin, cos, tan, radians
+ang = float(input('\nDigite o angulo\nAngulo: '))
+seno = sin(radians(ang))
+coss = cos(radians(ang))
+tang = tan(radians(ang))
+print('\nO Seno é: {:.2f}\nO Cosseno é: {:.2f}\nA Tangente é: {:.2f}'.format(seno,coss,tang),'\n' + '=' * 40)
