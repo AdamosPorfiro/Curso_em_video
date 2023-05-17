@@ -40,4 +40,4 @@ grupo3 = str(input('Digite nome do 3° grupo: '))
 grupo4 = str(input('Digite nome do 4° grupo: '))
 grupos = [grupo1, grupo2, grupo3, grupo4]
 shuffle(grupos)
-print(grupos,'\n' + '=' * 40)
+print('\nApresentação será na ordem: ', grupos,'\n' + '=' * 40)
