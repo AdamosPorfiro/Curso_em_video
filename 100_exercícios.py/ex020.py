@@ -31,7 +31,7 @@ Faça um programa que leia o nome dos quatro alunos e mostre a ordem sorteada.
 -> Print a lista grupos;
 
 '''
-print('\n'+ '=' * 6, 'Embaralhador de elementos', '=' * 6)
+print('\n'+ '=' * 21, 'Embaralhador de elementos', '=' * 21)
 from random import shuffle
 grupo1 = str(input('Digite nome do 1° grupo: '))
 grupo2 = str(input('Digite nome do 2° grupo: '))
@@ -39,4 +39,4 @@ grupo3 = str(input('Digite nome do 3° grupo: '))
 grupo4 = str(input('Digite nome do 4° grupo: '))
 grupos = [grupo1, grupo2, grupo3, grupo4]
 shuffle(grupos)
-print('\nApresentação será na ordem: ', grupos,'\n' + '=' * 40)
+print('\nApresentação será na ordem: ', grupos,'\n' + '=' * 70)
