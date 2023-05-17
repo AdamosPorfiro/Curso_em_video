@@ -33,3 +33,7 @@ from math import trunc #Podemos tambem usar o floor, que vai arredondar o valor
 print('\n' + '=' * 11, 'Coversor de numeros reais para inteiros', '=' * 12)
 num = float(input('\nDigite um numero. Use ponto para separar os decimais Ex.: 6.127\nNumero:  '))
 print('\nO numero escolhido foi {:.3f}.\nE sua porção inteira é {}.'.format(num,trunc(num)),'\n' + '=' * 64)
+
+#Aqui não usamos nenhuma biblioteca, apenas as funções float e int que tambem dá certo
+num1 = float(input('Digite um valor\nNumero: '))
+print('O valor digitado foi {}\ne sua porção inteira é {}.'.format(num1,int(num1)))
