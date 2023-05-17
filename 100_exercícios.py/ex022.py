@@ -20,9 +20,10 @@ Metodo dos 5 Q's
 -> Abrir e reproduzir um aúdio de arquivo mp3
 
 5 - Quais são os passos para se alcançar o resultado?
-#1 Importar o biblioteca playsound e a função playsound
-#2 Cria uma variavel com o caminho do arquivo Ex.:Caminho = \\file\\caminho
-#3 Chama função playsound(Caminho)
+
+#1 Importar o biblioteca playsound
+#2 Criar variavel com o caminho correto do arquivo Ex.: Caminho = //user//file//.mp3
+#3 Usar a função playsound(Caminho)
 
 
 '''
