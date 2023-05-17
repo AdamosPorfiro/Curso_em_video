@@ -6,10 +6,10 @@ Faça um programa que leia o nome dos quatro alunos e mostre a ordem sorteada.
 
 1 - Quais são os dados de entrada?
 -> import biblioteca random a função shuflle
--> input grupo_1
--> input grupo_2
--> input grupo_3
--> input grupo_4
+-> input grupo_1;
+-> input grupo_2;
+-> input grupo_3;
+-> input grupo_4;
 
 2 - O que devo fazer com esses dados?
 -> Vai sortear a ordem de apresentação de quatro grupos de alunos e mostrar a ordem sorteada
@@ -21,9 +21,14 @@ Faça um programa que leia o nome dos quatro alunos e mostre a ordem sorteada.
 -> Exibir na tela a ordem sorteada
 
 5 - Quais são os passos para se alcançar o resultado?
--> Importar a biblioteca choice e função shuffle
--> Montar uma lista com os 4 grupos
--> Print uma ordem aleatoria dos grupos usando a função shuffle
+-> Importar a biblioteca random função shuffle
+-> input grupo_1;
+-> input grupo_2;
+-> input grupo_3;
+-> input grupo_4;
+-> Declaro variavel que vai ser minha lista de grupos e dentro dela coloco os inputs grupos[grupo1, grupo 2...];
+-> Uso a função shuffle na lista;
+-> Print a lista grupos;
 
 '''
 
