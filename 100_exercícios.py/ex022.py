@@ -38,5 +38,5 @@ R:
 '''
 print('=' * 40)
 nome = str(input('Nome completo: '))
-nome_junto = "".join(nome.split())
-print('\nTudo maiúsculo:', nome.upper(),'\nTudo minúsculo:', nome.lower(),'\nQuantidade de caracteres:', len(nome_junto),'\n' + "=" * 40)
+nome1 = "".join(nome.split())
+print ('\nTudo maiúsculo:', nome.upper(),'\nTudo minúsculo:', nome.lower(),'\nQuantidade de caracteres:',len(nome1),'\n' + nome1, '\n' + '=' * 40 )
