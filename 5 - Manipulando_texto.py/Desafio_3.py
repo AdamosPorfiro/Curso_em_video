@@ -18,13 +18,17 @@ Metodo dos 5Q's
 
 5 - Quais são os passos para se alcançar o resultado esperado?
 1 - input cidade
-2 - Converte tudo para minusculo ou maiusculo;
+2 - Variavel1 = cidade.lower()
 2 - print cidade in santo
 """
-
+'''
 cidade = str(input("Digite o nome de uma cidade:\nCidade: "))
 p = cidade.lower()
 if('santo' in p):
     print('Sim, possui santo no nome!')
 else:
     print('Não, possui santo no nome!')
+'''
+c = str(input('Nome da cidade: ')).strip()
+m = c.lower()
+print('\nAnalisando o nome da cidade...\nPossui santo no nome: {}'.format("santo" in m))
