@@ -42,7 +42,7 @@ Formas de analisar um string:
 len = significa comprimento, que vai dizer pra gente o comprimento de uma frase
 count = Contador, exemplo de uso frase = 'Adamos' print(frase.count('a')) O count vai contar quantas vezes apareçe a letra a minuscula.
 outro exemplo de count é print(frase.count('a',0,8)) Ele vai verificar quantas vezes a letra "a" apareçe na frase contanto do indice 0 a 7 
-find = Econtrar, Ex.: Print(frase('amos')) Ele vai indicar em que indice 'amos' começa veja no code lá em baixo.
+find = Econtrar, Ex.: Print(frase('amos')) Ele vai indicar em que indice 'amos' começa veja no codigo lá em baixo.
 in = Podemos dizer adamos in frase. frase = 'Adamos Porfiro' print('Adamos' in frase)
 
 Formas de fazer transformações em string:
