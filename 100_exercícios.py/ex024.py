@@ -30,5 +30,4 @@ else:
     print('Não, possui santo no nome!')
 '''
 c = str(input('Nome da cidade: ')).strip()
-m = c.lower()
-print('\nAnalisando o nome da cidade...\nPossui santo no nome: {}'.format("santo" in m))
+print('\nAnalisando o nome da cidade...\nComeça com o nome santo: {}'.format(c[:6].lower() == 'santo'))
