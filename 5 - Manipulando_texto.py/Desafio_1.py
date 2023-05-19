@@ -30,13 +30,12 @@ R: input Nome_completo
 R: 
 
 #1 - input nome_completo;
-#2 - Chamar a função upper com um print;
-#3 - Chamar a função lower com um print;
-#4 - CHamar a função replace para tirar os espaços e len para contar os caracteres;
-#5 - Chamar a função find para achar o primeiro indice e contar o indice daquela palavra
-
+#2 - Variavel_1 = "".join(nome_completo.split());
+#3 - Variavel_2 = nome_completo.split();
+#4 - Print nome_completo.upper / nome_completo.lower / nome_junto / len(Variavel_2[0]).
 '''
 print('=' * 40)
 nome = str(input('Nome completo: '))
 nome_junto = "".join(nome.split())
-print('\nTudo maiúsculo:', nome.upper(),'\nTudo minúsculo:', nome.lower(),'\nQuantidade de caracteres:', len(nome_junto),'\n' + "=" * 40)
+p_n = nome.split()
+print('\nTudo maiúsculo:', nome.upper(),'\nTudo minúsculo:', nome.lower(),'\nQuantidade de caracteres ao todo:', len(nome_junto),'\nQuantidade de caracteres 1° nome:',len(p_n[0]),'\n' + "=" * 40)
