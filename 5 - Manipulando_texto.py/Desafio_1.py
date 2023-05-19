@@ -35,7 +35,7 @@ R:
 #4 - Print nome_completo.upper / nome_completo.lower / nome_junto / len(Variavel_2[0]).
 '''
 print('=' * 40)
-nome = str(input('Nome completo: '))
+nome = str(input('Nome completo: ')).strip()
 nome_junto = "".join(nome.split())
 p_n = nome.split()
 print('\nAnalisando o seu nome...\nTudo maiúsculo:', nome.upper(),'\nTudo minúsculo:', nome.lower(),'\nQuantidade de caracteres ao todo:', len(nome_junto),'\nQuantidade de caracteres 1° nome:',len(p_n[0]),'\n' + "=" * 40)
