@@ -30,8 +30,13 @@ Exibir na tela o primeiro e o segundo nome
 #5 Print da Variavel_2 e Variavel_3
 '''
 
-nome = str(input('Nome completo: '))
-separar = nome.split()
-n1 = separar[0]
-n2 = separar[-1] # -1 Representa o ultimo elemento da lista
-print('Primeiro nome: {}\nUltimo nome: {}'.format(n1,n2))
+'''
+nome = str(input('Nome completo: ')).strip().split()
+n1 = nome[0]
+n2 = nome[-1] # -1 Representa o ultimo elemento da lista
+print('\nAnalisando nome...\nPrimeiro nome: {}\nUltimo nome: {}'.format(n1,n2))
+'''
+
+n = str(input('Nome completo: ')).strip().split()
+#print('\nAnalisando nome...\nPrimeiro nome é: {}\nUltimo nome é: {}'.format(n[0].title(), n[len(n)-1].title()))
+print('\nAnalisando nome...\nO primeiro nome é: {}\nO ultimo nome é: {}'.format(n[0].title(), n[-1].title()))
