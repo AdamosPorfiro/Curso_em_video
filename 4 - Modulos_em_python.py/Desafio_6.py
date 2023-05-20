@@ -28,5 +28,5 @@ Metodo dos 5 Q's
 '''
 print('Reprodução aúdio - Righteous Brothers-Unchained Melody.mp3')
 from playsound import playsound
-caminho_arquivo = 'C:\\Users\\Ideal\\Documents\\GitHub\\Curso_em_video\\mp3\\Righteous Brothers-Unchained Melody.mp3'
+caminho_arquivo = 'C:\\Users\\Adamos\\Desktop\\ADAMOS\\CURSO_LP_PY\\Curso_em_video\\mp3\\Righteous Brothers-Unchained Melody.mp3'
 playsound(caminho_arquivo)
