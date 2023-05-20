@@ -33,12 +33,12 @@ e R$ 0,45 para viagens mais longas.
         r = Distância * 0.45
         print O valor da viagem é de R$ r
 '''
-print('\n' + '=' * 8,'Calculadora - Preço de viagens', '=' * 8)
-d = float(input('\nQual a distância da sua viagem?\nDistância (km): '))
+print('\n'+'=' * 8, 'Calculadora - Preço de viagens', '=' * 8)
+d = float(input('QUal a distância da sua viagem?\nDistancia (km): '))
 if d <= 200:
     r = d * 0.50
-    print('O valor da sua passagem é de R$ {:.2f}'.format(r))
+    print('\nO valor da sua passagem é de R$ {}.'.format(r))
 else:
     r = d * 0.45
-    print('O valor da sua passagem é de R$ {:.2f}'.format(r))
+    print('\nO valor da sua passagem é de R$ {}.'.format(r))
 print('=' * 48)
