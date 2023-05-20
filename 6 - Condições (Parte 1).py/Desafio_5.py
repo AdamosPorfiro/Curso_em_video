@@ -24,13 +24,18 @@ então ele é bissexto.
 
 5 - Quais são os passos para se alcançar o resultado esperado?
 #1 - input ano;
-#2 - if ano % 4 == 0 print O ano, é BISSEXTO!
-#3 - else print O ano, não é BISSEXTO
+#2 - if ano % 4 == 0 and ano % 400 % 4 print Sim, é BISSEXTO;
+#3 - else print Não é BISSEXTO.
 '''
-print('\nCalculadora de ano bissexto')
-a = int(input('ano: '))
+print(
+    '=' * 27 +
+    '\nCalculadora de ano bissexto'
+    )
+a = int(input('Ano: '))
 
-if a % 4 == 0:
+if a % 4 == 0 and a % 400 % 4 == 0:
     print('Sim é BISSEXTO')
-else: 
-    print('Não é BISSEXTO!')
+else:
+    print('Não é BISSEXTO')
+print('=' * 27)
+  
