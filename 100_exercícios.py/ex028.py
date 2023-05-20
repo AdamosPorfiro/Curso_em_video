@@ -34,9 +34,9 @@ se o usuario venceu ou perdeu.
 print('=' * 7, 'Jogo de adivinhar', '=' * 7)
 from random import randint
 n = randint(0,5)
-n1 = int(input('Escolha um numero entre 0 e 5: '))
-if n1 == n:
+v = int(input('Escolha um numero entre 0 e 5: '))
+if v == n:
     print('\nPARABÉNS, você acertou!')
 else:
-    print('\nQUE PENA, você errou!\nO numero certo era: {}'.format(n))
+    print('\nQUE PENA, você errou\nO numero correto é: {}'.format(n))
 print('=' * 33)
