@@ -31,12 +31,17 @@ se o usuario venceu ou perdeu.
 #3 - input usuario
 #4 - if input == variavel_1: Ganhou else: Perdeu
 '''
-print('=' * 7, 'Jogo de adivinhar', '=' * 7)
+print('-=-' * 11)
+print(' ' * 5, 'Jogo de adivinhar')
+print('-=-' * 11)
 from random import randint
+from time import sleep
 n = randint(0,5)
-v = int(input('Escolha um numero entre 0 e 5: '))
-if v == n:
-    print('\nPARABÉNS, você acertou!')
+n1 = int(input('Escolha um numero entre 0 e 5: '))
+print('\nProcessando...')
+sleep(1.5)
+if n1 == n:
+    print('\n'+' ' * 4,'PARABÉNS, você acertou!')
 else:
-    print('\nQUE PENA, você errou\nO numero correto é: {}'.format(n))
+    print('\n' + ' ' * 4, 'QUE PENA, você errou!','\n' + ' ' * 4, 'O numero certo era: {}'.format(n))
 print('=' * 33)
