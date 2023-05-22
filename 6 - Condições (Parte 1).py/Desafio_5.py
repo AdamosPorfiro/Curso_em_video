@@ -28,14 +28,18 @@ então ele é bissexto.
 #3 - else print Não é BISSEXTO.
 '''
 print(
-    '=' * 27 +
+    '=' * 65 +
     '\nCalculadora de ano bissexto'
     )
-a = int(input('Ano: '))
+from datetime import date
 
-if a % 4 == 0 and a % 400 % 4 == 0:
-    print('Sim é BISSEXTO')
+a = int(input('Informe o ano que deseja analisar? Digite 0 para ano atual:\nAno: '))
+
+if a == 0:
+    a = date.today().year
+if a % 4 == 0 and a % 100 != 0 or a % 400 == 0:
+    print('Sim, o ano {} é BISSEXTO'.format(a))
 else:
-    print('Não é BISSEXTO')
-print('=' * 27)
+    print('Não, o ano {} não é BISSEXTO'.format(a))
+print('=' * 65)
   
