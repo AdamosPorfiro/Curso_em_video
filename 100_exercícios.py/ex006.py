@@ -23,6 +23,6 @@ Metodo dos 5Q's
 
 '''
 
-print('=' * 25, 'Exercicio 6', '=' * 26)
-n1 = int(input('\nDigite um número para calcular o dobro, triplo e a raiz quadrada\nNumero: '))
+print('=' * 26, 'Exercicio 6', '=' * 26)
+n1 = int(input('\nDigite um número para calcular o' '\033[36m'' dobro, triplo e a raiz quadrada''\033[m''\nNumero: '))
 print ('\nO dobro de {} = {}\nO triplo de {} = {}\nA raiz quadrada de {} = {}'.format(n1,(n1 * 2), n1, (n1 * 3), n1, (n1 * 1/2)),'\n'+'=' * 64)

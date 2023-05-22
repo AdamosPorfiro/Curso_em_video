@@ -1,4 +1,4 @@
-'''
+"""
 
 Faça um programa que leia o nome de uma pessoa e mostre uma mensagem de boas-vindas
 
@@ -20,7 +20,7 @@ Faça um programa que leia o nome de uma pessoa e mostre uma mensagem de boas-vi
 #1 input nome
 #2 print Olá, nome seja bem vindo!
 
-'''
-print('=' * 5,'Exercicio 2','=' * 5)
-nome = input('Qual o seu nome?\nNome: ')
-print('\nOlá',nome+', Seja bem vindo!!!')
+"""
+print("=" * 5, "Exercicio 2", "=" * 5)
+nome = input("Qual o seu nome?\nNome: ")
+print("\nOlá", "\033[4;32m" + nome + "\033[m" + ", Seja bem vindo!!!\n")
