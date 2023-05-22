@@ -32,8 +32,10 @@ multiplicando o excedente de 15km com o valor de cada km R$ 7,00.
 #3 if input usuario <= 79 print você não foi multado
 '''
 
-v = float(input('Qual a velocidade que o carro estava?\nVelocidade: '))
-if v >= 80:
-    print('\nATENÇÃO, você foi multado.\nO valor da multa é de R$ {:.2f}.'.format((v - 79) * 7))
+v = float(input('Qual velocidade que o carro estava?\nVelocidade: '))
+if(v > 80):
+    print('\nATENÇÂO, Você foi multado.\nO valor da multa é de R$ {:.2f}.'.format((v - 79) * 7))
 else:
-    print('PARABÉNS, Você não foi multado!')
+    print('\nPARABÉNS,Você não foi multado!')
+print('Tenha um bom dia, dirija com segurança!\n')
+    
