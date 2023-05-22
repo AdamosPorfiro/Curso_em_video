@@ -46,12 +46,15 @@ R.: É possivel formar um triângulo utilizando essas medidas;
         print Não é possivel formar um triangulo com essas medidas!
 
 '''
-
-m1 = float(input('Informe a medida da primeira reta\n RETA 1: '))
-m2 = float(input('Informe a medida da segunda reta\n RETA 2: '))
-m3 = float(input('Informe a medida da terceira reta\n RETA 3: '))
+print('\n' + '-=-' * 18)
+print(' ' * 5, 'Analisando os segmentos de um triângulo')
+print('' + '-=-' * 18)
+m1 = float(input('Informe o primeiro segmento\n segmento 1: '))
+m2 = float(input('Informe o segundo segmento\n segmento 2: '))
+m3 = float(input('Informe o terceiro segmento\n segmento 3: '))
 
 if m1 + m2 > m3 and m1 + m3 > m2 and m3 + m2 > m1:
     print ('\nSim, é possivel formar um triangulo com essas medidas')
 else:
     print('\nNão é possivel formar um triangulo com essas medidas')
+print('\n' + '-=-' * 18)
