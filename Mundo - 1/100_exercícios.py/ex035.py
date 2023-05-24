@@ -13,16 +13,16 @@ A desigualdade triangular que diz que: Para que tês retas formem um triangulo, 
 maiores que a terceira, esse é o principio da DESIGUALDADE TRIÂNGULAR.
 
 Ex: Se obtemos as retas A|B|C então:
-A + B > C ;     
+A + B > C;     
 A + C > B;
-C + B > a;
+C + B > A;
 
 Se todas as condições, forem verdadeiras, então podemos formar um triangulo:
 
 Ex: Se obtemos as seguintes retas: A = 5 | B = 10 | C = 7 então:
 5 + 10 > 7 = VERDADEIRO;
 5 + 7 > 10 = VERDADEIRO;
-10 + 5 > = 7 VERDADEIRO;
+10 + 5 > 7 = VERDADEIRO;
 
 R.: É possivel formar um triângulo utilizando essas medidas;
 
