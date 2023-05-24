@@ -59,15 +59,15 @@ Analise:
         print Você já passou do tempo de alistamento;
                 
 '''
-#Dado de entrada;
+#Dados de entrada;
 from datetime import date
-print('\nUtilize apenas espaços para separar palavras e numeros')
+print('\nPreencha com essa formatação, nascimento:', '\033[31m''11 1993''\033[m')
 n = str(input('\nNome completo: ')).strip()
 i = str(input('Mês e ano de nascimento:  ')).strip().split()
 
 #Calculando idade;
 idade = date.today().year - int(i[1])
-mes = int(i[0])
+mes = int(i[1])
 
 #Verificando o mês caso mês atual seja menor que o informado;
 if date.today().month < mes:
