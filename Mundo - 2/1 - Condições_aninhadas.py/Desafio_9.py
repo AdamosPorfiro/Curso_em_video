@@ -89,6 +89,7 @@ exibir para o usuario o preço final do produto;
             \nCada parcela ficará R$ {(J + preço)/input}
 
 '''
+print('\n'+ '-=-' * 6, 'Caixa 1', '-=-' * 6)
 P = float(input('Informe o preço do produto\nR$ '))
 PG = int(input('\n1 - Pagamento dinheiro\n2 - Pagamento débito\n3 - Pagamento crédito\nPagamento: '))
 #Á vista
@@ -99,18 +100,20 @@ C_V = ((P*5)/100)
 J = ((P*20)/100) 
 #Condições
 if PG == 1:
-    print('\nPagamentos á vista tem 10%','de desconto\nPreço do produto é R$ {}\nVocê vai pagar R$ {}'.format(P, P-V))
+    print('\nPagamentos á vista tem 10%','de desconto\nPreço R$ {}\nA pagar R$ {}'.format(P, P-V))
 elif PG == 2:
-    print('\nPagamento no cartão débito tem 5%','de desconto\nPreço do produto é R$ {}\nVocê vai pagar R$ {}'.format(P, P-C_V))
+    print('\nPagamento no cartão débito tem 5%','de desconto\nPreço R$ {}\nA pagar R$ {}'.format(P, P-C_V))
 elif PG == 3:
-    N_P = str(input('\nQuantas parcelas você quer?\n'))
+    N_P = str(input('\nVai parcelar em quantas vezes?\n'))
     if N_P == 1:
-        print('\nPagamento parcelado em até 1x não tem juro!\nPreço do produto é R$ {}\nParcela R$ {}'.format(P, P))
+        print('\nPagamento parcelado em até 1x não tem juro!\nPreço R$ {}\nParcela R$ {}'.format(P, P))
     elif N_P == 2:
-        print('\nPagamento parcelado em até 2x não tem juro!\nPreço do produto é R$ {}\n1° Parcela R$ {}\n2° Parcela R$ {}'.format(P, P/2, P/2))
+        print('\nPagamento parcelado em até 2x não tem juro!\nPreço R$ {}\n1° Parcela R$ {}\n2° Parcela R$ {}'.format(P, P/2, P/2))
     else:
         Co = int(N_P)
-        print('\nPagamento parcelados acima de 2x tem 20%','de juros!\nPreço do produto é R$ {}\nCada Parcela Aplicado o juros fica R$ {:.2f}\nNumero de parcelas: {}\nTotal com juros R$ {}'.format(P, (P/Co)+J, N_P, ((P/Co)+J)*Co))
+        print('\nPagamento parcelados acima de 2x tem 20%','de juros!\nPreço R$ {}\nParcelas com juros R$ {:.2f}\nNumero de parcelas: {} parcelas\nTotal R$ {:.2f}'.format(P, (P/Co)+J, N_P, ((P/Co)+J)*Co))
+print('\n'+'-=-' * 15)
+
 
 
 
