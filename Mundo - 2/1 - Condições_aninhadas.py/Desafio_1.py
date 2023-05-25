@@ -86,7 +86,7 @@ m1 = m * 12
 c1 = c / m1
 #=================================================================================
 if s1 >= c1:
-    print('\nA mensalidade fica em: R$ {:.2f}\nParabéns, o seu emprestimo está aprovado!'.format(c1))
+    print('\nA mensalidade fica em: R$ {:.2f}\nParabéns, o seu emprestimo está {}aprovado!{}'.format(c1,'\033[1;32m','\033[m'))
 else:
     print('\nA mensalidade é de: {:.2f}\nExcede a percentual máximo do seu salario que é de R$ {:.2f} mês.''\033[31m''\nEmpréstimo Negado!' '\033[m'.format(c1, s1))
 print('\n' + '-=-' * 13)
