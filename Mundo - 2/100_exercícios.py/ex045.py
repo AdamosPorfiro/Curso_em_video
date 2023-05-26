@@ -82,25 +82,25 @@ print('{:=^31}'.format(''))
 
 if u == 1 != c == 'TESOURA':
     u = 'PEDRA'
-    print('Voce ganhou!\nUsando {} e o computador perdeu usando {}.'.format(u, c))
+    print('Voce ganhou!\nJogador: {}.\nComputador: {}.'.format(u, c))
 elif u == 2 != c == 'PEDRA':
     u = 'PAPEL'
-    print('Você ganhou!\nUsando {} e o computador perdeu usando {}.'.format(u,c))
+    print('Você ganhou!\nJogador: {}.\nComputador: {}.'.format(u,c))
 elif u == 3 != c == 'PAPEL':
     u = 'TESOURA'
-    print('Você ganhou!\nUsando {} e o computador perdeu usando {}.'.format(u,c))
+    print('Você ganhou!\nJogador: {}.\nComputador: {}.'.format(u,c))
 else:
     if u == 1 != c == 'PAPEL':
         u = 'PEDRA'
-        print('Você perdeu!\nUsando {} e o computador ganhou usando {}.'.format(u,c))
+        print('Você perdeu!\nJogador: {}.\nComputador: {}.'.format(u,c))
     elif u == 2 != c == 'TESOURA':
         u = 'PAPEL'
-        print('Você perdeu!\nUsando {} e o computador ganhou usando {}.'.format(u,c))
+        print('Você perdeu!\nJogador: {}.\nComputador: {}.'.format(u,c))
     elif u == 3 != c == 'PEDRA':
         u = 'TESOURA'
-        print('Você perdeu!\nUsando {} e o computador ganhou usando {}.'.format(u,c))
+        print('Você perdeu!\nJogador: {}.\nComputador: {}.'.format(u,c))
     else:
         u = c
-        print('Deu empate!\nVocê usou {} e o computador usou {}.'.format(u, u))
+        print('Deu empate!\nJogador: {}.\nComputador: {}.'.format(u, u))
 
 
