@@ -89,30 +89,35 @@ exibir para o usuario o preço final do produto;
             \nCada parcela ficará R$ {(J + preço)/input}
 
 '''
-print('\n'+ '-=-' * 6, 'Caixa 1', '-=-' * 6)
-P = float(input('Informe o preço do produto\nR$ '))
+print('\n' + '{:=^70}'.format('Caixa 1'))
+P = float(input('Informe o valor a pagar\nR$ '))
 PG = int(input('\n1 - Pagamento dinheiro\n2 - Pagamento débito\n3 - Pagamento crédito\nPagamento: '))
 #Á vista
 V = ((P*10)/100)
 #Cartão á vista
 C_V = ((P*5)/100)
-#Juros
-J = ((P*20)/100) 
 #Condições
 if PG == 1:
     print('\nPagamentos á vista tem 10%','de desconto\nPreço R$ {}\nA pagar R$ {}'.format(P, P-V))
 elif PG == 2:
     print('\nPagamento no cartão débito tem 5%','de desconto\nPreço R$ {}\nA pagar R$ {}'.format(P, P-C_V))
 elif PG == 3:
-    N_P = str(input('\nVai parcelar em quantas vezes?\n'))
+    N_P = str(input('\nVai parcelar em quantas vezes?\n '))
     if N_P == 1:
         print('\nPagamento parcelado em até 1x não tem juro!\nPreço R$ {}\nParcela R$ {}'.format(P, P))
     elif N_P == 2:
         print('\nPagamento parcelado em até 2x não tem juro!\nPreço R$ {}\n1° Parcela R$ {}\n2° Parcela R$ {}'.format(P, P/2, P/2))
     else:
         Co = int(N_P)
-        print('\nPagamento parcelados acima de 2x tem 20%','de juros!\nPreço R$ {}\nParcelas com juros R$ {:.2f}\nNumero de parcelas: {} parcelas\nTotal R$ {:.2f}'.format(P, (P/Co)+J, N_P, ((P/Co)+J)*Co))
-print('\n'+'-=-' * 15)
+        J_P = (((P/Co)*20)/100)+(P/Co)
+        print('''\nPagamento parcelados acima de 2x tem 20%','de juros!
+              \nPreço R$ {}
+              \n{} parcelas de R$ {:.2f} c/ juros
+              \nTotal R$ {:.2f}'''
+              .format(P, N_P, J_P, J_P*Co))
+else:
+    print('\nOPS...Algo deu errado, tente novamente!!!\nO valor da compra: R$ {:.2f}\nTotal a pagar: R$ {:.2F}'.format(P,P))
+print('\n'+'-=-' * 23)
 
 
 

@@ -43,7 +43,7 @@ quem foi o ganhador;
         print Voce ganhou
     else 
         print A maquina venceu
-'''
+
 print('\n'+'-=-'* 9,'JOKEMPÔ', '-=-' * 9)
 from random import choice
 c = [ 'PEDRA', 'PAPEL', 'TESOURA']
@@ -60,3 +60,47 @@ elif m == u:
 else:
     print('\nO Computador ganhou usando {} e você usou {}'.format(m, u))
 print('\n'+'-=-' * 21)
+'''
+from random import choice
+from time import sleep
+print('\n' + '{:=^31}'.format('JOKENPÔ'))
+l = ['PEDRA', 'PAPEL', 'TESOURA']
+c = choice(l)
+u = int(input('''
+       [ 1 ] - PEDRA
+       [ 2 ] - PAPEL
+       [ 3 ] - TESOURA
+\nEscolha: '''))
+print('{:=^31}'.format(''))
+sleep(0.5)
+print('{:^29}'.format('JO'))
+sleep(0.8)
+print('{:^29}'.format('KEN'))
+sleep(0.8)
+print('{:^29}'.format('PÔ'))
+print('{:=^31}'.format(''))
+
+if u == 1 != c == 'TESOURA':
+    u = 'PEDRA'
+    print('Voce ganhou!\nUsando {} e o computador perdeu usando {}.'.format(u, c))
+elif u == 2 != c == 'PEDRA':
+    u = 'PAPEL'
+    print('Você ganhou!\nUsando {} e o computador perdeu usando {}.'.format(u,c))
+elif u == 3 != c == 'PAPEL':
+    u = 'TESOURA'
+    print('Você ganhou!\nUsando {} e o computador perdeu usando {}.'.format(u,c))
+else:
+    if u == 1 != c == 'PAPEL':
+        u = 'PEDRA'
+        print('Você perdeu!\nUsando {} e o computador ganhou usando {}.'.format(u,c))
+    elif u == 2 != c == 'TESOURA':
+        u = 'PAPEL'
+        print('Você perdeu!\nUsando {} e o computador ganhou usando {}.'.format(u,c))
+    elif u == 3 != c == 'PEDRA':
+        u = 'TESOURA'
+        print('Você perdeu!\nUsando {} e o computador ganhou usando {}.'.format(u,c))
+    else:
+        u = c
+        print('Deu empate!\nVocê usou {} e o computador usou {}.'.format(u, u))
+
+
