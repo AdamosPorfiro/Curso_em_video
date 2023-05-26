@@ -37,12 +37,15 @@ bin() = binario | oct() = octal | hex() = hexadecimal;
     else:
         print(O numero digitado convertido para hexadecimal(numero))
 '''
-print('\nConversor de base binário, octal, hexadecimal')
+print('\n'+'-=-' * 5,'Conversor de base numericas', '-=-' * 5)
 n = int(input('\nInforme um numero inteiro\nNumero: '))
-c = int(input('\n1 - Binário | 2 - Octal | 3 - Hexadecimal\nEscolha: '))
+c = int(input('\n1 - Binário | 2 - Octal | 3 - Hexadecimal\nSua opção: '))
 if c == 1:
-    print('\nO numero convertido para binario fica assim: {}{}{}'.format('\033[32m',bin(n),'\033[m'))
+    print('\nO numero convertido para binario fica assim: {}{}{}'.format('\033[32m',bin(n)[2:],'\033[m'))
 elif c == 2:
-    print('\nO numero convertido para octal fica assim: {}{}{}'.format('\033[32m', oct(n),'\033[m'))
+    print('\nO numero convertido para octal fica assim: {}{}{}'.format('\033[32m', oct(n)[2:],'\033[m'))
+elif c == 3:
+    print('\nO numero convertido para hexadecimal fica assim: {}{}{}'.format('\033[32m',hex(n)[2:], '\033[m'))
 else:
-    print('\nO numero convertido para hexadecimal fica assim: {}{}{}'.format('\033[32m',hex(n), '\033[m'))
+    print('\nOpção inválida. Tente novamente')
+print('\n' + '-=-' * 20)

@@ -56,11 +56,11 @@ else
 #Recebendo o input e calculando media;
 n1 = float(input('Informe nota 1: '))
 n2 = float(input('Informe nota 2: '))
-media = n1 + n2 / 2
+media = (n1 + n2) / 2
 #condições com base na nota;
 if media < 5:
-    print('A sua média é {}: {}REPROVADO!{}'.format(media,'\033[1;31m', '\033[m'))
+    print('A sua média é: {:.1f} e está {}REPROVADO!{}'.format(media,'\033[1;31m', '\033[m'))
 elif media >= 5 and media <= 6.9:
-    print('A sua média é {}: {}RECUPERAÇÃO{}'.format(media, '\033[1;33m', '\033[m'))
+    print('A sua média é: {:.1f} e está em {}RECUPERAÇÃO{}'.format(media, '\033[1;33m', '\033[m'))
 else:
-    print('A sua média é {}: {}APROVADO{}'.format(media, '\033[1;32m', '\033[m'))
+    print('A sua média é: {:.1f} e está {}APROVADO{}'.format(media, '\033[1;32m', '\033[m'))

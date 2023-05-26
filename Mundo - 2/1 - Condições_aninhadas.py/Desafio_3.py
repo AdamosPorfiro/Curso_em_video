@@ -38,8 +38,10 @@ Escreva um programa que leia dois numeros inteiros e compare-os, mostrando na te
 
 
 '''
+
 #Importando biblioteca time, função sleep;
 from time import sleep
+print('\n'+'-=-' * 3,'Comparando numeros','-=-'*3)
 #Input para receber valores e armazena-los na variavel n1, n2;
 n1 = int(input('\nInsira um valor inteiro\nValor 1: '))
 n2 = int(input('\nInsira um valor inteiro\nValor 2: '))
@@ -49,13 +51,10 @@ sleep(1)
 # Condição 1:
 if n1>n2:
     print('O valor 1 é o','\033[32m''maior''\033[m')
-    print('O valor 2 é o','\033[33m''menor''\033[m')
-    print('Ambos são diferentes\n')
 # Condição 2:
 elif n2>n1:
-    print('O valor 1 é o', '\033[33m''menor''\033[m')
     print('O valor 2 é o', '\033[32m''maior''\033[m')
-    print('Ambos são diferentes\n')
 # Condição 3:
 else:
     print('Ambos os valores são iguais\n')
+print('\n'+'-=-'*12)

@@ -62,31 +62,32 @@ Analise:
 #Dados de entrada;
 from datetime import date
 print('\nPreencha com essa formatação, nascimento:', '\033[31m''11 1993''\033[m')
-n = str(input('\nNome completo: ')).strip()
+n = str(input('\nNome completo: ')).strip().title()
 i = str(input('Mês e ano de nascimento:  ')).strip().split()
 
 #Calculando idade;
 idade = date.today().year - int(i[1])
-mes = int(i[1])
+mes = int(i[0])
 
 #Verificando o mês caso mês atual seja menor que o informado;
 if date.today().month < mes:
     idade = date.today().year - int(i[1]) - 1 
+    falta = 18 - idade
     if idade < 18:
-            print('\n{} você possui apenas {} anos, volte quando completar 18 anos.'.format(n, idade))
+            print('\n{} você possui apenas {} anos.\nFaltam {} anos para você completar 18 anos.\nVolte quando completar 18 anos.'.format(n, idade, falta))
     elif idade >= 18 and idade <= 22:
-             print('''\n{} você possui {} anos e está na hora de você se alistar. Acesse no periodo de 1 de janeiro até 30 de junho: https://alistamento.eb.mil.br/ faça o cadastro e
-                    compareça a junta militar mais proxima da sua localidade'''.format(n,idade))
+             print('''\n{} você possui {} anos e está na hora de você se alistar.\nAcesse: https://alistamento.eb.mil.br/  no periodo de 1 de janeiro até 30 de junho.\nFaça o cadastro e
+                    compareça na junta militar mais proxima da sua localidade'''.format(n,idade))
     else:
-            print('{} você possui {} anos e já passou da idade, mas compareça ao junta militar mais proxima da sua localidade para se alistar e pegar sua dispensa militar.'.format(n,idade))
+            print('{} você possui {} anos e já passou da idade, mas compareça a junta militar mais proxima da sua localidade para se alistar e pegar sua dispensa militar.'.format(n,idade))
 
 #Verificando o mês caso mês atual seja maior que o informado;
 if date.today().month > mes:
-    idade = idade
+    falta = 18 - idade
     if idade < 18:
-            print('\n{} você possui apenas {} anos, volte quando completar 18 anos.'.format(n, idade))
+            print('\n{} você possui apenas {} anos.\nFaltam {} anos para você completar 18 anos.\nVolte quando completar 18 anos.'.format(n, idade,falta))
     elif idade >= 18 and idade <= 22:
-             print('''\n{} você possui {} anos e está na hora de você se alistar. Acesse no periodo de 1 de janeiro até 30 de junho: https://alistamento.eb.mil.br/ faça o cadastro e
-                    compareça a junta militar mais proxima da sua localidade'''.format(n,idade))
+             print('''\n{} você possui {} anos e está na hora de você se alistar.\nAcesse: https://alistamento.eb.mil.br/  no periodo de 1 de janeiro até 30 de junho.\nFaça o cadastro e
+                    compareça na junta militar mais proxima da sua localidade'''.format(n,idade))
     else:
-            print('{} você possui {} anos e já passou da idade, mas compareça ao junta militar mais proxima da sua localidade para se alistar e pegar sua dispensa militar.'.format(n,idade))
+            print('{} você possui {} anos e já passou da idade, mas compareça a junta militar mais proxima da sua localidade para se alistar e pegar sua dispensa militar.'.format(n,idade))
