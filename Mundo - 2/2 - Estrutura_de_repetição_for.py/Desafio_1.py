@@ -7,7 +7,7 @@ For = Para fazer a contagem de 10 até 0;
 modulo TIME a função SLEEP para fazer uma pausa de 1 seg;
 
 '''
-print('\n'+'{:=^10}'.format('Contador 10 á 0'))
+print('\n'+'{:^10}'.format('Contador regressiva'))
 from time import sleep
 for c in range(10,0,-1):
     print(c)
