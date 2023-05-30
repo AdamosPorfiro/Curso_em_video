@@ -26,7 +26,7 @@ input termo
 input razão
 
 O que devo fazer com esses dados?
-Lê-los e exibir na tela os 10 primeiros termos dessa progrssão aritmética
+Lê-los e exibir na tela os 10 primeiros termos dessa progressão aritmética
 
 Quais são as restrições desse problema?
 Exibir os 10 primeiros termos
@@ -40,10 +40,11 @@ input razão
 for contador (10)
     for me dizer a PA (termo,0,razão)
 '''
-pa = 0
+print('\nProgressão aritmética\n')
 t = int(input('Informe o termo: '))
 r = int(input('Informe a razão: '))
+print(t)
 for c in range(10):
     t = t + r
-    pa = t
-    print('{}'.format(pa))
+    print('{}'.format(t))
+print('{:=^22}'.format(''))
