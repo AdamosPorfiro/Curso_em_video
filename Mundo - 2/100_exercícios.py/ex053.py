@@ -35,50 +35,25 @@ Qual é o resultado esperado?
 Exibir se a frase informada é um palindromo ou não
 
 Quais são os passos para se alcançar o resultado esperado?
-        from unidecode import unidecode
-    1 - input frase .split().strip()
-    2 - frase = unidecode(''.join(frase))
-    3 - for c in (len(frase)):
-    4 - if s[0::].find(frase) == s[::-1].find(frase)
+    1 - from unidecode import unidecode
+    2 - input frase .split().strip()
+    3 - frase = unidecode(''.join(frase)).lower()
+    4 - if s[0::] == s[::-1]
     5 -     print('PARABENS, essa é um palindromo!')
-    6 -     break
-    7 - else:
-    8 -     print QUE PENA! Essa frase não é um palindromo
-    
-
-    # TESTE  - 1
-frase = 'nãosei'
-
-if frase[0::].find(frase) == frase[::-1].find(frase):
-    print('É um palindromo')
-else:
-    print('Não é um palindromo')  
-
-else:
-    print('Não é um palindromo')
-
-   # TESTE - 2 
-#Vai tirar todos os espaços e acentos
+    5 - else:
+    7 -     print QUE PENA! Essa frase não é um palindromo
+'''
 from unidecode import unidecode
 f = str(input('Digite um palindromo: ')).strip().split()
 f = unidecode(''.join(f)).lower()
-#Vamos criar a condição
-if f == f[::-1]:
-        print('PARABÉNS, é um palindromo!') 
+p = True
+for c in range(len(f)//2):
+    if f[c] != f[-c-1]:
+        p = False
+        break
+if p:
+    print('Sim é um palindromo!')
 else:
-    print('OPS! Não é um palindromo!')
-'''
+    print('Não é um palindromo!')
 
-from unidecode import unidecode # Modulo e função que tira acentuação das palavras;
-f = str(input('Digite um palindromo: ')).strip().split() # Receber input sem espaços da direita e esquerda e c/ palavras separadas
-f = unidecode(''.join(f)).lower() # Aplicar a função que foi importada e juntar as palavras que foram splitadas, removendo os espaços entre elas e por fim, deixar tudo minusculo
-palindromo = True # Definimos uma variavel como verdadeira
-for c in range(len(f)//2): # Usamos for para ler frase e dividir a quantidade de caracteres por 2
-       if f[c] != f[-c-1]: # Se os caracteres de f forem iguais os ultimos caracteres de f, então
-              palindromo = False # Variavel palindromo será falsa
-              break # Pare
-if palindromo: # Caso a condição de for seja correspondida a variavel palindromo que iniciamos como true sera false e caos contrario ela continua true
-       print('PARABÉNS, é um palindromo!') 
-else:
-       print('OPS! Não é um palindromo!')
 
