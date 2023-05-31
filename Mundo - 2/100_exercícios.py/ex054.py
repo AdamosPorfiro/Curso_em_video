@@ -42,15 +42,15 @@ Quais são os passos para se alcançar o resultado esperado?
             print(qtd_menor)
 '''
 
-lista = [] # Cria uma lista vazia;
-for idade in range(7): # Repete o input 7x e armazena dentro de lista;
-    idade = int(input('Qual a sua idade?\nIdade: '))
-    lista.append(idade)
-maior = [] # Crio duas listas vazia para armazenar pessoas maiores de idade e menores de idade;
+lista=[]
+for c in range(7):
+    i = int(input('Informe sua idade: '))
+    lista.append(i)
+maior = []
 menor = []
-for item in lista: # Crio outro for para passar na primeira lista que criamos
-    if item>=18: # Se o elemento que for passar pelo for, for maior que ou igual a 18 ele vai inserir esse lemento na lista maior
+for item in lista:
+    if item>=18:
         maior.append(item)
-    elif item<18: # Caso seja menor que 18 ele vai inserir o elemento na lista menor
+    elif item<18:
         menor.append(item)
-print('\nPossui {} maiores de idade\nPossui {} menores de idade'.format(len(maior), len(menor))) # Usamos len para ler a quantidade de elemento dentro de cada lista e exibimos;
+print('\nPossui {} maiores de idade\nPossui {} menores de idade'.format(len(maior), len(menor)))
