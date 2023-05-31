@@ -37,11 +37,11 @@ for c in range(numero)
 n = int(input("Informe um numero: "))
 # Verificar se o numero é maior que 1
 if n > 1:
-    for c in range(2,n):
-        if n%c == 0:
-            print('{} não é primo'.format(n))
-            break
-    else:
+    for c in range(2,n): # Vai contar do numero informado até 2;
+        if n%c == 0: # Vai verificar o numero informado é divisivel por um numero menor que ele
+            print('{} não é primo'.format(n)) # Vai printar caso não seja primo 
+            break # Caso não seja primo ele para o programa aqui
+    else: # Se não ele continua o programa e exibi sim ele é primo!
         print('{} é primo'.format(n))
 else:
     print('{} não é primo'.format(n))
