@@ -29,7 +29,7 @@ passo                                                         passo
 pega                                                           pega
 
 '''
-'''
+
 for c in range(0,6):
     print('oi')
 print('fim')
@@ -38,7 +38,7 @@ print('fim')
 for c in range(6, 0, -1):
     print(c)
 print('fim')
-
+'''
 for c in range(0, 10, 2): # Vai contar de 0 a 10 pulando de 2 em 2
     print(c)
 print('fim')
@@ -48,10 +48,12 @@ n = int(input('Digite um numero: '))
 for c in range(0, n+ 1):
     print(c)
 print('FIM')
-'''
+
 
 s = 0
 for c in range(0,3):
     n = int(input('Informe numero: '))
     s += n
 print('O somatório de todos os numero resulta em {}'.format(s))
+
+'''
