@@ -12,4 +12,4 @@ for c in range(6): # Repetição dos comandos 6 vezes
     if n1%2 == 0: # Verificar se o numero é par
         soma += n1 # Somar e armazenar na variavel soma o resultado
         cont += 1
-print('A soma de {} pares é: {}\n{:=^30}'.format(soma,''))
+print('Você informou {} pares.\nSoma de todos eles fica {}.'.format(cont,soma))
