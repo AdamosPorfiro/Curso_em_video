@@ -27,23 +27,41 @@ Exibir na tela se o numero informado é primo ou não.
 
 Quais são os passos necessarios para se chegar ao resultado esperado?
 input numero
-for c in range(numero)
-    if numero / <= numero >= 1
+if > 1
+    for c in range(2, numero)
+        if numero%c == 0:
         Não é primo
+        para aqui
     else 
         É primo
+else:
+    print Não é primo
 
 """
-n = int(input("Informe um numero: "))
-# Verificar se o numero é maior que 1
-if n > 1:
-    for c in range(2,n): # Vai contar do numero informado até 2;
-        if n%c == 0: # Vai verificar o numero informado é divisivel por um numero menor que ele
-            print('{} não é primo'.format(n)) # Vai printar caso não seja primo 
-            break # Caso não seja primo ele para o programa aqui
-    else: # Se não ele continua o programa e exibi sim ele é primo!
+'''
+n = int(input('Informe um numero: '))
+if n>1:
+    for c in range(2,n):
+        if n%c == 0:
+            print('{} Não é primo'.format(n))
+            break
+    else:
         print('{} é primo'.format(n))
 else:
-    print('{} não é primo'.format(n))
-    
- 
+    print('{} é primo'.format(n))
+'''
+
+n = int(input('Digite um numero: '))
+tot = 0
+for c in range(1, n + 1):
+    if n%c == 0 :
+        tot += 1
+        print('\033[32m',end=' ')        
+    else:
+        print('\033[31m',end=' ')
+    print('{}{}'.format(c,'\033[m'), end='')
+print('\nO numero {} foi divísivel {} vezes.'.format(n, tot),end=' ')
+if tot == 2:
+    print('Por isso ele é primo!')
+else:
+    print('Por isso ele não é primo!')

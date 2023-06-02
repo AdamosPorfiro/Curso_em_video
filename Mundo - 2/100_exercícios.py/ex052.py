@@ -38,9 +38,9 @@ else:
     print Não é primo
 
 """
-
+'''
 n = int(input('Informe um numero: '))
-if n > 1:
+if n>1:
     for c in range(2,n):
         if n%c == 0:
             print('{} Não é primo'.format(n))
@@ -49,3 +49,19 @@ if n > 1:
         print('{} é primo'.format(n))
 else:
     print('{} é primo'.format(n))
+'''
+
+n = int(input('Digite um numero: '))
+tot = 0
+for c in range(1, n + 1):
+    if n%c == 0 :
+        tot += 1
+        print('\033[32m',end=' ')        
+    else:
+        print('\033[31m',end=' ')
+    print('{}{}'.format(c,'\033[m'), end='')
+print('\nO numero {} foi divísivel {} vezes.'.format(n, tot),end=' ')
+if tot == 2:
+    print('Por isso ele é primo!')
+else:
+    print('Por isso ele não é primo!')
