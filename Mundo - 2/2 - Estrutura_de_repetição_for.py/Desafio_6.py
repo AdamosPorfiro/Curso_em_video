@@ -40,11 +40,11 @@ input razão
 for contador (10)
     for me dizer a PA (termo,0,razão)
 '''
-print('\nProgressão aritmética\n')
+print('{:=^67}''\n{:^22}Progressão aritmética\n''{:=^67}'.format('','',''))
 t = int(input('Informe o termo: '))
 r = int(input('Informe a razão: '))
-print(t)
-for c in range(10):
-    t = t + r
-    print('{}'.format(t))
-print('{:=^22}'.format(''))
+d = t + (10-1) * r
+for c in range(t, d + r, r):
+    print(c,' →', end= ' ')
+print('TERMINOU')
+print('{:=^67}'.format(''))
