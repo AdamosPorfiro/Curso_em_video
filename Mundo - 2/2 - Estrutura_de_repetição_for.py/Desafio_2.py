@@ -6,7 +6,5 @@ R:  Um numero é par quando ele é divisivel por 2 e o resto da sua divisão é 
 
 """
 print('Numeros pares')
-for con in range(1, 51):
-    if con % 2 == 0:
-        print('{:2} é par.'.format(con))
-print('{:=^13}'.format(''))
+for con in range(2, 51, 2):
+    print(con, end=' ')
