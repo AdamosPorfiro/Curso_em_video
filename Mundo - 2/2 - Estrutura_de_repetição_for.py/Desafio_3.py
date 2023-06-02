@@ -6,6 +6,11 @@ R: Numeros ímpares  é um numero que quando é dividido por 2 o seu resto resul
 E numero impares multiplos de três é quando o numero impar que é divido perfeitamente por 3 o resto da sua divisão resulta em 0 Ex: 3%3 = 0
 
 """
-for con in range(1, 501):
-    if con % 2 == 1 and con % 3 == 0:
-        print("{:3} = {} {}".format(con, con % 3,'Logo, esse valor é impar multiplo de 3'))
+soma = 0
+cont = 0
+for c in range(1, 501,2):
+    if c % 3 == 0:
+        soma = soma+c
+        cont = cont+1
+print('\nPossui {} impares multiplos de três\nA soma desses numeros fica {}'.format(cont, soma))
+        
