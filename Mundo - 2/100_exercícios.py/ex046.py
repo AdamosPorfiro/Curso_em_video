@@ -8,12 +8,14 @@ modulo TIME a função SLEEP para fazer uma pausa de 1 seg;
 Modulo Pygame para carregar imagem;
 
 '''
-import pygame
+#import pygame
 from time import sleep
 print('Contagem Regressiva')
 for cont in range (10,-1,-1):
     print(cont)
     sleep(1)
+print('BOOOMMM,BOOOMM,POOOMM')
+'''
 pygame.init()
 l = 500
 a = 450
@@ -23,3 +25,4 @@ j.blit(i,(0,0))
 pygame.display.flip()
 pygame.time.wait(2000)
 pygame.quit()
+'''

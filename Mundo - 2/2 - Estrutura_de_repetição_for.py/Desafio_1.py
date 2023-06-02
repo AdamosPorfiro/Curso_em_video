@@ -8,13 +8,15 @@ modulo TIME a função SLEEP para fazer uma pausa de 1 seg;
 Modulo Pygame para carregar imagem;
 
 '''
-import pygame
+#import pygame
 print('\n'+'{:^10}'.format('Contador regressiva'))
 from time import sleep
 for c in range(10,-1,-1):
     print(c)
     sleep(1)
-'''Vamos carregar uma imagem usando pygame'''
+print('BOOOMMM! POOOOMMM!')
+
+'''Vamos carregar uma imagem usando pygame
 pygame.init() # Init vai Inicializamos pygame;
 l = 500 # Definimos uma largura;
 a = 450 # Definimos uma Altura;
@@ -23,6 +25,6 @@ im = pygame.image.load('C:\\Users\\Adamos\\Desktop\\ADAMOS\\CURSO_LP_PY\\Curso_e
 j.blit(im, (0,0)) # Blit vai exibir nossa janela na posição 0,0;
 pygame.display.flip() # Flip vai atualizar a janela uma vez;
 pygame.time.wait(2000) # time.wait vai deixar a janela em exibição por 2 segundos ;
-pygame.quit() # Vai fechar a janela e reiniciar o programa;
+pygame.quit() # Vai fechar a janela e reiniciar o programa;'''
 
 
