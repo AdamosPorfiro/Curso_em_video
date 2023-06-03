@@ -44,8 +44,8 @@ Quais são os passos para se alcançar o resultado esperado?
 
 lista=[]
 for c in range(7):
-    i = int(input('Informe sua idade: '))
-    lista.append(i)
+    i = str(input('Informe sua idade: '))
+    lista.append(int(i))
 maior = []
 menor = []
 for item in lista:
