@@ -55,7 +55,7 @@ maior = []
 menor = []
 ano_a = date.today().year
 for item in range(1, 8):
-    i = int(input('informe o {}° Ano de nascimento: '.format(item)))
+    i = int(input('Qual ano a {}° pessoa nasceu: '.format(item)))
     Ano.append(i)
 for item in Ano:
     Ano = ano_a - item
