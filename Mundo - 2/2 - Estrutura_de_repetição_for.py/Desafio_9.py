@@ -44,8 +44,8 @@ Quais são os passos para se alcançar o resultado esperado?
 
 lista = [] # Cria uma lista vazia;
 for idade in range(7): # Repete o input 7x e armazena dentro de lista;
-    idade = int(input('Qual a sua idade?\nIdade: '))
-    lista.append(idade)
+    idade = str(input('Qual a sua idade?\nIdade: ')).strip()
+    lista.append(int(idade))
 maior = [] # Crio duas listas vazia para armazenar pessoas maiores de idade e menores de idade;
 menor = []
 for item in lista: # Crio outro for para passar na primeira lista que criamos
