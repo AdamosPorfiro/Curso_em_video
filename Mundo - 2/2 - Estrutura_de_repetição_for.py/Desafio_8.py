@@ -68,17 +68,33 @@ if f == f[::-1]:
 else:
     print('OPS! Não é um palindromo!')
 '''
-
+'''
+print('{:=^30}''\n{:^4}Detector de palindromo''\n{:=^30}'.format('',' ',''))
 from unidecode import unidecode # Modulo e função que tira acentuação das palavras;
-f = str(input('Digite um palindromo: ')).strip().split() # Receber input sem espaços da direita e esquerda e c/ palavras separadas
-f = unidecode(''.join(f)).lower() # Aplicar a função que foi importada e juntar as palavras que foram splitadas, removendo os espaços entre elas e por fim, deixar tudo minusculo
+f = str(input('{:^5}Digite um palindromo\n\n'.format(' '))).strip().lower().split() # Receber input sem espaços da direita e esquerda e c/ palavras separadas
+f = unidecode(''.join(f)) # Aplicar a função que foi importada e juntar as palavras que foram splitadas, removendo os espaços entre elas e por fim, deixar tudo minusculo
 palindromo = True # Definimos uma variavel como verdadeira
 for c in range(len(f)//2): # Usamos for para ler frase e dividir a quantidade de caracteres por 2
        if f[c] != f[-c-1]: # Se os caracteres de f forem iguais os ultimos caracteres de f, então
               palindromo = False # Variavel palindromo será falsa
               break # Pare
 if palindromo: # Caso a condição de for seja correspondida a variavel palindromo que iniciamos como true sera false e caos contrario ela continua true
-       print('PARABÉNS, é um palindromo!') 
+       print('PARABÉNS, é um palindromo!\n') 
 else:
-       print('OPS! Não é um palindromo!')
+       print('OPS! Não é um palindromo!\n')
+'''
 
+f = str(input('Digite uma frase: ')).strip().upper()
+palavras = f.split()
+juntou = ''.join(palavras)
+inverso = juntou[::-1]
+'''for letra in range(len(juntou)-1, -1, -1):
+    inverso += juntou[letra]
+if inverso == juntou:
+    print('Sim, é um palindromo\nA frase {} lida de trás pra frente é {}'.format(juntou, inverso))
+else:
+    print('Não é um palindromo')'''
+if inverso == juntou:
+    print('Sim, é um palindromo\nA frase {} lida de trás pra frente é {}'.format(juntou, inverso))
+else:
+    print('Não é um palindromo')
