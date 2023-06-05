@@ -25,23 +25,25 @@ Quais são os passos para se alcançar o resultado?
     lista = []
     for (5)
         input Informe o peso (Kg):
-        lista.append(for)
-    variavel = lista[0]
     variavel = lista[0]
     for i lista
         if i > variavel
             variavel = i
     print i
 '''
-pesos=[]
-for c in range(5):
-    p = float(input('Informe o peso (kg): '))
-    pesos.append(p)
-p_maior = pesos[0]
-p_menor = pesos[0]
-for item in pesos:
-    if item>p_maior:
-        p_maior = item
-    elif item<p_menor:
-        p_menor=item
-print('\nO maior peso é: {} kg\nO menor peso é: {} kg'.format(p_maior,p_menor))
+lista=[]
+for c in range(1,6):
+    p = float(input('Informe o peso da {}° pessoa (kg): '.format(c)))
+    lista.append(p)
+valor_maior = lista[0]
+valor_menor = lista[0]
+for item in lista:
+    if item>valor_maior:
+        valor_maior = item
+    elif item<valor_menor:
+        valor_menor=item
+
+print('\nO maior peso é: {:.1f} kg\nO menor peso é: {:.1f} kg'.format(valor_maior, valor_menor))
+
+
+

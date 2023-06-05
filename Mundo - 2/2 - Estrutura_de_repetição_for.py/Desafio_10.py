@@ -32,8 +32,8 @@ Quais são os passos para se alcançar o resultado?
     print i
 '''
 lista=[]
-for c in range(5):
-    p = float(input('Informe o peso (kg): '))
+for c in range(1,6):
+    p = float(input('Informe o peso da {}° pessoa (kg): '.format(c)))
     lista.append(p)
 valor_maior = lista[0]
 valor_menor = lista[0]
@@ -42,4 +42,8 @@ for item in lista:
         valor_maior = item
     elif item<valor_menor:
         valor_menor=item
-print('\nO maior peso é: {:.2f} kg\nO menor peso é: {:.2f} kg'.format(valor_maior, valor_menor))
+
+print('\nO maior peso é: {:.1f} kg\nO menor peso é: {:.1f} kg'.format(valor_maior, valor_menor))
+
+
+
