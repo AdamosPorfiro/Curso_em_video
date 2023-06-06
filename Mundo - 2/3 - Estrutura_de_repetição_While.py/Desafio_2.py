@@ -26,15 +26,36 @@ se ele deseja continuar ou não o jogo.
 5 - Quais são os passos para se alcançar o resultado esperado?
 Vamos importar a biblioteca random e função radint;
 usaremos radint para que o computador selecione um numero entre 0 e 10
-Esse numero será armazenado em uma variavel;
+Esse numero será armazenado em uma variavel n;
 contador_de_palpite = 0
-continuar = ''
-while palpite_usuario != n
+continuar = 'S'
+while continuar in 'Ss'
     input usuario
     if palpite_usuario != n
         contador_de_palpite += 1
-        continuar = str(input('Você errou, deseja tenta novamente? S/N: !')
-
-
+        input continuar Deseja continuar [S/N]
 '''
+#Pensar em um numero e armazenar
+
+from random import randint,seed
+
+
+
+continuar = ''
+print ('\n{:=^33}\n{:^5}JOGO ADIVINHE O NÚMERO'.format('','',''))
+while continuar in 'Ss':
+    contador = 0
+    p = ''
+    n = randint(0,10)
+    while p != n:
+        contador += 1
+        p = int(input('{:=^33}\nPalpite: '.format('')).strip())
+    if p == n:
+        print('\nPARABÉNS!!!Você ganhou!\nQuantidade de palpites: {}'.format(contador))
+        continuar = str(input('Deseja continuar jogando? [S/N]: ')).strip()
+        if continuar in 'nN':
+            print('Obrigado por jogar!')
+        
+
+
 
