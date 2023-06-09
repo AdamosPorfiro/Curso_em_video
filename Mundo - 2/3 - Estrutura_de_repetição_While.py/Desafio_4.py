@@ -2,4 +2,30 @@
 Faça um programa que leia um numero qualquer e mostre o seu fatorial.
 
 Ex: 5! = 5x4x3x2x1= 120
+
+Quais são so dados de entrada?
+input numero
+
+O que devo fazer com esses dados?
+Exibir na tela o fatorial de input numero
+
+Quais são as restrições desse problema?
+Fatorial de um numero
+
+Qual o resultado esperado?
+Exibir na tela o fatorial do numero digitado
+
+Quais são os passos para se alcançar o resultado?
+input numero
+sair = 2
+fatorial = 0
+while sair == 2
+    input numero
+    for c in range(0,numero)
+        fatorial *= c
+    print Fatorial do numer {numero} = {}
+    sair = input 1 - sair do programa  2 - continuar
 '''
+from math import factorial
+n = int(input('Informe um numero para receber '))
+print(factorial(5))
