@@ -11,7 +11,7 @@ from time import sleep
 resultado = 0
 n3 = 0
 while n3 != 5:
-    n1 = float(input('Informe o primeiro numero: ')) 
+    n1 = float(input('{:=^38}\nInforme o primeiro numero: '.format(''))) 
     n2 = float(input('Informe o segundo numero: '))
     n3 = int(input('''
     [1] Somar
