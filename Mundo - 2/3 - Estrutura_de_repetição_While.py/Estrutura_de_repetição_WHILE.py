@@ -3,7 +3,7 @@ O que é uma estrutura de repetição WHILE?
 R: È um estrutura de controle de fluxo que permite repetir
 um bloco de códigos em quanto uma condição for verdadeira ou falsa;
 
-Utilizan=mos while com frequencia quando não sabemos o limite de uma repetição
+Utilizamos while com frequencia quando não sabemos o limite de uma repetição
 por exemplo, se é necessario 20 passos para alcançar um objeto, é mais
 pratico usarmos a estrutura FOR, caso não soubessemos a quantidade de passos
 então usariamos o WHILE.
