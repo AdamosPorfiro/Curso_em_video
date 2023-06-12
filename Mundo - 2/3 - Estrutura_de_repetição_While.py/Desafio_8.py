@@ -25,9 +25,15 @@ Desconsiderar o numero 999 sendo que ele é o flag;
 5 Quais são os passos necessarios para se alcançar o resultado esperado?
 
 saida = 999
+contador_n = 0
 while saida != 999
     n1 = input numero
-
-
-
+    if n1 == 999:
+        print OPS! Houve um erro tente novamente!
+    else:
+        contador += 1
+        n1 += n1
+print Quantidade de numero digitados: {}
+print Soma dos numeros digitado: {}]
 '''
+
