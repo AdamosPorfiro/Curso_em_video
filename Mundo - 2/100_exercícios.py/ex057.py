@@ -8,6 +8,6 @@ while s != 'M' and s != 'F':
     if s != 'M' and s != 'F':
         print('Informação incorreta, Tente novamente!')
 if s in 'Mm':
-    print('Masculino')
+    print('Sexo masculino registrado com sucesso')
 if s in 'Ff':
-    print('Feminino')
+    print('Sexo feminino registrado com sucesso!')
