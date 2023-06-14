@@ -49,13 +49,15 @@ while continuar in 'Ss':
             print('Errou! Valor é maior...')
         elif p!=n and p > n:
             print('Errou! Valor é menor...')
+    if p == n and contador == 1:
+        print('\nNOOOOSSSAAAA, DE PRIMEIRA. PAAARAABÉÉNNSS!')
     if p == n:
         print('\nPARABÉNS!!!Você acertou!\nQuantidade de palpites: {}'.format(contador))
         continuar = str(input('Deseja continuar jogando? [S/N]: ')).strip().upper()
         while continuar != 'S' and continuar != 'N':
             continuar = str(input('Deseja continuar jogando? [S/N]: ')).strip().upper()
         if continuar in 'nN':
-            print('Obrigado por jogar!')
+            print('Muitissimo obrigado por jogar!')
         
 
 
