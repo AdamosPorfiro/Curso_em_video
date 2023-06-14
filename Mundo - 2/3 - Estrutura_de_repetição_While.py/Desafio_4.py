@@ -1,4 +1,4 @@
-'''
+"""
 Faça um programa que leia um numero qualquer e mostre o seu fatorial.
 
 Ex: 5! = 5x4x3x2x1= 120
@@ -31,14 +31,31 @@ n = int(input('\nInforme um numero para receber o seu fatorial:  '))
 for item in range(n,0,-1):
     acumulador *= item
 print('\nO fatorial do número {} é {}'.format(n ,acumulador))
-'''
-acumulador = 1 
-contador = 0
-n = int(input('\nInforme um numero para receber o seu fatorial:  '))
-while contador < n:
-    contador += 1
-    acumulador *= contador
-print('O fatorial do numero {} é {}'.format(n,acumulador))
+"""
+# Contador
+print('{:=^52}'.format(''))
+n = int(input("Informe um numero para receber o seu fatorial: "))
+contador = n
+r = 1
+print("\nCalculando fatorial de {}! = ".format(n), end="")
+while contador > 0:
+    print("{} ".format(contador), end="")
+    print("x " if contador > 1 else "=", end="")
+    r *= contador
+    contador -= 1
+print(" {}".format(r), end='')
+print('\n{:=^52}\n'.format(''))
 
-        
-      
+
+"""
+n = int(input('\nDigite um numero para receber o seu fatorial: '))
+c = n
+r = 1
+print('Calculando {}! = '.format(n),end='')
+while c > 0:
+    print('{} '.format(c), end='')
+    print('x ' if c > 1 else '= ', end='')
+    r *=c
+    c -= 1
+print('{}'.format(r))
+"""
