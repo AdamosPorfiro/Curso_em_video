@@ -43,7 +43,9 @@ while contador > 0:
     print("x " if contador > 1 else "=", end="")
     r *= contador
     contador -= 1
-print(" {}".format(r), end='')
+# Utilizando f ele transforma a chaves em uma f-string que vai analisar expressão e 
+# substituirá certos valors, como aqui adicionando uma virgula , que é o caso.
+print(f' {r:,}', end='')
 print('\n{:=^52}\n'.format(''))
 
 
