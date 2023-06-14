@@ -8,11 +8,12 @@ while reiniciar == 1:
     n1 = int(input('{:^20}Informe o termo: '.format('')))
     n2 = int(input('{:^20}Informe o razão: '.format(''))) 
     contador = 0
+    termo = n1
     print('\n{:^10}Os 10 primeiros termos dessa progressão é:\n'.format(''))
     while contador < 10:
-        termo = n1 + contador*n2
         print('➝ {:^4}'.format(termo),end='')
         contador += 1
+        termo += n2
     reiniciar = int(input('''
                 \nDeseja ver mais termos? 
                         [0] - não  
