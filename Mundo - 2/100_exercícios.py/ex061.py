@@ -9,11 +9,12 @@ PA = T+R
 print('{:=^60}\n{:^18}PROGRESSÂO ARITMÉTICA\n{:=^60}'.format('','','')) # TITULO;
 n1 = int(input('{:^20}Informe o termo: '.format(''))) # INPUT;
 n2 = int(input('{:^20}Informe o razão: '.format(''))) # INPUT;
+t = n1
 contador = 0 # CONTADOR DE 0 A 10;
 print('\n{:^10}Os 10 primeiros termos dessa progressão é:\n'.format('')) # EXIBIR
 while contador < 10: # EM QUANTO O CONTADOR FOR MENOR QUE 10 O BLOCO ABAIXO SERÁ EXECUTADO;
-    termo = n1 + contador*2 # CALCULA OS TERMOS PARA EXIBIR A PROGRESSÃO
-    print ('➝ ' if contador < 10 else '',end='')
-    print('{:^4}'.format(termo),end='') # EXIBI OS TERMOS
+    print('➝ {:^4}'.format(t),end='') # EXIBI OS TERMOS
     contador += 1 # SOMA MAIS UM NO CONTADOR
+    t += n2
+print('FIM!')
 print('\n{:=^60}'.format(''))
