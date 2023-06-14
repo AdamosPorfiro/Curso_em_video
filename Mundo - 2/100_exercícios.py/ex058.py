@@ -45,6 +45,10 @@ while continuar in 'Ss':
     while p != n:
         contador += 1
         p = int(input('{:=^33}\nPalpite: '.format('')).strip())
+        if p != n and p < n:
+            print('Errou! Valor é maior...')
+        elif p!=n and p > n:
+            print('Errou! Valor é menor...')
     if p == n:
         print('\nPARABÉNS!!!Você acertou!\nQuantidade de palpites: {}'.format(contador))
         continuar = str(input('Deseja continuar jogando? [S/N]: ')).strip().upper()
