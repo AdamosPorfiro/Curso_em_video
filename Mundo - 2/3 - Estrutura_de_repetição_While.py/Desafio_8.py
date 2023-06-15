@@ -39,9 +39,7 @@ print Quantidade de numero digitados: {contador}
 print Soma dos numeros digitado: {soma}
 '''
 from time import sleep
-sair = 0
-contador_n = 0
-soma = 0
+sair = contador_n = soma = 0
 while sair != 999:
     n1 = int(input('Digite um numero ou para sair digite (999):  '))
     if n1 == 999:
