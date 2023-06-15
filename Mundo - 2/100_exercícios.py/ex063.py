@@ -16,15 +16,20 @@ Assim, temos a sequência:
  8 > 15 > 29 > 57 > 113...n
 '''
 print('{:=^40}\n{:^8}SEQUÊNCIA DE FIBONACCI\n{:=^40}\n'.format('','',''))
-n1 = float(input('{:^9}Informe um número: '.format('')))
+n1 = float(input('{:^6}Quantos termos deseja ver? '.format('')))
 '''for c in range(1,6):
     n1 = n1-1+n1
     print('> {} '.format(n1), end='')'''
 Repetidor = 0
-while Repetidor < 5:
-    n1 = n1-1+n1
+t1 = 0
+t2 = 1
+print ('> {} > {} > '.format(t1,t2),end='')
+while Repetidor < n1:
+    t3 = t1 + t2
     Repetidor += 1
-    print('> {} '.format(n1), end='')
+    print(' {} >'.format(t3),'FIM' if Repetidor == n1 else '', end='')
+    t1 = t2
+    t2 = t3
 print('\n{:=^40}'.format(''))
 
 
