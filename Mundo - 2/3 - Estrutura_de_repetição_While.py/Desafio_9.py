@@ -46,7 +46,7 @@ while sair in 'Nn'
         print Maior numero informado foi {maior}
         print Menor numero informado foi {menor}
 print Obrigado!
-'''
+
 media = 0
 contador = 0
 verificado = 0
@@ -65,4 +65,21 @@ while sair in 'Nn':
     if sair in 'Ss':
         print('\nA média dos valores é: {:.1f}\nO maior valor informado foi: {}\nO menor valor informado foi: {}'.format(media/contador,maior, menor))
 
+'''
 
+resp = 'S'
+media = quant = soma = maior = menor = 0
+while resp in 'Ss':
+    num = int(input('Digite um numero: '))
+    soma += num
+    quant += 1
+    if quant == 1:
+            maior = menor = num
+    else:
+        if num > maior:
+                maior = num
+        if  num < num:
+              menor = num
+    resp = str(input('Quer continuar? [S/N]')).upper().strip()[0]
+media = soma / quant
+print('\nVocê digitou: {} números.\nA média é: {}.\nMaior numero é: {}.\nO menor número é: {}.'.format(quant,media,maior, menor))
