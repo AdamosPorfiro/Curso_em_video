@@ -39,7 +39,7 @@ while r == 'S':
     n = int(input('Digite um numero: '))
     r = str(input('Quer continuar? [S/N] ')).upper()
 print('Fim')'''
-
+'''
 n = 1
 qtd_p = 0
 qtd_i = 0
@@ -51,3 +51,25 @@ while n != 0:
         else:
             qtd_i += 1
 print('Você digitou {} numeros pares e {} numeros impares'.format(qtd_p, qtd_i))
+
+Interronpendo repetição em while!
+
+Utilizamos BREAK para parar uma condição de while;
+BREAK desvia a execução para o lado de fora da repetição;
+
+# Funcionamento de BREAK;
+cont = 1
+while True:
+    print(cont,'-> ', end='')
+    cont+=1
+print('Acabou')
+'''
+n =  s = 0
+while True:
+    n = int(input('Digite um numero: '))
+    if n == 999:
+        break
+    s+=n
+print('A soma vale %s'%(s)) # Forma antiga usado no python 2
+print('A soma vale {}'.format(s)) # Forma usada a partir python 3
+print(f'A soma vale {s}') # A mais recente f-string python 3.6+
