@@ -27,7 +27,7 @@ print Quantidade de números digitados: c
 print Soma entre os números informados: s
 '''
 
-s = c = n = 0
+s = c = 0
 while True:
     n = int(input('Digite um numero [999 pra parar]: '))
     if n == 999:
