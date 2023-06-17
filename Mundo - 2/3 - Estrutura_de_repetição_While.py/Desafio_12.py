@@ -54,7 +54,7 @@ from random import randint, choice
 while True:
 
     #Escolhas do computador
-    lista = ['PAR', 'IMPAR']
+    lista = ['P', 'I']
     computador_n = randint(1,10)
     computador_e = choice(lista)
 
@@ -65,7 +65,18 @@ while True:
         if n1 < 1 or n1 > 10:
             continue
         if n2 in 'PpIi':
-            continue
-        print('valido')
-        break
+            break
+
+    #Comparar os resultados para encontrar o vencedor
+    resultado_1 = computador_n + n1
+    quantidade_vencidas = 0
+    print(f'\n\n{resultado_1}')
+    # Par e impar
+    if resultado_1 % 2 or resultado_1 % 2 == 1:
+        if computador_e in 'P' and n2 in 'Pp' or computador_e in 'I' and n2 in 'Ii':
+            quantidade_vencidas += 1
+            print(f'Empatou.\nResultado:{resultado_1} = PAR.\nJogadas: jogador {n2} x Computador {computador_e}.')
+  
+
+    
 
