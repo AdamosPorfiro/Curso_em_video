@@ -51,6 +51,7 @@ print Empatou {empate}
 print Game Over!
 '''
 from random import randint, choice
+quantidade_vencidas = 0
 while True:
 
     #Escolhas do computador
@@ -61,21 +62,58 @@ while True:
     #Escolha do usuario
     while True:
         n1 = int(input('Digite um numero [1 á 10]: '))
-        n2 = str(input('Ímpar ou Par [I/P]: ')).upper().strip()[0]
         if n1 < 1 or n1 > 10:
             continue
-        if n2 in 'PpIi':
+        n2 = str(input('Ímpar ou Par [I/P]: ')).upper()[0].strip()
+        if n2 not in 'PI':
+            continue
+        elif n2 in 'PI':
             break
 
     #Comparar os resultados para encontrar o vencedor
     resultado_1 = computador_n + n1
-    quantidade_vencidas = 0
-    print(f'\n\n{resultado_1}')
-    # Par e impar
-    if resultado_1 % 2 or resultado_1 % 2 == 1:
-        if computador_e in 'P' and n2 in 'Pp' or computador_e in 'I' and n2 in 'Ii':
-            quantidade_vencidas += 1
-            print(f'Empatou.\nResultado:{resultado_1} = PAR.\nJogadas: jogador {n2} x Computador {computador_e}.')
+
+    # Variavel IMPAR e PAR
+    Par = ''
+    Impar = ''
+
+    # Calculando Par e Impar
+    if resultado_1 % 2 == 0 :
+        Par = 'P'
+    elif resultado_1 % 2 == 1:
+        Impar = 'I' 
+
+    #Empate com PAR
+    if Par in 'P' and computador_e  == Par and n2[0]  == Par:
+        quantidade_vencidas += 1
+        print(f'\nEMPATOU.\nSoma: {resultado_1} = PAR.\nJogadas: jogador PAR x Computador PAR.')
+    
+    #Empate com IMPAR
+    elif Impar in 'I' and computador_e  == Impar and n2[0]  == Impar:
+        quantidade_vencidas += 1
+        print(f'\nEMPATOU.\nSoma: {resultado_1} = IMPAR.\nJogadas: jogador IMPAR x Computador IMPAR.')
+       
+    # Jogador ganhar PAR
+    elif Par in 'P' and n2 [0] == Par and computador_e  != Par:
+        quantidade_vencidas += 1
+        print(f'\nPARABENS!!! Você ganhou!.\nSoma: {resultado_1} = PAR.\nJogadas: jogador PAR x Computador IMPAR.')
+     
+     # Jogador ganhar IMPAR
+    elif Impar in 'I' and n2 [0] == Impar and computador_e != Impar:
+        quantidade_vencidas += 1
+        print(f'\nPARABENS!!! Você ganhou!.\nSoma: {resultado_1} = IMPAR.\nJogadas: jogador IMPAR x Computador PAR.')
+    
+    #Comutador ganhar PAR
+    elif Par in 'P' and computador_e == Par and n2[0] != Par:
+        print(f'\nGAME OVER!.\nResultado: {resultado_1} = PAR.\nJogadas: jogador IMPAR x Computador PAR.\nPartidas vencidas consecutivas: {quantidade_vencidas}')
+        break
+    elif Impar in 'I' and computador_e == Impar and n2[0] != Impar:
+        print(f'\nGAME OVER!.\nSoma: {resultado_1} = PAR.\nJogadas: jogador PAR x Computador IMPAR.\nPartidas vencidas: {quantidade_vencidas} Partidas.')
+        break
+    
+
+
+       
   
 
     
