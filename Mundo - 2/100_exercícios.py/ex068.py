@@ -11,6 +11,7 @@ Inicialmente vamos desenvolver a escolha da maquina usando o modulo randon;
 '''
 from random import randint, choice
 vencidas = empates = 0
+print('\n{:=^28}\n{:>8}IMPAR OU PAR\n{:=^28}'.format('','',''))
 while True:
     Numero_computador = randint(1,10)
     Lista = ['P','I']
@@ -52,9 +53,9 @@ while True:
     diferentes do resultado, sendo assim ninguem ganha
     '''
     if Escolha_computador in 'P' != Pi and Escolha_usuario in 'P' != Pi:
-        print('Ninguem ganhou')
+        print('\nNinguem ganhou\n')
     elif Escolha_computador in 'I' != Pi and Escolha_usuario in 'I' != Pi:
-        print('Ninguem ganhou') # Funcionando
+        print('\nNinguem ganhou\n') # Funcionando
 
  
     # Parte - 5
@@ -62,10 +63,10 @@ while True:
     # tambem correspondem ambos ao resultado, sendo assim havendo um empate
     
     elif Escolha_computador in 'P' == Pi and Escolha_usuario in 'P' == Pi: # Empata com par
-        print('Empate')
+        print('\nEmpate\n')
         empates+=1
     elif Escolha_computador in 'I' == Pi and Escolha_usuario in 'I' == Pi: # Empata com impar
-        print('Empate')
+        print('\nEmpate\n')
         empates+=1
     
     # Parte - 6
@@ -73,16 +74,16 @@ while True:
     # se um deles corresponde ao resultado, se um deles corresponder então teremos um ganhador e um perdedor;
     
     elif Escolha_usuario in 'P' == Pi and Escolha_computador in 'I' != Pi: # Vence com par
-        print('Você venceu!')
+        print('\nVocê venceu!\n')
         vencidas+=1
     elif Escolha_usuario in 'I' == Pi and Escolha_computador in 'P' != Pi: # Vence com impar
-        print('Você venceu!')
+        print('\nVocê venceu!\n')
         vencidas+=1
 
     elif Escolha_usuario in 'P' != Pi and Escolha_computador in 'I' == Pi: # Perde com par
-        print(f'Você Perdeu!\nPartidas vencidas: {vencidas}.\nPartidas empatadas: {empates}.')
+        print(f'\nVocê Perdeu!\nPartidas vencidas: {vencidas}.\nPartidas empatadas: {empates}.\n')
         break
     elif Escolha_usuario in 'I' != Pi and Escolha_computador in 'P' == Pi: # Perde com impar
-        print(f'Você Perdeu!\nPartidas vencidas: {vencidas}.\nPartidas empatadas: {empates}.')
+        print(f'\nVocê Perdeu!\nPartidas vencidas: {vencidas}.\nPartidas empatadas: {empates}.\n')
         break
 print('GAME OVER!')
