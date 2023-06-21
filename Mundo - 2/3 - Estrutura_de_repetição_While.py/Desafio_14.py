@@ -8,7 +8,7 @@ B - Quantos produtos custam mais que R$ 1000
 C - Qual é o nome do produto mais barato
 
 '''
-Total_gasto  = Preco_produto_barato = 0
+Total_gasto  = Preco_barato = Preco_maior = 0
 Lista_produtos = []
 Produto_mais_barato  = ''
 while True:
@@ -18,8 +18,8 @@ while True:
         Total_gasto+=Preco
         if Preco >= 1000:
             Lista_produtos.append(Produto)
-        if Preco_produto_barato < Preco:
-            Preco_produto_barato = Preco
+        if Preco > Preco_barato:
+            Preco_maior = Preco
             Produto_mais_barato = Produto
         while True:
             Sair_continuar = str(input('Continuar [S/N]: ')).upper().strip()[0]
