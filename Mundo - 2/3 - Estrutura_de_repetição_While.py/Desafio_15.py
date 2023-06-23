@@ -20,9 +20,16 @@ while True:
         continue # Funciona
 '''
 Dizer para o usuario quantas cedulas de cada valor serão entregues;
+
+Teria uma forma de fazer um contador onde ele conte o valor que o usuario digitou e 
+através das condições ele mostre para o usuario as cedulas que ele irá receber;
 '''
 n=int(n)
-for c in range(1,50):
+if n >= 1 and n <= 5:
+    for c in range(1,n+1):
+        n=c
+    print(f'Você receberá {n} cedulas de R$ {Cedulas_1}')
+
     
 
 
