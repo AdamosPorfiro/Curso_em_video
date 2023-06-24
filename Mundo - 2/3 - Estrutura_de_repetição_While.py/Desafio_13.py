@@ -16,6 +16,7 @@ O usuario deve informa os dados corretamente se não o loop é ativo;
 '''
 from time import sleep
 Pessoasmaiores = qtd_homens = qtd_mulher_menor_20 = 0
+print('{:=^25}\n{:>3}CADASTRO DE PESSOAS'.format('',''))
 while True:
     while True:
         Idade = str(input('{:=^25}\nQual sua idade? '.format('')))
@@ -27,7 +28,7 @@ while True:
                 Pessoasmaiores+=1
             break
     while True:
-        Sexo = str(input('{:=^25}\nQual seu sexo [M/F]: '.format(''))).upper().strip()[0]
+        Sexo = str(input('\nQual seu sexo [M/F]: ' )).upper().strip()[0]
         if Sexo in 'MF':
             if Sexo in 'M': # Condição da opção (B) - Quantos homens foram cadastrados
                 qtd_homens+=1
@@ -42,7 +43,7 @@ while True:
 # Vamos criar outro loop e condições que vão perguntar para o usuario se ele quer sair ou não!
 #O usuario precisa dar a entrada correta, se não ele vai repetir o loop!
     while True:
-        Sair_continuar = str(input('{:=^25}\nDeseja sair [S/N]: '.format(''))).upper().strip()[0]
+        Sair_continuar = str(input('\nDeseja sair [S/N]: ' )).upper().strip()[0]
         if Sair_continuar not in 'SN':
             continue
         elif Sair_continuar in 'N':
