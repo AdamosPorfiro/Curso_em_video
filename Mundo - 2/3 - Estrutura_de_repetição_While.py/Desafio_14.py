@@ -11,6 +11,7 @@ C - Qual é o nome do produto mais barato
 Total_gasto  = Qtd_1000  = 0
 Preco_barato = float('inf')
 Produto_mais_barato  = ''
+print('{:=^25}\n{:>5}LOJÂO DAMINHOS\n{:=^25}'.format('','',''))
 while True:
     while True:
         Produto = str(input('Produto: '))
@@ -23,6 +24,7 @@ while True:
             Produto_mais_barato = Produto
         while True:
             Sair_continuar = str(input('Continuar [S/N]: ')).upper().strip()[0]
+            print('{:=^25}'.format(''))
             if Sair_continuar not in 'SN':
                 continue
             elif Sair_continuar in 'S':
