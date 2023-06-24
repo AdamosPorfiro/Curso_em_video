@@ -16,8 +16,8 @@ while True:
         Produto = str(input('Produto: '))
         Preco = float(input('Preço R$ '))
         Total_gasto+=Preco
-        if Preco >= 1000:
-            Qtd_1000+1
+        if Preco > 1000:
+            Qtd_1000 += 1
         if Preco<Preco_barato:
             Preco_barato = Preco
             Produto_mais_barato = Produto
@@ -32,4 +32,4 @@ while True:
         if Sair_continuar in 'N':
             break
     break
-print(f'\nTotal gasto R$ {Total_gasto:,}\nQuantos produtos custaram mais de R$ 1000: {Qtd_1000}\nProduto mais barato: {Produto_mais_barato}' )
+print(f'\nTotal gasto R$ {Total_gasto:,}\nQuantos produtos custaram mais de R$ 1000: {Qtd_1000} un\nProduto mais barato: {Produto_mais_barato}' )
