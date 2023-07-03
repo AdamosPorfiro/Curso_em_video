@@ -5,17 +5,17 @@ Depois disso, mostre a listagem de números gerados
 e também indique o menor e o maior valor que estão da tupla
 '''
 from random import randint
-Lista = []
+lista = []
 for c in range(5):
     n = randint(0, 999)
-    Lista.append(n)
-Tupla = tuple(Lista)
+    lista.append(n)
+Tupla = tuple(lista)
 print(Tupla)
 maior = 0
 menor = Tupla[0]
-for m in Tupla:
-    if maior < m:
-        maior = m
-    if m < menor:
-        menor = m
-print(f'Maior numero é: {maior}\nO menor número é: {menor}')
+for t in Tupla:
+    if maior < t:
+        maior = t
+    if t < menor:
+        menor = t
+print(f'O maior número gerado é: {maior}\nO menor número gerado é: {menor}')
