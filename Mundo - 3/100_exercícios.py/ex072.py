@@ -28,30 +28,29 @@ D - Em que posição na tabela está o time da Chapecoense.
 19 - América - MG
 20 - Coritiba
 '''
+
 Tabela = ('Botafogo', 'Grêmio', 'Flamengo', 'Palmeiras', 'Bragantino', 'Fluminense',
           'São Paulo', 'Internacional', 'Athlético - PR', 'Atlético - MG', 'Fortaleza',
           'Cruzeiro', 'Cuiabá', 'Santos', 'Bahia', 'Corinthians', 'Goiás',
-          'Vasco da Gama', 'América - MG', 'Coritiba')
-# A - Apenas os 5 primeiros colocados da tabela:
-print('5 Primeiros colocados\n{:=^25}'.format(''))
-for indice, colocados in enumerate(Tabela):
-    while indice < 5:
+          'Vasco da Gama', 'América - MG', 'Coritiba', 'Chapecoense')
+print('5 PRIMEIROS COLOCADOS\n')
+
+# A - Apenas os 5 primeiros colocados.
+for indices, colocados in enumerate(Tabela):
+    if indices <= 4:
         print(colocados)
-        break
-# B - Os últimos 4 colocados da tabela.
-print('{:=^25}\n\n4 Ultimos colocados\n{:=^25}'.format('',''))
-for indice, colocados in enumerate(Tabela):
-    while indice >= 16 and indice < 20:
+
+# B - Os últimos 4 colocados da tabela
+print('\n4 ULTIMOS COLOCADOS\n')
+for indices, colocados in enumerate(Tabela):
+    if indices >= 16 and indices <= 19:
         print(colocados)
-        break
+
 # C - Uma lista com os times em ordem alfabética.
-print('{:=^25}\n\nOrdem Alfabética\n{:=^25}'.format('',''),'\n',sorted(Tabela),'\n{:=^25}'.format(''))
+print('\nORDEM ALFABÈTICA\n\n',sorted(Tabela))
 
 # D - Em que posição na tabela está o time da Chapecoense.
-
 if colocados in 'Chapecoense':
-    print('\n',indice+1,'° Posição')
+    print('\nChapecoense está em:',indices+1,'° Posição')
 else:
-    print('\nChapecoense não está mais na tabela')
-   
-        
+    print('\nNão está na tabela')
