@@ -23,15 +23,17 @@ for indice,num in enumerate(Numero_em_extenso)
     if n == indice:
         print num
 '''
-n_extenso = ('Zero', 'Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez',
-             'Onze', 'Doze', 'Treze', 'Quatorze', 'Quinze', 'Dezesseis', 'Dezessete', 'Dezoito', 'Dezeone',
-             'Vinte')
-while True:
-    n_usuario = int(input('Digite um número de 0 á 20: '))
-    if n_usuario < 0 and n_usuario > 20:
-        continue
-    else:
-        for indice, extenso in enumerate(n_extenso):
-            if n_usuario == indice:
-                print(extenso)
-    break
+n_extenso = ('Zero', 'Um', 'Dois', 'Três', 'Quatro', 
+             'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 
+             'Dez', 'Onze', 'Doze', 'Treze', 'Catorze',
+             'Quinze', 'Dezesseis', 'Dezessete', 'Dezoito',
+             'Dezenove', 'Vinte')
+continuar = 'S'
+while continuar == 'S':
+    while True:
+        n = int(input('Digite um número entre 0 e 20: '))
+        if 0 <= n <= 20:
+            break
+        print('Tente novemente! ', end='')
+    print(f'Você digitou o numero \33[32m{n_extenso[n]}\33[m')
+    continuar = str(input('Deseja continuar? [S/N] ')).upper().strip()[0]
