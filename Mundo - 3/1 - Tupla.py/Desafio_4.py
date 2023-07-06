@@ -20,5 +20,5 @@ for indice,valor in enumerate(convert_tupla):
         indice_3 = indice + 1 
     if valor % 2 == 0:
         Pares.append(valor)
-print(f'''\nO valor 9 apareceu: {qtd_9} vezes\nA posição que o primeiro 3 foi digitado foi: {indice_3}
+print(f'''Você digitou os valores: {convert_tupla}\nO valor 9 apareceu: {qtd_9} vezes\nA posição que o primeiro 3 foi digitado foi: {indice_3}
 Os numeros pares são: {Pares}''')

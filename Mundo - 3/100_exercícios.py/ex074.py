@@ -7,18 +7,18 @@ C) Quais foram os numeros pares.
 '''
 Lista = []
 Pares = []
-qtd_9 = posicao_3 = 0
+qtd_9  = indice_3 = 0
 for c in range(4):
     n = int(input('Digite um numero: '))
     Lista.append(n)
-converter_tupla = tuple(Lista)
+convert_tupla = tuple(Lista)
 
-for i, v in enumerate(converter_tupla):
-    if v == 9:
+for indice,valor in enumerate(convert_tupla):
+    if valor == 9:
         qtd_9+=1
-    if v == 3 and posicao_3 == 0:
-        posicao_3 = i+1
-    if v % 2 == 0:
-        Pares.append(v)
-print(f'''Quantidade de valores 9 é: {qtd_9}\nPosição que 1º valor 3 está: {posicao_3}
-Numeros pares digitados é: {Pares}''')
+    if valor == 3 and indice_3 == 0:
+        indice_3 = indice + 1 
+    if valor % 2 == 0:
+        Pares.append(valor)
+print(f'''Você digitou os valores: {convert_tupla}\nO valor 9 apareceu: {qtd_9} vezes\nA posição que o primeiro 3 foi digitado foi: {indice_3}
+Os numeros pares são: {Pares}''')
