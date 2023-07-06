@@ -27,7 +27,7 @@ D - Em que posição na tabela está o time da Chapecoense.
 18 - Vasco da Gama
 19 - América - MG
 20 - Coritiba
-'''
+
 Tabela = ('Botafogo', 'Grêmio', 'Flamengo', 'Palmeiras', 'Bragantino', 'Fluminense',
           'São Paulo', 'Internacional', 'Athlético - PR', 'Atlético - MG', 'Fortaleza',
           'Cruzeiro', 'Cuiabá', 'Santos', 'Bahia', 'Corinthians', 'Goiás',
@@ -53,5 +53,20 @@ if colocados in 'Chapecoense':
     print('\n',indice+1,'° Posição')
 else:
     print('\nChapecoense não está mais na tabela')
-   
-        
+'''
+Tabela = ('Botafogo', 'Grêmio', 'Flamengo', 'Palmeiras', 'Bragantino', 'Fluminense',
+          'São Paulo', 'Internacional', 'Athlético - PR', 'Atlético - MG', 'Fortaleza',
+          'Cruzeiro', 'Cuiabá', 'Santos', 'Bahia', 'Corinthians', 'Goiás',
+          'Vasco da Gama', 'América - MG', 'Coritiba','Chapecoense')
+#  A - Apenas os 5 primeiros colocados.
+print('='*80)
+print(f'Os 5 primeiros colocados: {Tabela[0:5]}')
+print('='*80)
+# B - Os últimos 4 colocados da tabela.
+print(f'Os 4 últimos colocados: {Tabela[-4:]}')
+print('='*80)
+# C - Uma lista com os times em ordem alfabética.
+print(f'Orden alfabética: {sorted(Tabela)}')
+print('='*80)
+# D - Em que posição na tabela está o time da Chapecoense.
+print(f'O Chapecoense está na posição {Tabela.index("Chapecoense")+1}')
