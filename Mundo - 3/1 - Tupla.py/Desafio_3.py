@@ -19,3 +19,7 @@ for m in Tupla:
     if m < menor:
         menor = m
 print(f'Maior numero é: {maior}\nO menor número é: {menor}')
+print('='*30)
+numeros = (randint(1,10), randint(1,10), randint(1,10), randint(1,10), randint(1,10))
+print(f'Os números sorteados são: {numeros}')
+print(f'O maior numero é: {max(numeros)}\nO menor numero é: {min(numeros)}')
