@@ -30,7 +30,7 @@ num.insert(1, 2) # Vai adicionar na posição 2 o elemento 0, lembrando que as c
 num.pop() # Se usarmos a função pop() sem parametro, ela vai eliminar o ultimo elemento da lista.
 num.pop(3) # Vai eliminar o elemento 2 que no caso é o elemento 0 que adicionamos interiormente.
 if 4 in num:    
-    num.remove(4) # Ele reomvoe apenas o primeiro elemento que corresponde ao paraetro que nesse caso é 2
+    num.remove(4) # Ele reomvoe apenas o primeiro elemento que corresponde ao parametro que nesse caso é 2
 else:
     print('Não encontramos o numero 4')
 print(num)
