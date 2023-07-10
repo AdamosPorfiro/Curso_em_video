@@ -6,9 +6,10 @@ respectivamente.
 
 Ao final, mostre o conteúdo das três listas geradas.
 '''
+
 l_n = []
 pares = []
-impar = []
+impares = []
 while True:
     n = int(input('Digite um número: '))
     l_n.append(n)
@@ -21,5 +22,5 @@ for num in l_n:
     if num % 2 == 0:
         pares.append(num)
     else:
-        impar.append(num)
-print(f'\nVocê digitou os número {l_n}\nNúmeros pares são: {pares}\nNúmero ímpares são: {impar}')
+        impares.append(num)
+print(f'\nNúmeros digitados foram {l_n}\nOs pares são {pares}\nÍmpares são {impares}')
