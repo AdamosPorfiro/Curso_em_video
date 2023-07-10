@@ -19,14 +19,14 @@ while True:
     else:
         break
 l_n.sort(reverse=True)
-print(f'\nForam digitados {len(l_n)} números\nOrdem decrescente {l_n}')
+print(f'\nForam digitados {len(l_n)} números\n Ordem decrescente {l_n}')
 
-numero = False
+numero_5 = False
 for num in l_n:
     if num == 5:
-        numero = True
+        numero_5 = True
         break
-if numero == True:
-    print('O número 5 está ná lista!')
+if numero_5 == True:
+    print('O número 5 está na lista!')
 else:
     print('O número 5 não está na lista!')
