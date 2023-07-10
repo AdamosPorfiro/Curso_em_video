@@ -8,13 +8,13 @@ l_n = []
 while True:
     n = int(input('Digite um número: '))
     if n in l_n:
-        print('Esse número já existe na lista!',end=' ')
+        print('Esse número já existe na lista!', end=' ')
     else:
         l_n.append(n)
-    continuar = str(input('Deseja continuar? [S/N] ')).upper().strip()[0]
-    if continuar in 'S':
+    c = str(input('Deseja continuar? [S/N] ')).upper().strip()[0]
+    if c in 'S':
         continue
     else:
         break
 l_n.sort()
-print(f'Você digitou os valores {l_n}')
+print(f'Você digitou os números {l_n}')
