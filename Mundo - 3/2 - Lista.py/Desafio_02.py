@@ -10,6 +10,7 @@ while True:
     if n in l_n:
         print('Esse número já existe na lista!',end=' ')
     else:
+        print('\nNúmero adicionado com sucesso...')
         l_n.append(n)
     continuar = str(input('Deseja continuar? [S/N] ')).upper().strip()[0]
     if continuar in 'S':
