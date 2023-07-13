@@ -16,7 +16,7 @@ for c in range(5): # Vai repetir 5x o input
             index += 1 # Ele vai adicionar +1 ao index e então index passa a ser 1...2...3... e assim por diante
         l_n.insert(index, n) # E vai inserir o index que é a chave e armazenar n input do usuario dentro
 print(f"Você digitou os valores {l_n}") # Vamos printar a lista
-'''
+
 
 l_n = [] # Lista vazia
 for c in range(5): # Repetir 5 vezes o input
@@ -29,8 +29,19 @@ for c in range(5): # Repetir 5 vezes o input
             chave+=1 # Se for verdadeiro ele adiciona +1 ao indice, para verificar, se der falso, ele sai do loop
         l_n.insert(chave,n) # E inseri a chave e o numero informado pelo usuario
 print(f'Você digitou os números: {l_n}') # e imprimi na tela para o usuario
-
-
-
-
-
+'''
+l_n = []
+for c in range(5):
+    n = int(input('Digite um valor: '))
+    if c == 0 or n > l_n[-1]:
+        l_n.append(n)
+        print('Adicionado no final da lista')
+    else:
+        pos = 0
+        while pos < len(l_n):
+            if n <= l_n[pos]:
+                l_n.insert(pos, n)
+                print(f'Foi adicionado a posição {pos}')
+                break
+            pos += 1
+print(f'Os valores digitados em ordem foram {l_n}')
