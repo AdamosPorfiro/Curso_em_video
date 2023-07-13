@@ -30,18 +30,18 @@ for c in range(5): # Repetir 5 vezes o input
         l_n.insert(chave,n) # E inseri a chave e o numero informado pelo usuario
 print(f'Você digitou os números: {l_n}') # e imprimi na tela para o usuario
 '''
-l_n = []
-for c in range(5):
-    n = int(input('Digite um valor: '))
-    if c == 0 or n > l_n[-1]:
+l_n = [] # Lista vazia
+for c in range(5): # Laço repetição 5x
+    n = int(input('Digite um valor: ')) # input
+    if c == 0 or n > l_n[-1]: # se c for igual a 0 ou n for maior que o último elemento da lista, então ele vai inserir um elemento no final da lista
         l_n.append(n)
         print('Adicionado no final da lista')
-    else:
-        pos = 0
-        while pos < len(l_n):
-            if n <= l_n[pos]:
-                l_n.insert(pos, n)
+    else: # Senão
+        pos = 0 # posição = 0
+        while pos < len(l_n): # laço que vai passar pelas posições, Em quanto pos for menor que posição da lista
+            if n <= l_n[pos]: # Se n for menor ou igual a algum elemento da lista da posição especifica
+                l_n.insert(pos, n) # Insere um elemento ali
                 print(f'Foi adicionado a posição {pos}')
-                break
-            pos += 1
+                break # pausa o laço
+            pos += 1 # Adiciona +1 ao pos
 print(f'Os valores digitados em ordem foram {l_n}')
