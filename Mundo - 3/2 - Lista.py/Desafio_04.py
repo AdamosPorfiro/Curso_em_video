@@ -14,13 +14,16 @@ while True:
     n = int(input('Digite um número: '))
     l_n.append(n)
     c = str(input('Deseja continuar? [S/N] ')).upper().strip()[0]
-    if c in 'S':
-        continue
-    else:
+    if c in 'N':
         break
 l_n.sort(reverse=True)
 print(f'\nForam digitados {len(l_n)} números\nOrdem decrescente {l_n}')
+if 5 in l_n:
+    print('O número 5 está na lista!')
+else:
+    print('O número 5 não está na lista!')
 
+'''
 numero = False
 for num in l_n:
     if num == 5:
@@ -30,3 +33,4 @@ if numero == True:
     print('O número 5 está ná lista!')
 else:
     print('O número 5 não está na lista!')
+'''
