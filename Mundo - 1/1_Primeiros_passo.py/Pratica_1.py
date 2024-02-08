@@ -40,4 +40,4 @@ nome=input('Qual é o seu nome?') <- Variavel nome, recebe o resultado do input 
 nome=input('Qual é o seu nome?\n')  #Nome1 vai receber o input que o usuario irá interar(digitar);
 idade=input('Qual é a sua idade\n')  #Idade1 vai receber o input que o usuario irá interar(digitar);
 peso=input('Qual é o seu peso?\n')   #Peso1vai receber o input que o usuario irá interar(digitar);
-print("\nNome: {}\nIdae: {}\nPeso: {}".format(nome,idade,peso)) # Vai exibir os valores, informações, objetos armazenados.
+print("\nNome: {}\nIdade: {}\nPeso: {}Kg".format(nome,idade,peso)) # Vai exibir os valores, informações, objetos armazenados.
