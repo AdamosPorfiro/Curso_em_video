@@ -27,5 +27,6 @@ Pseudocódigo:
 Código final abaixo:
 '''
 print('===== Desafio 1 =====')
-nome = input('Qual é o seu nome?  ')
-print ('Olá '+nome+', é um prazer conhece-lo(a), seja bem vindo(a)')
+
+nome = input('Qual é o seu nome?\n')
+print ('\nOlá, {}!!!\nÉ um imenso prazer conhece-lo(a).\nseja bem vindo(a).'.format(nome))
