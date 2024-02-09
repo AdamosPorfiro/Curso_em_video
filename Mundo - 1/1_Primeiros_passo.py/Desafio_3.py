@@ -29,14 +29,15 @@ Pseudocódigo:
 Código final abaixo:
 '''
 print('===== Desafio 3 =====')
-n_1 = int(input('Digite o primeiro valor:  ')) # É necessario converter os valores recebido para numerais, para realizar uma operação matemática, pois sem a conversão, o valor armazenado é de string(caracteres).
+n_1 = int(input('\nDigite o primeiro valor:  ')) # É necessario converter os valores recebido para numerais, para realizar uma operação matemática, pois sem a conversão, o valor armazenado é de string(caracteres).
 n_2 = int(input('Digite o segundo valor:  ')) # Outra alternativa é converter os valores no codigo que ira realizar a operação matematica Ex.: print (int (n_1)+int(n_2))
 print(n_1 + n_2) # print (int (n_1)+int(n_2))
 print('A soma do valor',n_1, 'com o valor',n_2,'resulta no valor', n_1 + n_2)
+print('=====================')
 
 '''
 Alternativa - 2
-n_1 = input('Digite o primeiro valor:  ')
+n_1 = input('Digite o primeiro valor:  ')   
 n_2 = input('Digite o segundo valor:  ')
 print( int(n_1) + int(n_2)) 
 '''
