@@ -74,5 +74,4 @@ c = n1 / n2
 d = n1 // n2
 e = n1 ** n2
 print('\nA soma é: {}\nO produto é: {}\nDivisão é: {:.2f}'.format(a, b, c), end='.  ')  # Podemos usar "end" para dizer que mesmo com 2 prints não haverá quebra de linha, então ele vai exibir os 2 prints na mesma linha 
-print ('A divisão inteira é: {}Potência é: {}'.format(d, e)) # Podemos utilizar tambem "\n" nova quebra de linha, para quebrar linhas e organizar os prints um abaixo do outro, como desejar.
-
+print ('A divisão inteira é: {} Potência é: {}'.format(d, e)) # Podemos utilizar tambem "\n" nova quebra de linha, para quebrar linhas e organizar os prints um abaixo do outro, como desejar.
