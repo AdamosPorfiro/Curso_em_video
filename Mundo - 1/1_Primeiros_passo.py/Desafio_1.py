@@ -29,4 +29,4 @@ Código final abaixo:
 print('===== Desafio 1 =====')
 
 nome = input('Qual é o seu nome?\n')
-print ('\nOlá, {}!!!\nÉ um imenso prazer conhece-lo(a).\nseja bem vindo(a).'.format(nome))
+print ('\nOlá, {}!!!\nÉ um imenso prazer conhece-lo(a)!\nseja bem vindo(a).'.format(nome))
