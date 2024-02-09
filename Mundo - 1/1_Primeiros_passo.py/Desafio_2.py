@@ -32,7 +32,7 @@ Pseudocódigo:
 Código final abaixo:
 '''
 print('===== Desafio 2 =====')
-dia = input('Qual foi o dia do seu nascimento? ') # 10
-mes = input('Qual foi o mês do seu nascimento? ') # novembro
-ano = input('Qual foi o ano do seu nascimento? ') # 1993
-print('Você nasceu no dia,'+dia+' de '+mes+', de '+ano+'. Correto?') # Você nasceu no dia, 10 de novembro', de 1993. Correto?
+dia = input('\nQual foi o dia do seu nascimento?\n') # 10
+mes = input('Qual foi o mês do seu nascimento?\n') # novembro
+ano = input('Qual foi o ano do seu nascimento?\n') # 1993
+print('Você nasceu no dia,',dia,mes, 'de',ano,'.Correto?') # Você nasceu no dia, 10 de novembro', de 1993. Correto?
