@@ -1,41 +1,33 @@
-# Faça um programa que  leia algo pelo teclado e mostre na tela o seu tipo primitivo e todas as  informações possiveis sobre ele.
-'''
-print('===== Desafio 2 =====')
-n1 = input('Digite algo: ')
-print (type(n1))
-print ('Os dados digitados são alfabeticos?', n1.isalpha()) -> Verifica se é uma strign com letras "Alfabético";
-print ('Os dados digitados são numeros decimais ?', n1.isdecimal());
-print ('Os dados digitados são alfabeticos e numericos ?', n1.isalnum())-> Verificar se é "Alphanumerico" com letras e números;
-print ('Os dados digitados são espaços em branco ?', n1.isspace()) # Deve ter um espaço vazio (space) do teclado;
-print ('Os dados digitados são do padrão ASCII?', n1.isascii()) # Hello ou 12345;
-print ('Os dados digitados são todos digitos?', n1.isdigit())
-print ('Os dados digitados é um identificador valido?', n1.isidentifier()) # _valido = 123 ou valido = 123;
-print ('Os dados digitados usam letras minusculas?', n1.islower())
-print ('Os dados digitados usam letras maiusculas?', n1.isupper())
-print ('Os dados digitados foram escritos um titulo (Capitalizado)?', n1.istitle()) # O Pequeno Príncipe_observe as letras maiusculas; (Capitalizado)
-print ('Os dados digitados são caracteres imprimiveis?', n1.isprintable())
-'''
-# Utilizando função format
+""" 
+Desafio 5
 
-'''
-print('===== Desafio 2 =====')
+Faça um programa que leia um numero inteiro e mostre na tela o seu sucessor e o seu antecessor
 
+Metodo dos 5 Q's
 
-n1 = input('Digite uma frase: ')
-print ('{} é alfabeticos?'.format(n1), n1.isalpha())
-print('{} é Alfanumerico?'.format(n1), n1.isalnum())
-print('{} é um número decimal?'.format(n1), n1.isdecimal())
-print('{} é um espaço em branco?'.format(n1), n1.isspace())
-print('{} está no padrão ASCII?'.format(n1), n1.isascii())
-print('{} são todo digitos?'.format(n1), n1.isdigit())
-print('{} é um identificador valido?'.format(n1), n1.isidentifier())
-print('{} Possuem letras minusculas?'.format(n1), n1.islower())
-print('{} Possuem letras maiusculas?'.format(n1), n1.isupper())
-print('{} Foi escrito em formato de titulo?'.format(n1), n1.istitle())
-print('{} São imprimiveis?'.format(n1), n1.isprintable())
-'''
+1 - Quais são os dados de entrada?
+ - Numero inteiro
 
-# Verifique cada caracter da frase utilizando os verificadores
+2 - O que devo fazer com esses dados?
+ - Mostrar na tela o seu sucessor e o seu antecessor
 
+3 - Quais são as restrições desse problemas?
+ - Deve ser numero inteiro
 
+4 - Qual é o resultado esperado?
+ - Exibir para o usuario o sucessor e o antecessor do numero informado
 
+5 - Qual é a sequencia de passos a serem feitas?
+ - Input numero
+ - V_1 = numero - 1
+ - V_2 = numero + 1
+ - Print o sucessor do numero informado é V_1 e o seu antecessor é V_2
+
+"""
+
+print("{:=^28}".format(" Desafio 5 "))
+n_1 = int(input("Digite um numero inteiro: "))
+sucessor = n_1 + 1
+antecessor = n_1 - 1
+print("O sucessor de {} é {}\nO antecessor de {} é {}".format(n_1,sucessor,n_1,antecessor))
+print("{:=^28}".format(""))
