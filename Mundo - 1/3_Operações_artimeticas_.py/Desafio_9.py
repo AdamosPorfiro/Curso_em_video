@@ -1,35 +1,39 @@
-'''
+"""
 
-===== Desafio 9 =====
+Desafio 9
 
-Faça um programa que leia o salario de um funcionario e mostre o seu novo salario, com 15% de aumento.
+Faça um programa que leia um numero inteiro qualquer e mostre na tela a sua tabuada
 
-Analise criticamente:
-Supondo que o profissional seja balconista e recebe R$ 1.300 por mês e terá um aumento de R$ 15% *Sonho meu :_) kkkkkkkk*
-Vamos então multiplicar o salario pelo aumento e dividir por 100, o resultado é o valor que terá de aumento no salario:
-
-1300*15/100 = 195 - logo o aumento é de R$ 195 reais, basta então somar  1300 + 195 = 1495
-Para validar se o valor de 195 equivale a 15% de 1300, basta fazer o calculo: porcentagem = 195 / 1300 = 0.15 * 100 = 15 % logo 195 equivale a 15% de 1300
-
-Metodo dos 5 Q's
+5 Q's
 
 1 - Quais são os dados de entrada?
--> input salario
+- Um numero inteiro
 
-2 - O que deve ser feito com esses dados?
--> Calcular o salario com um aumento de 15% e exibir na tela
+2 - O que devo fazer com esses dados?
+- Mostrar na tela para o usuario a tabuada no numero que ele informou
 
-3 - Quais são as restrições desse problema?
--> Como os dados serão numeros com decimais o programa deve trabalhar com numeros reais (float)
+3 - Quais são as restrições do problema?
+- Apenas numeros inteiros
 
 4 - Qual o resultado esperado?
--> Que o programa calcule o salario com aumento de 15% e exiba para o usuario esse aumento.
+- Tabuada do numero informado
 
-5 - Quais são os passos a serem feitos para se alcançar o resultado?
-#1 input salario
-#2 print salario é: salario * 15 / 100 + salario
+5 - Quais os passos necessarios para se alcançar o resultado?
+- input n
+- print 1xn=n*1 2xn=n*2 3xn=n*3 4xn=n*4 5xn=n*5 6xn=n*6 7xn=n*7 8xn=n*8 9xn=n*9 10xn=n*10
 
-'''
-print('=' * 20, 'Desafio 9', '=' * 20, '\n','Calculadora de 15 porcento de aumento no salario')
-s1 = float(input('\nDigite o seu salario mensal\nR$ '))
-print('\nO seu novo salario é: R$ {:.2f}'.format((s1 * 15) / 100 + s1)+'\n','=' * 51)
+"""
+print("{:=^50}".format(" Desafio 9 "))
+n = int(input("Informe um numero para saber sua tabuada: "))
+print("\nTabuada do {}".format(n))
+print("{} x 1 = {}".format(n,n*1))
+print("{} x 2 = {}".format(n,n*2))
+print("{} x 3 = {}".format(n,n*3))
+print("{} x 4 = {}".format(n,n*4))
+print("{} x 5 = {}".format(n,n*5))
+print("{} x 6 = {}".format(n,n*6))
+print("{} x 7 = {}".format(n,n*7))
+print("{} x 8 = {}".format(n,n*8))
+print("{} x 9 = {}".format(n,n*9))
+print("{} x 10 = {}".format(n,n*10))
+print("{:=^50}".format(""))
