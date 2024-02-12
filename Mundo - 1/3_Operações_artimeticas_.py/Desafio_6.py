@@ -32,5 +32,5 @@ n = int(input("Digite um numero: "))
 dobro = n*2
 triplo = n*3
 quadrada = math.sqrt(n) #Para importar a função invocamos a função math seguido da operação a ser utilizada
-print("\nDobro: {}\nTriplo: {}\nRaiz quadrada: {}\n".format(dobro,triplo,quadrada))
+print("\nDobro: {}\nTriplo: {}\nRaiz quadrada: {:.2f}\n".format(dobro,triplo,quadrada))
 print("{:=^28}".format(""))
