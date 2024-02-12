@@ -35,5 +35,5 @@ print("{:=^28}".format(" Desafio 7 "))
 n_1 = float(input("Digite a primeira nota: "))
 n_2 = float(input("Digite a segunda nota: "))
 media = (n_1+n_2)/2
-print("A média é {}".format(media))
+print("A média é {:.2f}".format(media))
 print("{:=^28}".format(""))
