@@ -1,6 +1,7 @@
 '''
 O que são modulos em python?
-R: São arquivos  que contem definições e comandos em python que são usados para trazer certas funcionalidades, tornando mais eficiente o código, gasto menor de memoria e código mais limpo.
+R: São arquivos  que contem definições e comandos em python que são usados para trazer certas funcionalidades, 
+tornando mais eficiente o código, gasto menor de memoria e código mais limpo.
 
 Comando usar para adicionar modulos no python usamos o comando: 
 import - > importa todo um conjunto de comandos de um módulo;
