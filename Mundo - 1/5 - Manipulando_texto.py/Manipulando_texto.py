@@ -38,7 +38,7 @@ um 3 caractere ele não exibira mais.
 
 [] = Python reconhece o conchete como uma estrutura de dados que é chamada de lista;
 
-Formas de analisar um string:
+Formas de analisar um string: É saber algumas informações de uma string / frase
 len = significa comprimento, que vai dizer pra gente o comprimento de uma frase
 count = Contador, exemplo de uso frase = 'Adamos' print(frase.count('a')) O count vai contar quantas vezes apareçe a letra a minuscula.
 outro exemplo de count é print(frase.count('a',0,8)) Ele vai verificar quantas vezes a letra "a" apareçe na frase contanto do indice 0 a 7 
