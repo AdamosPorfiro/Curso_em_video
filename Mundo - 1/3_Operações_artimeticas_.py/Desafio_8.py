@@ -23,9 +23,12 @@ Escreva um programa que leia um valor em metros e o exiba convertido em centimet
 - mil = valor_metros*1000
 - print = Metro informado é valor_metros convertido para centimetros é cent e para milimetros é mil
 """
+from time import sleep
 print("{:=^42}".format(" Desafio 8 "))
 v_metros = float(input("Informe quantos metros quer converter: "))
 centimetros = v_metros*100
 milimetros = v_metros*1000
-print("Convertendo...\n\nCentimentros: {}\nMilimetros: {}".format(centimetros, milimetros))
+print("Convertendo para centimentros e milimetros...")
+sleep(2)
+print("\n\nCentimentros: {}\nMilimetros: {}".format(centimetros, milimetros))
 print("{:=^42}".format(""))
