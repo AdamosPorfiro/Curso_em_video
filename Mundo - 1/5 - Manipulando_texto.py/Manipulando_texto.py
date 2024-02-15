@@ -45,7 +45,7 @@ outro exemplo de count é print(frase.count('a',0,8)) Ele vai verificar quantas 
 find = Econtrar, Ex.: Print(frase('amos')) Ele vai indicar em que indice 'amos' começa veja no codigo lá em baixo.
 in = Podemos dizer adamos in frase. frase = 'Adamos Porfiro' print('Adamos' in frase)
 
-Formas de fazer transformações em string:
+Formas de fazer transformações em string: 
 replace = reposicionar, trocar. Ex.: frase.replace('Adamos', 'Jordam') ele vai fazer a troca do nome Adamos por Jordam
 upper() = Significa pra cima. frase.upper() Ele vai tornar a frase em maiuscula
 lower() = Significa pra baixo, o contrario de upper
@@ -64,7 +64,7 @@ join = Vai juntar as palavras da string Ex.: '-'.join(frase) Ele vai usar o trac
 
 """
 
-frase = "  Adamos Porfiro  "
+frase = "Adamos Porfiro"
 print(frase[8])  # o
 print(frase[1:8])  # damos P
 print(frase[0:13:2])  # Exibi "A" conta 2 e exibi o 2 "a" "o" " " "o" " f " "r" Aao ofr
@@ -85,8 +85,8 @@ print(frase.strip()) # Remove todos os espaços inuteis no inicio e fim da strin
 print(frase.rstrip()) # Remove espaços da direita
 print(frase.lstrip()) # Remove espaços da esquerda
 print(frase.split()) # Ele dividi as palavras, Adamos se torna independente e porfirio tambem, gerando assim um lista de uma cadeia de caracteres
-print(frase.split('-'.join(frase))) 
-print('-'.join(frase)) # Vai juntar a frase usando - tracinho, se usarmos em uma frase splitada ele vai juntar ela novamente, como no exemplo acima
+print(frase.split ('-'.join(frase))) 
+print('_'.join(frase)) # Vai juntar a frase usando - tracinho, se usarmos em uma frase splitada ele vai juntar ela novamente, como no exemplo acima
 texto = ''' Em linguística, a noção de texto é ampla e ainda aberta a uma definição mais precisa. 
 Grosso modo, pode ser entendido como manifestação linguística das ideias de um autor, 
 que serão interpretadas pelo leitor de acordo com seus conhecimentos linguísticos e culturais.
@@ -94,5 +94,7 @@ Seu tamanho é variável. '''
 print(len(texto))
 print(texto.count('a'))
 print(len(texto.strip()))
+frase = frase.split()
+print(frase[0][3])
 
 
