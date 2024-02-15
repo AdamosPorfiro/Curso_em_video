@@ -50,3 +50,7 @@ print(emoji.emojize('Olá, mundo 🌍')) # Para vermos quais são os pacotes de 
 # Para desinstalar basta usar o comando no terminal: pip uninstall "nome do modulo";
 
 '''
+
+from emoji import emojize
+print(emojize("Olá, mundo :globe_showing_Americas:"))
+
