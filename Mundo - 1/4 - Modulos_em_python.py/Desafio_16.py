@@ -6,6 +6,8 @@ Crie um programa que leia um numero real qualquer pelo teclado e mostre na tela 
 Ex: Digite um numero: 6.127 o numero 6.127 tem a parte inteira 6.
 
 """
+print("{:=^50}".format(" Desafio 16 "))
 from math import trunc
 num = float(input("Digite um numero real: ")) 
 print("A parte inteira do numero {} é {}".format(num, trunc(num))) # Vai truncar o numero e mostrar apenas o numero inteiro
+print("{:=^50}".format(""))
