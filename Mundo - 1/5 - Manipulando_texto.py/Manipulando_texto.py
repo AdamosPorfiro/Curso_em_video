@@ -95,6 +95,6 @@ print(len(texto))
 print(texto.count('a'))
 print(len(texto.strip()))
 frase = frase.split()
-print(frase[0][3])
+print(frase[0][0:])
 
 
