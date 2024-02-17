@@ -11,6 +11,9 @@ centena: 8
 milhar: 1
 
 """
+"""
+# Formula utilizando string
+
 print("{:=^40}".format(" Desafio 23 "))
 num = str(input("Digite um numero entre 0 a 9999: ")) # Convertemos ele para string
 
@@ -22,3 +25,13 @@ milhar = num[-4:-3]
 
 print("Unidade: {}\nDezena: {}\nCentena: {}\nMilhar: {}".format(unidade,dezena,centena,milhar))
 print("{:=^40}".format(""))
+"""
+num = int(input("Informe um numero de 0 a 9999: "))
+unidade = num // 1 % 10
+dezenha = num // 10 % 100
+centena = num // 100 % 1000
+milhar = num // 1000 % 10000
+print("\nUnidade: {}".format(unidade))
+print("Dezenha: {}".format(dezenha))
+print("Centena: {}".format(centena))
+print("Milhar: {}".format(milhar))
