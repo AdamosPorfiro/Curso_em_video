@@ -28,9 +28,9 @@ print("{:=^40}".format(""))
 """
 num = int(input("Informe um numero de 0 a 9999: "))
 unidade = num // 1 % 10
-dezenha = num // 10 % 100
-centena = num // 100 % 1000
-milhar = num // 1000 % 10000
+dezenha = num // 10 % 10
+centena = num // 100 % 10
+milhar = num // 1000 % 10   
 print("\nUnidade: {}".format(unidade))
 print("Dezenha: {}".format(dezenha))
 print("Centena: {}".format(centena))
