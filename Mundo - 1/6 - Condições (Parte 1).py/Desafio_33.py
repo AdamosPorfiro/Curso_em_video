@@ -13,7 +13,6 @@ if n2<n3 and n2<n1:
     menor = n2
 if n3<n2 and n3<n1:
     menor = n3
-print(f"\n{menor} é o menor")
 
 #Verificar o maior numero
 maior = n1
@@ -21,7 +20,7 @@ if n2>n3 and n2>n1:
     maior = n2
 if n3>n2 and n3>n1:
     maior = n3
-print(f"{maior} é o maior")
+print(f"{maior} é o maior\n{menor} é o menor")
 print("="*30)
 """
 if n1>n2 and n2>n3:
