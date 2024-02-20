@@ -8,12 +8,19 @@ O programa deverá escrever na tela se o usuario perdeu ou venceu!
 """
 
 from random import randint
-print("{:=^40}".format(" Desafio 28 "))
+from time import sleep
+
+print("-="*30)
+print("{:^60}".format("Vou pensar em um numero entre 0 e 5. TENTE ADIVINHAR..."))
+print("-="*30)
+
 n_aleatorio = (randint(0,5))
-print("Descubra o numero gerado pelo computador")
-usuario = int(input("Informe o número de 0 á 5: "))
-if usuario == n_aleatorio:
+usuario = int(input("{:^17}Escolha o numero: ".format("")))
+print("PROCESSANDO...")
+sleep(2)
+
+if n_aleatorio == usuario:
     print("\nPARABÉNS, você venceu!!!")
 else:
-    print("\nVocê perdeu, tente novamente!")
-print("{:=^40}".format(""))
+    print("\nGANHEI, eu pensei no número {} e não no {}".format(n_aleatorio,usuario))
+print("="*60)
