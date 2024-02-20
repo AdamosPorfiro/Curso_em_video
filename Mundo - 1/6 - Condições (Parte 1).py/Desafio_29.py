@@ -12,7 +12,6 @@ print("{:=^35}".format(" Desafio 29 "))
 velocidade = float(input("Informe a velocidade do carro: "))
 if velocidade > 80:
     print("\nVocê utrapassou a velocidade de 80km/h")
-    print("por isso levou uma multa no valor de R$ {:.2f}\nATENÇÂO, Dirija com cuidado!".format((velocidade-80)*7))
-else:
-    print("\nObrigado, Dirija com segurança!")
+    print("por isso levou uma multa no valor de R$ {:.2f}".format((velocidade-80)*7))
+print("\nObrigado, Dirija com segurança!")
 print("{:=^35}".format(""))
