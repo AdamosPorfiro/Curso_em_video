@@ -12,11 +12,11 @@ ano = int(input("Informe o ano que deseja verificar: "))
 if  ano%4 == 0:
     if ano%100 == 0: 
         if ano%400 == 0:
-            print("Esse ano é bissexto!")
+            print("O ano {} é bissexto!".format(ano))
         else:
-            print("Esse ano não é bissexto!")
+            print("O ano {} não é bissexto!".format(ano))
     else:
-        print("Esse ano é bissexto!")
+        print("O ano {} é bissexto!".format(ano))
 else:
-    print("Esse ano não é bissexto!")
+    print("O ano {} não é bissexto!".format(ano))
 print("{:=^40}".format(""))
