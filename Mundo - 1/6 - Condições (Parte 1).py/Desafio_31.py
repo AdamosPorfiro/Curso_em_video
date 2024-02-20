@@ -8,7 +8,7 @@ e R$0,45 para viagens mais longas
 
 """
 print("{:=^50}".format(" Desafio 31 "))
-v_km = float(input("Informe a distância em km da sua viagem: "))
+v_km = float(input("Informe a distância da sua viagem: "))
 if v_km <= 200:
     print("\nO valor da passagem fica R$ {:.2f}".format(v_km*0.50))
 else:
