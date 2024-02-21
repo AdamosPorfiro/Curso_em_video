@@ -14,10 +14,13 @@ print("{:=^55}".format(" Desafio 34 "))
 salario = float(input("Informe o seu salario R$ "))
 
 if salario > 1250:
-    print(f"Quem ganhava R${salario} passa a ganhar R${salario*10/100+salario}")
+    n_salario = salario*10/100+salario
+    #print(f"Quem ganhava R${salario} passa a ganhar R${salario*10/100+salario}")
 else:
-    print(f"Quem ganhava R${salario} passa a ganhar R${salario*15/100+salario}")
-    
+    n_salario = salario*15/100+salario
+    #print(f"Quem ganhava R${salario} passa a ganhar R${salario*15/100+salario}")
+print(f"Quem ganhava R${salario} passa a ganhar R${n_salario}")
+
 """
 if salario > 1250:
     print("\nVocê terá um aumento de 10%' e agora receberá R$ {}".format(salario*10/100+salario))
