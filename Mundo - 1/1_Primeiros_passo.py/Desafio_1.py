@@ -26,7 +26,8 @@ Pseudocódigo:
 
 Código final abaixo:
 '''
-print('===== Desafio 1 =====')
+from emoji import emojize
+print('{:=^30}'.format(emojize(" Desafio 1 -> \33[0;32;40mUPADO\33[m ☝️")))
 
 nome = input('Qual é o seu nome?\n')
 print ('\nOlá, {}!!!\nÉ um imenso prazer conhece-lo(a)!\nseja bem vindo(a).'.format(nome))
