@@ -40,6 +40,8 @@ logo \033[0:33:44m - none para estilo, cor: Amarelo, cor de fundo: Azul;
 
 #Utilizando cores em python;
 
+print("\33[0;33;40mTeste\33[m")
+
 print('\033[1;32;41mOlá, mundo!\033[m')
 a = 'Adamos'
 cores = {'Limpa': '\033[m', 

@@ -5,7 +5,7 @@ Desenvolva um programa que leia o comprimento de 3 retas e vai dizer
 se ele pode ou não formar um triangulo
 
 """
-print("{:=^40}".format(" Desafio 35 "))
+print("{:=^40}".format(" \33[0;34;40mDesafio 35\33[m "))
 r1 = float(input("Informe comprimento da 1º reta: "))
 r2 = float(input("Informe comprimento da 1º reta: "))
 r3 = float(input("Informe comprimento da 1º reta: "))
