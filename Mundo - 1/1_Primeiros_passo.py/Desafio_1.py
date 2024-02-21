@@ -27,7 +27,14 @@ Pseudocódigo:
 Código final abaixo:
 '''
 from emoji import emojize
-print('{:=^30}'.format(emojize(" Desafio 1 -> \33[0;32;40mUPADO\33[m ☝️")))
+from datetime import datetime
+print('{:=^50}'.format(emojize(" Desafio 1 -> \33[0;32mUPADO\33[m :dorso_da_mão_com_dedo_indicador_apontando_para_cima: ",language='pt')))
 
 nome = input('Qual é o seu nome?\n')
-print ('\nOlá, {}!!!\nÉ um imenso prazer conhece-lo(a)!\nseja bem vindo(a).'.format(nome))
+if datetime.today().hour < 12:
+    hour = "Bom dia"
+elif datetime.today().hour >= 12 and datetime.today().hour <= 18:
+    hour = "Boa tarde"
+else:
+    hour = "Boa noite"
+print (f'\n{hour}, \33[1;33m{nome}\33[m!!\nÉ um imenso prazer conhece-lo(a),seja bem vindo(a) ao \33[1;34mpython.\33[m')
