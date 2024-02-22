@@ -18,7 +18,7 @@ if nome == 'Adamos':
     print('\033[31m''Que nome bonito!''\033[m')
 elif nome == 'Maria' or nome == 'João' or nome == 'Pedro':
     print('\033[1;33m''O seu nome é popular no brasil!''\033[m')
-elif nome in 'Vilma Pamel Bruna Julia Mylena':
+elif nome in 'Vilma Morgana Bruna Julia Mylena':
     print('\033[35m''O seu nome é um belo nome feminino!''\033[m')
 else:
     print('O seu nome é bem normal!')
