@@ -12,14 +12,14 @@ elif = SE NÂO, SE, pode ser usado varias vezes; -> É uma condição opcional;
 else = SENÃO, pode ser usado nenhuma ou uma vez; -> É uma condição opcional;
 
 '''
-
+print("\33[1;31mCONDIÇÂO ANINHADA\33[m")
 nome = str(input('Qual é o seu nome: '))
 if nome == 'Adamos':
     print('\033[31m''Que nome bonito!''\033[m')
 elif nome == 'Maria' or nome == 'João' or nome == 'Pedro':
     print('\033[1;33m''O seu nome é popular no brasil!''\033[m')
-elif nome in 'Adamos Vilma Alesson Antonio':
-    print('\033[35m''O seu nome é um belo nome feminino!''\033[m')
+elif nome in 'Vilma Thalita Jessica Morgana Raissa Mariana  ':
+    print('\033[32mÉ um belo nome feminino!\033[m')
 else:
     print('O seu nome é bem normal!')
 print('Tenha um bom dia, {}{}{}!'.format('\033[32m',nome,'\033[m'))
