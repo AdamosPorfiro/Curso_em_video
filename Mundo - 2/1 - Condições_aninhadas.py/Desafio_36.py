@@ -21,4 +21,8 @@ salario = float(input("Qual o seu salário? R$"))
 anos_pagar = int(input("Em quantos anos pretende pagar a casa? "))
 
 vl_prestação = valor_casa/anos_pagar # Valor da prestação
-trinta_porcento_prestação = vl_prestação*30/100 # 30% da prestação  '   
+
+if salario*30/100+salario < vl_prestação:
+    print(f"A prestação no valor de R${vl_prestação} é 30% maior que o seu salario\nPor isso o empréstimo foi: \33[1;31mNEGADO\33[m")
+else:
+    print(f"A prestação no valor de R${vl_prestação} foi: \33[1;32mAPROVADO\33[m")
