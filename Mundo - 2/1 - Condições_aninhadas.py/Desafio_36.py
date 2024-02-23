@@ -15,7 +15,9 @@ calcular a prestação mensal
 se a prestação for 30% maior que o salario o empréstimo será negado
 
 """
-
+print("-="*20)
+print("{:>27}".format("Banco do Adamos"))
+print("-="*20)
 valor_casa = float(input("Qual o valor da casa? R$"))
 salario = float(input("Qual o seu salário? R$"))
 anos_pagar = int(input("Em quantos anos pretende pagar a casa? "))
