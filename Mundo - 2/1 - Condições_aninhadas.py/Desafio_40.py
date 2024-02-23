@@ -7,3 +7,6 @@ no final de acordo com a média atingida:
 - Média 7.0 ou superior: Aprovado;
 
 '''
+
+nota1 = float(input("Primeira nota: "))
+nota2 = float(input("Segunda nota: "))
