@@ -28,3 +28,4 @@ if salario*30/100+salario < vl_prestação:
     print(f"A prestação no valor de R${vl_prestação} é 30% maior que o seu salario\nPor isso o empréstimo foi: \33[1;31mNEGADO\33[m")
 else:
     print(f"A prestação no valor de R${vl_prestação} foi: \33[1;32mAPROVADO\33[m")
+print("-="*20)
