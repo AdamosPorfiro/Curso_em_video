@@ -47,6 +47,31 @@ Escaleno:
 1 - Todas as retas devem ter comprimentos diferentes; 
 2 - A soma de duas retas devem ser maior que a terceira;
 CASO ESSAS REGRAS SEJAM ATENDIDAS, ENTÃO PODEMOS TER UM ESCALENO.
+
+- Equilátero: Todas os lados iguais;
+- Isosceles: Dois lados iguais;
+- Escaleno: Todos os lados diferentes;
 =================================================================================
 
 '''
+
+r1 = float(input("Informe o comprimento da 1° reta: "))
+r2 = float(input("Informe o comprimento da 2° reta: "))
+r3 = float(input("Informe o comprimento da 3° reta: "))
+
+#Triângulo
+if r1+r2>r3 and r1+r3>r2 and r2+r3>r1:
+    #Equilatero
+    if r1==r2 and r1==r3 and r2==r3:
+        print("É possível formar um EQUILÁTERO")
+    #Isosceles
+    elif r1==r2  or r1==r3 or r2==r3:
+        if r1+r2>r3 or r1+r3>r2 or r2+r3>r1:
+            print("É possível formar um ISOSCELES")
+    #Escaleno
+    elif r1!=r2 and r1!=r3 and r2!=r3:
+        if r1+r2>r3 or r1+r3>r2 or r2+r3>r1:
+            print("É possível formar um ESCALENO")
+else:
+    print("Não é possível formar um triangulo")
+    
