@@ -7,7 +7,9 @@ no final de acordo com a média atingida:
 - Média 7.0 ou superior: Aprovado;
 
 '''
-
+print("-=" * 20)
+print("{:>25}".format(" Desafio 40 "))
+print("-=" * 20)
 nota1 = float(input("Primeira nota: "))
 nota2 = float(input("Segunda nota: "))
 media = nota1*nota2/2
