@@ -15,10 +15,10 @@ print("-="*27)
 n1 = int(input("Informe um numero inteiro: "))
 base = int(input(
 """Qual a base de conversão que deseja:
-        1 - BINÁRIO
-        2 - OCTAL
-        3 - HEXADECIMAL
-        Digite: """))
+1 - BINÁRIO
+2 - OCTAL
+3 - HEXADECIMAL
+Digite: """))
 if base == 1:
     base = "BINÀRIO"
     n1 = bin(n1)
