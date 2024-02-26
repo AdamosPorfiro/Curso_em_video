@@ -16,35 +16,40 @@ from random import choice
 
 lista = ['Pedra', 'Papel', 'Tesoura']
 computador = choice(lista).lower()
-usuario = str(input("Escolha Pedra, Papel ou Tesoura: ")).strip().lower()
+usuario = int(input("""Escolha 
+    1- Pedra 
+    2- Papel
+    3- Tesoura
+    opção:  """))
+user_dic = {1:'pedra', 2:'papel', 3:'tesoura'}
 
 # Empate
-if computador == 'pedra' and usuario == 'pedra':
-    print(f"Empatado!\nVocê escolheu {usuario} e o computador {computador}")
-elif computador == 'papel' and usuario == 'papel':
-    print(f"Empatado!\nVocê escolheu {usuario} e o computador {computador}")
-elif computador == 'tesoura' and usuario == 'tesoura':
-    print(f"Empatado!\nVocê escolheu {usuario} e o computador {computador}")
+if computador == 'pedra' and usuario == 1:
+    print(f"Empatado!\nVocê escolheu {user_dic[1]} e o computador {computador}")
+elif computador == 'papel' and usuario == 2:
+    print(f"Empatado!\nVocê escolheu {user_dic[2]} e o computador {computador}")
+elif computador == 'tesoura' and usuario == 3:
+    print(f"Empatado!\nVocê escolheu {user_dic[3]} e o computador {computador}")
 
 
 #Vencedor computador
-elif computador == 'papel' and usuario == 'pedra':
-    print(f"Você perdeu!\nVocê escolheu {usuario} e o computador {computador}")
-elif computador == 'tesoura' and usuario == 'papel':
-    print(f"Você perdeu!\nVocê escolheu {usuario} e o computador {computador}")
-elif computador == 'pedra' and usuario == 'tesoura':
-    print(f"Você perdeu!\nVocê escolheu {usuario} e o computador {computador}")
+elif computador == 'papel' and usuario == 1:
+    print(f"Você perdeu!\nVocê escolheu {user_dic[1]} e o computador {computador}")
+elif computador == 'tesoura' and usuario == 2:
+    print(f"Você perdeu!\nVocê escolheu {user_dic[2]} e o computador {computador}")
+elif computador == 'pedra' and usuario == 3:
+    print(f"Você perdeu!\nVocê escolheu {user_dic[3]} e o computador {computador}")
 
 
 #Vencedor jogador
-elif computador == 'papel' and usuario == 'tesoura':
-    print(f"Parabéns, você ganhou!\nVocê escolheu {usuario} e o computador {computador}")
-elif computador == 'tesoura' and usuario == 'pedra':
-    print(f"Parabéns, você ganhou!\nVocê escolheu {usuario} e o computador {computador}")
+elif computador == 'papel' and usuario == 3:
+    print(f"Parabéns, você ganhou!\nVocê escolheu {user_dic[3]} e o computador {computador}")
+elif computador == 'tesoura' and usuario == 1:
+    print(f"Parabéns, você ganhou!\nVocê escolheu {user_dic[1]} e o computador {computador}")
   
-elif computador == 'pedra' and usuario == 'papel':
-    print(f"Parabéns, você ganhou!\nVocê escolheu {usuario} e o computador {computador}")
+elif computador == 'pedra' and usuario == 2:
+    print(f"Parabéns, você ganhou!\nVocê escolheu {user_dic[2]} e o computador {computador}")
 
 #Caso digite errado
 else:
-    print("Você deve digitar corretamente")
+    print("Você deve digitar corretamente. Tente novamente!")
