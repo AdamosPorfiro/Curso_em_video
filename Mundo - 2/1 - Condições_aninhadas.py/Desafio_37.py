@@ -31,5 +31,5 @@ elif base == 3:
 print("Convertendo dados...")
 sleep(1.5)
 
-print(f"{n1} convertido para {base} fica {n1}")
+print(f"O número convertido para {base} fica {n1[2:]}")
 print("-="*27)
