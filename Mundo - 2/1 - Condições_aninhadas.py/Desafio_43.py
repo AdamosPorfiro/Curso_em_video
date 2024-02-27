@@ -9,21 +9,22 @@ o seu status, de acordo com a tabela abaixo:
 - Acima de 40: Obesidade mórbida;
 
 '''
-print("-="*20)
-print("\33[1;34m{:>29}\33[m".format(" Calculadora de IMC "))
-print("-="*20)
+print("-="*25)
+print("\33[1;34m{:>34}\33[m".format(" Calculadora de IMC "))
+print("-="*25)
 peso = float(input("Informe o seu peso em kg: "))
 altura = float(input("Informa a sua altura: "))
-imc = (peso/altura)/altura
+imc = peso/(altura**2)
+print(f"O IMC está em {imc:.2f} com status ", end="")
 
 if imc < 18.5:
-    print(f"O seu IMC é de {imc:.2f} e você está abaixo do peso")
-elif imc >= 18.5 and imc <= 25:
-    print(f"O seu IMC é de {imc:.2f} e você está no peso ideal")
-elif imc >= 25 and imc <= 30:
-    print(f"O seu IMC é de {imc:.2f} e você está com sobrepeso")
-elif imc >= 30 and imc <= 40:
-    print(f"O seu IMC é de {imc:.2f} e você está com obsidade")
+    print("\33[1;31mABAIXO DE PESO\33[m")
+elif imc <= 25:
+    print("\33[1;32mPESO IDEAL\33[m")
+elif imc <= 30:
+    print("\33[1;34mSOBREPESO\33[m")
+elif imc <= 40:
+    print("\33[1;33mOBESIDADE\33[m")
 else:
-    print("Você está com obesidade mórbida")
-print("-="*20)
+    print("\33[1;31mOBESIDADE MORBIDA\33[m")
+print("-="*25)
