@@ -29,5 +29,7 @@ elif pagamento == 4:
     parcelado = int(input("Informe quantas vezes deseja parcelar: "))
     juros = vl_produto+(vl_produto*20/100)
     print(f"\nVocê irá pagar com 20% de juros\nEquivalente a R${juros:.2f}\nQue será parcelado em {parcelado}x de R$ {juros/parcelado:.2f} ")
+else:
+    print("Opção invalida de pagamento, tente novamente!")
 print("-="*30)
 
