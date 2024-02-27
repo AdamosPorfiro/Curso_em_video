@@ -20,5 +20,5 @@ elif media >= 5 and media < 7:
     situação = "\33[1;33mRECUPERAÇÂO\33[m"
 else:
     situação = "\33[1;32mAPROVADO\33[m"
-print(f"A sua média é de {media}.\nA sua situação é {situação}")
+print(f"A sua média é de {media:.1f}\nA sua situação é {situação}")
 print("-=" * 20)
