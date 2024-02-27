@@ -18,13 +18,13 @@ ano = date.today().year - ano_nasc
 
 if ano <= 9:
     categoria = "MIRIM"
-elif ano > 9 and ano <= 14:
+elif ano <= 14:
     categoria = "INFATIL"
-elif ano > 14 and ano <= 19:
+elif ano <= 19:
     categoria = "JUNIOR"
 elif ano == 20:
     categoria = "SÊNIOR"
 else:
     categoria = "MASTER"
-print(f"Você tem {ano} e sua categoria é \33[1;32m{categoria}\33[m")
+print(f"Você tem {ano} ano e sua categoria é \33[1;32m{categoria}\33[m")
 print("-=" * 20)
