@@ -12,7 +12,7 @@ print("{:>25}".format(" Desafio 40 "))
 print("-=" * 20)
 nota1 = float(input("Primeira nota: "))
 nota2 = float(input("Segunda nota: "))
-media = nota1*nota2/2
+media = nota1+nota2/2
 
 if media < 5:
     situação = "\33[1;31mREPROVADO\33[m"
