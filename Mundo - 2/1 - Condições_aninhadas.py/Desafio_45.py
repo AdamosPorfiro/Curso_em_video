@@ -17,6 +17,7 @@ from time import sleep
 
 lista = ['Pedra', 'Papel', 'Tesoura']
 computador = choice(lista).lower()
+
 usuario = int(input("""Escolha 
     1- Pedra 
     2- Papel
