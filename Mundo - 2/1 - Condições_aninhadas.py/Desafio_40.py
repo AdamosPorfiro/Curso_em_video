@@ -15,10 +15,10 @@ nota2 = float(input("Segunda nota: "))
 media = nota1*nota2/2
 
 if media < 5:
-    situação = "REPROVADO"
+    situação = "\33[1;31mREPROVADO\33[m"
 elif media >= 5 and media < 7:
-    situação = "em RECUPERAÇÂO"
+    situação = "\33[1;33mRECUPERAÇÂO\33[m"
 else:
-    situação = "APROVADO"
-print(f"Você está {situação}")
+    situação = "\33[1;32mAPROVADO\33[m"
+print(f"A sua média é de {media}.\nA sua situação é {situação}")
 print("-=" * 20)
