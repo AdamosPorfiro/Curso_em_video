@@ -9,15 +9,16 @@ Seu programa tambem deverá mostrar o tempo que falta ou que passou do prazo.
 
 '''
 
-from datetime import datetime
+from datetime import date
 nome = str(input("Nome: "))
-dia_nasceu = int(input("Informe o dia em que nasceu:  "))
-mes_nasceu = int(input("Informe o mês em que nasceu:  "))
-ano_nasceu = int(input("Informe o ano em que nasceu:  "))
+ano_nasceu = int(input("Ano de nascimento:  "))
+idade = date.today().year - ano_nasceu
 
-if datetime.today().year - ano_nasceu < 18:
-    print("\nVocê não completou 18 anos ainda, volte quando completar 18 anos.\nPara mais informações acesse: https://alistamento.eb.mil.br/")
-elif datetime.today().year - ano_nasceu == 18 and datetime.today().month <= mes_nasceu and datetime.today().day >= dia_nasceu:
-    print("\nParabéns, está na hora de você se alistar, acesse o site e se faça sua candidatura: https://alistamento.eb.mil.br/")
-elif datetime.today().year - ano_nasceu > 18:
-    print("\nVocê já passou do tempo de alistamento acesse o site para mais informações: https://alistamento.eb.mil.br/") 
+if idade < 18:
+    saldo = 18 - idade
+    print(f"\nVocê tem apenas {idade}.\nFaltam {saldo} anos para você completar 18 anos.\nVolte no ano de {date.today().year+saldo} para se alistar\nPara mais informações acesse: https://alistamento.eb.mil.br/")
+elif idade == 18:
+    print(f"\nParabéns, você tem {idade} anos e está na hora de você se alistar.\nDirija-se a um posto e aliste-se\nAcesse o site e se faça sua candidatura: https://alistamento.eb.mil.br/")
+elif idade > 18:
+    saldo = idade - 18
+    print(f"\nVocê tem {idade} anos e já passou {idade - 18} anos.\nEra para você se alistar no ano de {date.today().year - saldo} vá a um posto e aliste-se.\nAcesse o site para mais informações: https://alistamento.eb.mil.br/") 
