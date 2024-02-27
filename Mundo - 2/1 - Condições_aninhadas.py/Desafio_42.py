@@ -63,17 +63,18 @@ r3 = float(input("Informe o comprimento da 3° reta: "))
 
 #Triângulo
 if r1+r2>r3 and r1+r3>r2 and r2+r3>r1:
+    print("É possível forma um triângulo ", end="")
     #Equilatero
-    if r1==r2 and r1==r3 and r2==r3:
-        print("É possível formar um EQUILÁTERO")
+    if r1==r2 and r1==r3 and r2==r3: # if r1 == r2 == r3 <- Possibilidade
+        print("EQUILÁTERO")
     #Isosceles
     elif r1==r2  or r1==r3 or r2==r3:
         if r1+r2>r3 or r1+r3>r2 or r2+r3>r1:
-            print("É possível formar um ISOSCELES")
+            print("ISOSCELES")
     #Escaleno
     elif r1!=r2 and r1!=r3 and r2!=r3:
         if r1+r2>r3 or r1+r3>r2 or r2+r3>r1:
-            print("É possível formar um ESCALENO")
+            print("ESCALENO")
 else:
     print("Não é possível formar um triangulo")
 print("-="*20)
