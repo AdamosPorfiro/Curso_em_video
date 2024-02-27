@@ -24,7 +24,7 @@ if pagamento == 1:
 elif pagamento == 2:
     print(f"\nVocê terá um desconto de 5%\nEquivalente a R${vl_produto*5/100:.2f} de desconto\nO total a pagar é R$ {vl_produto-(vl_produto*5/100):.2f}")
 elif pagamento == 3:
-    print(f"\nVocê irá pagar R$ {vl_produto} parcelado 2x de R$ {vl_produto/2:.2f}")
+    print(f"\nVocê irá pagar R$ {vl_produto} parcelado 2x de R$ {vl_produto/2:.2f}, SEM JUROS")
 elif pagamento == 4:
     parcelado = int(input("Informe quantas vezes deseja parcelar: "))
     juros = vl_produto+(vl_produto*20/100)
