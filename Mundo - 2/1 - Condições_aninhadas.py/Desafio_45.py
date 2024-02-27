@@ -13,6 +13,7 @@ Regras:
 '''
 
 from random import choice
+from time import sleep
 
 lista = ['Pedra', 'Papel', 'Tesoura']
 computador = choice(lista).lower()
@@ -21,6 +22,13 @@ usuario = int(input("""Escolha
     2- Papel
     3- Tesoura
 Opção: """))
+
+print("\nJO")
+sleep(1)
+print("KEN")
+sleep(1)
+print("PÔ\n")
+
 user_dic = {1:'pedra', 2:'papel', 3:'tesoura'}
 
 # Empate
