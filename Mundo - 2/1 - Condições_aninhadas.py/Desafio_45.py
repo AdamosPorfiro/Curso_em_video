@@ -20,7 +20,7 @@ usuario = int(input("""Escolha
     1- Pedra 
     2- Papel
     3- Tesoura
-    opção:  """))
+Opção: """))
 user_dic = {1:'pedra', 2:'papel', 3:'tesoura'}
 
 # Empate
