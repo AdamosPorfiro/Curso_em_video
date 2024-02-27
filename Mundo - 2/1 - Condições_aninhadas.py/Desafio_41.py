@@ -12,9 +12,9 @@ de um atleta e mostre sua categoria, de acordo com a idade:
 print("-=" * 20)
 print("{:>25}".format(" Desafio 41 "))
 print("-=" * 20)
-from datetime import datetime
+from datetime import date
 ano_nasc = int(input("Informe o ano de nascimento: "))
-ano = datetime.today().year - ano_nasc
+ano = date.today().year - ano_nasc
 
 if ano <= 9:
     categoria = "MIRIM"
@@ -26,5 +26,5 @@ elif ano == 20:
     categoria = "SÊNIOR"
 else:
     categoria = "MASTER"
-print(f"Sua categoria é \33[1;32m{categoria}\33[m")
+print(f"Você tem {ano} e sua categoria é \33[1;32m{categoria}\33[m")
 print("-=" * 20)
