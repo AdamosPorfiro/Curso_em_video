@@ -1,8 +1,8 @@
 '''
 Estrutura de repetição FOR
 
-FOR = Permite executar uma bloco de códigos repetidamente para uma sequência de elementos ou uma coleção de elementos, chamamos em
-de variavel de laço de variavel de controla, laço de repetição ou laço.
+FOR = Permite executar uma bloco de códigos repetidamente para uma sequência de elementos ou uma coleção de elementos, chamamos
+de variavel de laço, variavel de controla ou laço de repetição ou laço.
 
 Ex.: 
 
