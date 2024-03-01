@@ -22,7 +22,7 @@ else:
     print("\n"+"="*25)
     print(f"Sim, o número {n} é primo")
     print("="*25)
-print("\n\33[0;31mvermelho\33[m indica que o número informado é divisivel pelo número informado")
-print("\33[0;32mVerde\33[m indica que o número informado não é divisível pelo número informado")
+print("\n\33[0;31mvermelho\33[m é a indicação do numero que é divisivel pelo número que você informou")
+print("\33[0;32mVerde\33[m é a indicação do numero que é não é divisivel pelo número que você informou")
 print("-="*20)
     
