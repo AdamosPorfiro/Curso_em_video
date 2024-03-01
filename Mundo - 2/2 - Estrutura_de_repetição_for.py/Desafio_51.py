@@ -18,9 +18,9 @@ print("{:>20}".format(" Desafio 51 "))
 print("=-"*15)
 termo = int(input("Informe o termo: "))
 razao = int(input("Informe a razão: "))
-print(f"\nOs 10 primeiro são:\n1° termo {termo}")
+print(f"\nOs 10 primeiro são:\n 1° termo {termo}")
 for c in range(2,11):
     termo += razao
-    print(f"{c}° termo {termo}")
+    print(f"{c:2}° termo: {termo}")
 print("=-"*15)
 
