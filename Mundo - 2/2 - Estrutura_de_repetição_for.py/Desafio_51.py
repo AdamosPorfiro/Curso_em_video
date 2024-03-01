@@ -19,10 +19,11 @@ print("=-"*28)
 termo = int(input("Informe o termo: "))
 razao = int(input("Informe a razão: "))
 print("\n")
+decimo = termo + (10-1) * razao # Enezimo termo de uma PA
 #print(f"\nOs 10 primeiro são:\n 1° termo {termo}")
-for c in range(1,11):
-    print(f"{termo}",end=' → ')
-    termo += razao
+for c in range(termo,decimo, razao):
+    print(f"{c}",end=' → ')
+#    termo += razao
     #print(f"{c:2}° termo: {termo}")
 print("Acabou"+"\n"+"=-"*28)
 
