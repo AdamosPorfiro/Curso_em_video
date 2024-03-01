@@ -6,7 +6,9 @@ Palindromo são palavras ou frases que podem ser lidar do começo pro fim ou do 
 Ex: Apos a sopa, A sacada da casa, A torre da derrota, O lobo ama o bolo, Anotaram a data da maratona.
 
 '''
-
+print("-="*30)
+print("{:>35}".format(" Desafio 53 "))
+print("-="*30)
 frase = str(input("Digite um PALINDROMO: ")).strip().lower()
 
 frase = ''.join(frase.split()) # Juntar a frase, para facilitar a comparação no final do programa
@@ -21,6 +23,7 @@ if frase == palindromo:
     print(f"A frase é um palindromo")
 else:
     print(f"A frase não é um palindromo")
+print("-="*30)
 
 
 
