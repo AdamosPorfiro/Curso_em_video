@@ -2,16 +2,27 @@
 Faça um programa que leia um numero inteiro e diga se ele é ou não um numero primo.
 
 """
-
+print("-="*20)
+print("{:>25}".format(" Desafio 52 "))
+print("-="*20)
 n = int(input("Informe um numero inteiro: "))
 
 divisor = 0
-
 for c in range(1, n+1):
+    if n % c != 0:
+        print(f"\33[0;32m{c}\33[m",end=' ')
     if n % c == 0: # Se o numero informado for divisivel por 3 numeros ele não é primo
+        print(f"\33[0;31m{c}\33[m",end=' ')
         divisor += 1
 if divisor >= 3:
-    print("Esse número não é primo")
+    print("\n"+"="*25)
+    print(f"O número {n} não é primo")
+    print("="*25)
 else:
-    print(f"Sim, {n} é um número primo")
+    print("\n"+"="*25)
+    print(f"Sim, o número {n} é primo")
+    print("="*25)
+print("\n\33[0;31mvermelho\33[m indica que o número informado é divisivel pelo número informado")
+print("\33[0;32mVerde\33[m indica que o número informado não é divisível pelo número informado")
+print("-="*20)
     
