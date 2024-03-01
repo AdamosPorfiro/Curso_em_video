@@ -15,14 +15,14 @@ for c in range(1, n+1):
         print(f"\33[0;31m{c}\33[m",end=' ')
         divisor += 1
 if divisor >= 3:
-    print("\n"+"="*25)
-    print(f"O número {n} não é primo")
-    print("="*25)
+    print("\n"+"="*55)
+    print(f"O número {n} foi divisível {divisor} vezes e ele não é primo")
+    print("="*55)
 else:
-    print("\n"+"="*25)
-    print(f"Sim, o número {n} é primo")
-    print("="*25)
+    print("\n"+"="*55)
+    print(f"Sim, o número {n} foi divisível {divisor} vezes e ele é primo")
+    print("="*55)
 print("\n\33[0;31mvermelho\33[m é a indicação do numero que é divisivel pelo número que você informou")
 print("\33[0;32mVerde\33[m é a indicação do numero que é não é divisivel pelo número que você informou")
-print("-="*20)
+print("-="*55)
     
