@@ -13,14 +13,16 @@ Primeiro termo é: 6
 Segundo termo é: 6+3 = 9, logo segundo termo é 9
 terceiro termo é: 12... 
 '''
-print("=-"*15)
-print("{:>20}".format(" Desafio 51 "))
-print("=-"*15)
+print("=-"*28)
+print("{:>32}".format(" Desafio 51 "))
+print("=-"*28)
 termo = int(input("Informe o termo: "))
 razao = int(input("Informe a razão: "))
-print(f"\nOs 10 primeiro são:\n 1° termo {termo}")
-for c in range(2,11):
+print("\n")
+#print(f"\nOs 10 primeiro são:\n 1° termo {termo}")
+for c in range(1,11):
+    print(f"{termo}",end=' → ')
     termo += razao
-    print(f"{c:2}° termo: {termo}")
-print("=-"*15)
+    #print(f"{c:2}° termo: {termo}")
+print("Acabou"+"\n"+"=-"*28)
 
