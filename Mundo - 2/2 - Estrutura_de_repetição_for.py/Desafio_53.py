@@ -20,9 +20,9 @@ for c in range(len(frase[:-1])+1): # Lê as posições da frase de trás para fr
 
 # Compara as frases
 if frase == palindromo:
-    print(f"A frase é um palindromo")
+    print(f"A frase {frase.capitalize()} é {palindromo.capitalize()} é um palindromo")
 else:
-    print(f"A frase não é um palindromo")
+    print(f"A frase {frase.capitalize()} é {palindromo.capitalize()} não é um palindromo")
 print("-="*30)
 
 
