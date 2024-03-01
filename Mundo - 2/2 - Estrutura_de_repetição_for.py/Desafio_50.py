@@ -5,11 +5,13 @@ impar desconsidere-o
 '''
 
 soma = 0
+cont = 0
 for c in range(1,7):
     n = int(input(f"Informe {c}° número inteiro: "))
     if n % 2 == 0:
         soma += n
+        cont += 1
 if soma != 0:
-    print(f"\nA soma dos números pares é {soma}")
+    print(f"\nVocê informou {cont} pares.\nA soma desses números é {soma}")
 else:
     print("\nNão exite número pares para somá-los")
