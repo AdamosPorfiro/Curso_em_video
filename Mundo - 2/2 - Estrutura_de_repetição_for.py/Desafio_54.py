@@ -10,10 +10,14 @@ print("{:>20}".format(" Desafio 54 "))
 print("-="*15)
 from datetime import date
 
-qdt_pessoas = 0
+qdt_pessoas_maiores = 0
+qdt_pessoas_menores = 0
 for c in range(1,8):
-    nasc = int(input("Informe o ano de nascimento: "))
+    nasc = int(input(f"Em que ano a {c}° pessoa nasceu: "))
     if date.today().year-nasc >= 21:
-        qdt_pessoas += 1
-print(f"\n{qdt_pessoas} pessoas são maiores de idade")
+        qdt_pessoas_maiores += 1
+    elif date.today().year-nasc < 21:
+        qdt_pessoas_menores += 1
+print(f"\n{qdt_pessoas_maiores} pessoas são maiores de idade")
+print(f"\n{qdt_pessoas_menores} pessoas são menores de idade")
 print("-="*15)
