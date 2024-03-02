@@ -17,7 +17,8 @@ While apple == false
     passo
 Pega
 '''
-'''for c in range(1,3):
+'''
+for c in range(1,3):
     print(c)
 print('Fim')
 
