@@ -8,9 +8,12 @@ Crie um programa que leia dois valores e mostre um menu na tela:
  Seu programa deverá realizar a operação solicitada em cada caso.
 '''
 from time import sleep
+print("-="*20)
+print("{:>25}".format(" Desafio 60 "))
+print("-="*20)
 opções = 0
 n1 = n2 = 0
-print("="*30)
+print("="*40)
 while opções != 5: 
     if opções == 4:
         while opções == 4:
@@ -54,4 +57,4 @@ while opções != 5:
             print("Saindo do programa...")
             sleep(1)
             print("Obrigado, Volte sempre!")
-        print("="*30)
+        print("="*40)

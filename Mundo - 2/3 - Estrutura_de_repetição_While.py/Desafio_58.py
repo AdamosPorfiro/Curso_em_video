@@ -6,6 +6,9 @@ palpites foram necessarios para vencer.
 
 from random import randint
 
+print("-="*20)
+print("{:>25}".format(" Desafio 60 "))
+print("-="*20)
 #Escolha do computador
 computador = randint(0,10)
 
