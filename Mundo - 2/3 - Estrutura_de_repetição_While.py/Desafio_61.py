@@ -8,3 +8,15 @@ Ex: T = 5 R = 2
 PA = T+R
 5 > 7 > 9 > 11 > 13 > 15 > 17 > 19 > 21 > 23
 '''
+print("-="*20)
+print("{:>25}".format(" Desafio 61 "))
+print("-="*20)
+termo = int(input("Informe o termo: "))
+razão = int(input("Informe a razão: "))
+saida = 0
+pa = termo
+while saida < 10:
+    print(f"{pa}", end=' ⮕ ')
+    saida += 1
+    pa += razão
+print("Acabou")
