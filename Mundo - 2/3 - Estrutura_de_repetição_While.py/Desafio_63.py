@@ -22,5 +22,5 @@ calculo = n
 while qtd_termos != 7:
     print(f"{calculo}",end=' ⮕ ')
     qtd_termos += 1
-    calculo += calculo
+    calculo = calculo+(calculo-1)
 print("Acabou")
