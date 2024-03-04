@@ -15,3 +15,12 @@ Assim, temos a sequência:
 
  8 > 15 > 29 > 57 > 113...n
 """
+
+n = int(input("Informe um número: "))
+qtd_termos = 0
+calculo = n
+while qtd_termos != 7:
+    print(f"{calculo}",end=' ⮕ ')
+    qtd_termos += 1
+    calculo += calculo
+print("Acabou")
