@@ -4,7 +4,7 @@ Caso esteja errado, peça a digitação novamente até ter um valor correto;
 '''
 sexo = ' '
 while sexo not in 'MF':
-    sexo = str(input("Qual o seu sexo [M | F]: ")).upper()
+    sexo = str(input("Qual o seu sexo [M | F]: ")).upper().strip()
     if sexo not in 'MF':
         print("OPS, erro!!! Digite corretamente!")
 if sexo in "M":
