@@ -19,8 +19,8 @@ while jogador != computador:
     jogador = int(input("Adivinhe o númnero sorteado pelo computador [0 á 10]: "))
     Qtd_palpites += 1
     if jogador > computador:
-        print("Pensei em um número menor\n")
+        print("Errou! É menor\n")
     elif jogador < computador:
-        print("Pensei em um número maior\n")
+        print("Errou! É maior\n")
 #Venceu
 print(f"\nParabens, pensei no número {computador}\nVocê acertou com {Qtd_palpites} palpites")
