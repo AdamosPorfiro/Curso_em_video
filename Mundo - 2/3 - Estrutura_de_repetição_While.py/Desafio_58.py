@@ -23,4 +23,4 @@ while jogador != computador:
     elif jogador < computador:
         print("Pensei em um número maior\n")
 #Venceu
-print(f"\nParabens, pensei no número {computador}\nVocê fez {Qtd_palpites} palpites")
+print(f"\nParabens, pensei no número {computador}\nVocê acertou com {Qtd_palpites} palpites")

@@ -18,9 +18,16 @@ Assim, temos a sequência:
 
 n = int(input("Informe um número: "))
 qtd_termos = 0
-calculo = n
+
+termo_atual = n
+proximo_termo = n-1
+
 while qtd_termos != 7:
-    print(f"{calculo}",end=' ⮕ ')
+    print(f"{termo_atual}",end=' ⮕ ')
+
+    termo_seguinte = termo_atual + proximo_termo # 9
+    termo_atual = termo_seguinte
+    termo_seguinte = proximo_termo
+    
     qtd_termos += 1
-    calculo = calculo+(calculo-1)
 print("Acabou")
