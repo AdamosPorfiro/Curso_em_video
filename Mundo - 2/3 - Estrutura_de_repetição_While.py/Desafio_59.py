@@ -50,11 +50,14 @@ while opções != 5:
             else:
                 print(f"O maior número é o 2° valor = {n2}")
         #Novos números
-        if opções == 4:
+        elif opções == 4:
             print("Informe novos valores!")
         #Sair do programa
         elif opções == 5:
+            opções = True
             print("Saindo do programa...")
             sleep(1)
             print("Obrigado, Volte sempre!")
+        else:
+            print("Opção invalida!!! Digite novamente.")
         print("="*40)
