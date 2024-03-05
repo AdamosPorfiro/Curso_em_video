@@ -5,6 +5,9 @@ Crie um programa que leia vários números inteiros pelo teclado.
  - qual foi o maior e o menor valor lidos.
 O programa deve perguntar ao usúario se ele quer ou não continuar a digitar valores.
 '''
+print("-="*20)
+print("{:>25}".format(" Desafio 65 "))
+print("-="*20)
 continuar = True
 Divisor_media = 0
 Soma_valores = 0
@@ -29,9 +32,9 @@ while continuar != False:
     #Continuar ou não
     continuar = str(input("Deseja sair [S/N] ")).upper()
     print("-="*10)
-    print("\n")
     if continuar in "S":
         continuar = False
 
 print(f"A média é de {Soma_valores/Divisor_media:.2f}")
 print(f"O maior número é {maior} e o menor é {menor}")
+print("-="*20)
