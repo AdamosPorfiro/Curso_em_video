@@ -35,6 +35,6 @@ while continuar != False:
     if continuar in "S":
         continuar = False
 
-print(f"A média é de {Soma_valores/Divisor_media:.2f}")
+print(f"Você digitou {Divisor_media} e a média é de {Soma_valores/Divisor_media:.2f}")
 print(f"O maior número é {maior} e o menor é {menor}")
 print("-="*20)
