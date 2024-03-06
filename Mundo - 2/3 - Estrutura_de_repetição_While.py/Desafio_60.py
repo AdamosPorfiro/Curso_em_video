@@ -7,11 +7,13 @@ print("-="*20)
 print("{:>25}".format(" Desafio 60 "))
 print("-="*20)
 
-n = int(input("Informe o numero para receber o fatorial: ")) + 1
+n = int(input("Calcular seu fatorial: "))
+cont = n
 fatorial = 1
-while n != 1:
-    fatorial = (n-1)*fatorial
-    n -= 1
-    if n > 0:
-        print(f"{n} ", end=' ⮕ ')
+print(f"Calculando {n}! = ",end=' ')
+while cont > 0:
+    print(f"{cont} ", end=' ')
+    print(f"x" if cont > 1 else "=", end=' ')
+    fatorial *= cont
+    cont -= 1
 print(f" {fatorial}")
