@@ -7,6 +7,15 @@ B - Quantos homens foram cadastrados
 C - Quantas mulheres tem menos de 20 anos
 '''
 
+while True:
+    idade = int(input("Informe a idade: "))
+    sexo = str(input("Sexo [M | F]: ")).strip().upper()
+    continuar = str(input("Deseja continuar [S | N]: ")).strip().upper()
+    if continuar in "N":
+        break
+    while continuar != 'S' or continuar != 'N':
+        continuar = str(input("Deseja continuar [S | N]: ")).strip().upper()
+
     
             
     
