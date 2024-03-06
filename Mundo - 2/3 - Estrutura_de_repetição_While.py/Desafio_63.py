@@ -15,19 +15,19 @@ Assim, temos a sequência:
 
  8 > 15 > 29 > 57 > 113...n
 """
-
-n = int(input("Informe um número: "))
-qtd_termos = 0
-
-termo_atual = n
-proximo_termo = n-1
-
-while qtd_termos != 7:
-    print(f"{termo_atual}",end=' ⮕ ')
-
-    termo_seguinte = termo_atual + proximo_termo # 9
-    termo_atual = termo_seguinte
-    termo_seguinte = proximo_termo
-    
-    qtd_termos += 1
-print("Acabou")
+print("-="*20)
+print("{:>25}".format(" Desafio 63 "))
+print("-="*20)
+n = int(input("Quantos termos você quer ver: "))
+t1 = 0
+t2 = 1
+print("-="*30)
+print(f"{t1} ⮕ {t2}",end=' ')
+cont = 3
+while cont <= n:
+    t3 = t1 + t2
+    print(f"⮕ {t3}", end=' ')
+    t1 = t2
+    t2 = t3
+    cont += 1
+print("Fim")
