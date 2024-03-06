@@ -13,10 +13,10 @@ print("{:>25}".format(" Desafio 61 "))
 print("-="*20)
 termo = int(input("Informe o termo: "))
 razão = int(input("Informe a razão: "))
-saida = 0
+cont = 0
 pa = termo
-while saida < 10:
+while cont < 10:
     print(f"{pa}", end=' ⮕ ')
-    saida += 1
+    cont += 1
     pa += razão
 print("Acabou")
