@@ -8,6 +8,43 @@ Crie um programa que leia dois valores e mostre um menu na tela:
  Seu programa deverá realizar a operação solicitada em cada caso.
 '''
 from time import sleep
+n1 = int(input("Informe o 1° número: "))
+n2 = int(input("Informe o 2° número: "))
+opções = 0
+while opções != 5:
+    print("""
+[ 1 ] Somar
+[ 2 ] Multiplicar
+[ 3 ] Maior
+[ 4 ] Novos números
+[ 5 ] Sair""")
+    opções = int(input("Escolha opção: "))
+    if opções == 1:
+        somar = n1 + n2
+        print(f"A soma entre o valor {n1} + {n2} é {somar}")
+    elif opções == 2:
+        produto = n1 * n2
+        print(f"O produto entre o valor {n1} x {n2} é {produto}")
+    elif opções == 3:
+        if n1 > n2:
+            maior = n1
+        else:
+            maior = n2
+        print(f"O maior número entre {n1} e {n2} é {maior}")
+    elif opções == 4:
+        print("=-"*10)
+        n1 = int(input("Informe o 1° número: "))
+        n2 = int(input("Informe o 2° número: "))
+    elif opções == 5:
+        print("Fechando...")
+        sleep(1.5)
+    else:
+        print("Opção invalida, digite novamente!")
+    print("-="*10)
+print("Programa fechado, Volte sempre!")
+
+'''
+from time import sleep
 print("-="*20)
 print("{:>25}".format(" Desafio 60 "))
 print("-="*20)
@@ -61,3 +98,4 @@ while opções != 5:
         else:
             print("Opção invalida!!! Digite novamente.")
         print("="*40)
+'''
