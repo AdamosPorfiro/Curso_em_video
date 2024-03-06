@@ -19,8 +19,8 @@ print("-="*20)
 print("{:>25}".format(" Desafio 63 "))
 print("-="*20)
 n = int(input("Quantos termos você quer ver: "))
-t1 = 0
-t2 = 1
+t1 = 0 # 1° termo
+t2 = 1 # 2° termo
 print("-="*30)
 print(f"{t1} ⮕ {t2}",end=' ')
 cont = 3
