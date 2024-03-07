@@ -17,7 +17,13 @@ while True:
     print("-="*15)
     jogador = int(input("Digite um número [0 á 10]: "))
     escolha_jogador = str(input("Escolhar Ímpar ou Par [I | P]: ")).strip().upper()
+    while escolha_jogador not in 'PÍI':
+        escolha_jogador = str(input("Digite corretamente, Ímpar ou Par [I | P]: ")).strip().upper()
+        if escolha_jogador in 'PÍI':
+            break
+    print("-="*15)
     
+    #Verificação para definir vencedor, perdedor ou empate  
     if escolha_computador == 'P':
         escolha_computador = "PAR"
     else:
@@ -27,7 +33,7 @@ while True:
         escolha_jogador = "PAR"
     else:
         escolha_jogador = 'ÍMPAR'
-    print("-="*15)
+   
 
     soma = computador + jogador
     if soma % 2 == 0:
@@ -36,8 +42,11 @@ while True:
         resultado = "ÍMPAR"
 
     #Resultado
-    print(f"Computador escolheu o número {computador} e o jogador {jogador} a soma fica {soma}\nO número {soma} é {resultado}")
+    print(f"Computador escolheu o número {computador} e o jogador {jogador}")
+    print(f"A soma fica {computador} + {jogador} = {soma}\nO número {soma} é {resultado}")
+    print("~"*30)
     print(f"O jogador escolheu {escolha_jogador} e o computador escolheu {escolha_computador}")
+    print("~"*30)
 
     #Computador vende
     if escolha_computador == resultado and escolha_jogador != resultado:
