@@ -8,13 +8,20 @@ C - Quantas mulheres tem menos de 20 anos
 '''
 
 while True:
+    print("-="*25)
     idade = int(input("Informe a idade: "))
     sexo = str(input("Sexo [M | F]: ")).strip().upper()
-    continuar = str(input("Deseja continuar [S | N]: ")).strip().upper()
-    if continuar in "N":
-        break
-    while continuar != 'S' or continuar != 'N':
+    while True:
         continuar = str(input("Deseja continuar [S | N]: ")).strip().upper()
+        if continuar in 'S':
+            break
+        elif continuar in 'N':
+            break
+        print("-="*25)
+        break
+    if continuar in 'N':
+        break
+    
 
     
             
