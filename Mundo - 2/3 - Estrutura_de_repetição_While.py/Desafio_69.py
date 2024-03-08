@@ -11,7 +11,6 @@ while True:
     print("-="*25)
     idade = int(input("Informe a idade: "))
     sexo = str(input("Sexo [M | F]: ")).strip().upper()
-    #cont = str(input("Deseja continuar [S | N]: ")).strip().upper()
 
     #Dados de saída
     if idade >= 18:
