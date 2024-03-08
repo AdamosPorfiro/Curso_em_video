@@ -10,8 +10,11 @@ maior_de_18 = homens_cadastrados = mulheres_menos_de_20 = 0
 while True:
     print("-="*25)
     idade = int(input("Informe a idade: "))
-    sexo = str(input("Sexo [M | F]: ")).strip().upper()
-
+    while True:
+        sexo = str(input("Sexo [M | F]: ")).strip().upper()
+        if sexo in 'MF':
+            break
+    print("Cadastro realizado com sucesso!")
     #Dados de saída
     if idade >= 18:
         maior_de_18 += 1
@@ -31,10 +34,20 @@ while True:
         break
 
 #Imprimir os dados e saída
-print(f"{maior_de_18} Pessoas são maiores de 18 anos")
-print(f"{homens_cadastrados} homens foram cadastrados")
-print(f"{mulheres_menos_de_20} mulheres tem menos de 20 anos")
-    
+print("~"*40)
+if maior_de_18 > 1:
+    print(f"{maior_de_18} Pessoas são maiores de 18 anos")
+else:
+    print(f"{maior_de_18} Pessoa é maior de 18 anos")
+if homens_cadastrados > 1:
+    print(f"{homens_cadastrados} homens foram cadastrados")
+else:
+    print(f"{homens_cadastrados} homem foi cadastrado")
+if mulheres_menos_de_20 > 1:
+    print(f"{mulheres_menos_de_20} mulheres tem menos de 20 anos")
+else:
+    print(f"{mulheres_menos_de_20} mulher menor de 20 anos foram cadastradas")
+print("~"*40)
         
 
     
