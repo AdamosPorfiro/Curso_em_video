@@ -6,7 +6,7 @@ consecutivas que ele conquistou no final do jogo.
 from time import sleep
 from random import randint,choice
 escolha_computador = ['I','P']
-Jogadas = empates = 0
+Jogadas = empates = jogador = 0
 while True:
 
     #Computador
@@ -15,7 +15,10 @@ while True:
     
     #Jogador
     print("-="*15)
-    jogador = int(input("Digite um número [0 á 10]: "))
+    while True:
+        jogador = int(input("Digite um número [0 á 10]: "))
+        if jogador <= 10:
+            break
     escolha_jogador = str(input("Escolhar Ímpar ou Par [I | P]: ")).strip().upper()
     while escolha_jogador not in 'PÍI':
         escolha_jogador = str(input("Digite corretamente, Ímpar ou Par [I | P]: ")).strip().upper()
