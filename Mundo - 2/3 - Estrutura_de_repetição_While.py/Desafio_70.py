@@ -18,8 +18,6 @@ while True:
         mais_de_mil += 1
 
     #Produto mais barato
-    produto_mais_barato = nome_prod
-    preço_prod_mais_barato = preço_prod
     if preço_prod < preço_prod_mais_barato:
         preço_prod_mais_barato = preço_prod
         produto_mais_barato = nome_prod
