@@ -49,6 +49,7 @@ if nota_10 >= 1:
     print(f"{nota_10} notas de R$ 10")
 if nota_1 >= 1:
     print(f"{nota_1} notas de R$ 1")
+print("Volte sempre ao \33[0;34mADAMOS BANK\33[m! Tenha um bom dia!")
 
 
     
