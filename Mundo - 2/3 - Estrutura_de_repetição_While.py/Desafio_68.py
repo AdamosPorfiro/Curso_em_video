@@ -7,6 +7,10 @@ from time import sleep
 from random import randint,choice
 escolha_computador = ['I','P']
 Jogadas = empates = jogador = 0
+
+print("-="*15)
+print("{:>20}".format(" Desafio 68 "))
+
 while True:
 
     #Computador
