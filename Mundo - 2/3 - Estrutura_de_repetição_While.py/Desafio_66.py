@@ -9,9 +9,9 @@ No final mostre quantos numeros foram digitados e a soma entre eles.
 print("{:>14}".format("Desafio 66"))
 qtd_numeros = soma = flag = 0
 while True:
-    n = int(input("Digite um número: "))
+    n = int(input("Digite um número [999 para sair]: "))
     if n == 999:
         break
     soma += n
     qtd_numeros +=1
-print(f"Você digitou {qtd_numeros} números\nA soma entre os número é {soma}")
+print(f"A soma entre os {qtd_numeros} números é {soma}")
