@@ -14,4 +14,4 @@ while True:
         break
     soma += n
     qtd_numeros +=1
-print(f"A soma entre os {qtd_numeros} números é {soma}")
+print(f"A soma entre os {qtd_numeros} números é {soma}!")
