@@ -20,10 +20,15 @@ while True:
             break
     for pos,num in enumerate(contagem_por_extenso_0_a_20):
         if numero == pos:
-            print(f"Você digitou o número {num}")
+            print(f"Você digitou o número \33[1;32m{num}\33[m")
             print("-="*15)
-    continuar = str(input("Deseja continuar [S | N]: ")).strip().upper()
-    if continuar == 'N':
+    while True:
+        continuar = str(input("Deseja continuar [S | N]: ")).strip().upper()
+        if continuar not in 'SN':
+            continue
+        elif continuar in 'SN':
+            break
+    if continuar in 'N':
         break
 print("Saindo...")
 sleep(1)
