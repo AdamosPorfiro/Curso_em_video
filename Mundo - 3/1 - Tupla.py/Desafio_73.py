@@ -8,7 +8,9 @@ C - Uma lista com os times em ordem alfabética.
 D - Em que posição na tabela está o time da Chapecoense.
 
 '''
-
+print("-="*20)
+print("{:>25}".format(" Desafio 73 "))
+print("-="*20)
 tabela_times = (
     'Athletico-PR', 'Atlético-GO', 'Atlético-MG', 'Bahia','Botafogo', 'Cortinthians',
     'Criciúma', 'Cruzeiro', 'Cuiabá', 'Flamengo', 'Fluminense', 'Fortaleza', 'Grêmio', 'Internacional',
