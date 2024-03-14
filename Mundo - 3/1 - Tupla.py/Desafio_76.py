@@ -11,14 +11,8 @@ produtos_com_valores = (
     'Mochila Escolar', 99.90, 'Cartolina', 2.00, 'Lapis de cor', 25.00, 'Caneta colorida', 8.50
 )
 
-print("Listagem de Preços:")
-print("=" * 30)
-print("{:<20} {:>10}".format("Produto", "Preço"))
-print("-" * 30)
-
-for i in range(0, len(produtos_com_valores), 2):
-    produto = produtos_com_valores[i]
-    preco = produtos_com_valores[i + 1]
-    print("{:<20} R$ {:>8.2f}".format(produto, preco))
-
+for iten in range(0, len(produtos_com_valores),2):
+    produtos_sem_valor = produtos_com_valores[iten]
+    print(f"{produtos_sem_valor}")
+    print("{:>20}".format("R$"))
         
