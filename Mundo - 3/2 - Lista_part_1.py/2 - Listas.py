@@ -57,4 +57,46 @@ a = [2,3,4,7]
 b = a[:] # Nesse caso ele não cria uma ligação, mas sim uma cópia
 b[2] = 8
 print(f'Lista A: {a}\nLista B: {b}')
+
+
+num = [2,5,9,1] #Lista
+print(num) #exibi lista
+num[2] = 3 #Substitui elemento do indice 2 pelo elemento definido "3"
+num.append(7) #Adiciona o elemento 7 a lista
+print(num)
+num.sort(reverse=True) #Organiza a lista de forma revertida
+print(num)
+num.insert(2,0) #Inseri o elemento "0" no indice 2
+print(num)
+num.insert(2,2) #Vai inserir o elemento "2" no indice 2
+print(num)
+num.remove(2) #Vai remover o primeiro numero 2
+print(num)
+if 4 in num:
+    num.remove(4) #Vai remover o numero 4 caso ele exista na lista
+else:
+    print("Não achei o número 4")
+print(num)
+num.pop() #Remove o ultimo item da lista
+print(num)
+num.pop(2) #Remove o elemento do indice 2
+print(num)
+
+print(f"Essa lista tem {len(num)} elementos")
+
+
+valores = []
+for cont in range(0,5):
+    valores.append(int(input("Digite um valor: ")))
+print()
+for c,v in enumerate(valores):
+    print(f"Na posição {c} encontrei o valor {v}!")
+print("Cheguei ao final da lista.")
 '''
+
+a = [2,3,4,7]
+b = a[:] #Pega todos os valores de A e joga em B
+#b[2] = 8 #Python cria uma ligação de uma lista com a outra
+b[2] = 8
+print(f"Lista A: {a}")
+print(f"Lista B: {b}")
