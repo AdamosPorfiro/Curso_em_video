@@ -20,7 +20,7 @@ criar uma lista de 4 a 11 - valor = 4,5,6,7,8,9,10.
 
 É possivel ordenar os elementos de uma lista usando a função sort(). No caso da lista acima
 valor.sort() - Vai ordenar todos os valores
-valor.sorte(reverse=True) - Ordena os valores, porém inverte a ordem. 
+valor.sort(reverse=True) - Ordena os valores, porém inverte a ordem. 
 
 num = [2,5,9,1]
 num[2] = 3 # Não é possivel alterar uma tupla, pois ela é imutavel.
