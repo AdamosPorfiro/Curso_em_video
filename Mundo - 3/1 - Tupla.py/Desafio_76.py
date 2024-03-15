@@ -14,6 +14,15 @@ print("="*40)
 print("="*40)
 print("Produtos {:>30}".format(" Preços "))
 print("-"*40)
+
+"""
 #Função zip() combina os produtos com seus respectivos preços e então imprimi cada par formatado adequadamente
 for produtos, preços in zip(produtos_com_valores[0::2], produtos_com_valores[1::2]):
     print("{:<15}..................R$ {:4}".format(produtos, preços))
+"""
+for pos in range(0,len(produtos_com_valores)):
+    if pos % 2 == 0:
+        print(f"{produtos_com_valores[pos]:.<30}",end=" ")
+    else:
+        print(f"R$ {produtos_com_valores[pos]:>4.2f}")
+print("="*40)
