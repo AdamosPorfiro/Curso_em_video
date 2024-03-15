@@ -11,12 +11,12 @@ o elemento desejado.
 
 Para apagar elementos usamos del ou usando pop
 del lance[3]
-lanche.pop(3) - Geralmente usado eliminar o ultimo elemento da lista, porém pode passar como parametro o que voce deseja eliminar.
-lanche.remove(valor que quer eliminar)  - Vai eliminar o elemento, a chave reposiciona as chaves.
+lanche.pop(3) - Geralmente usado eliminar o ultimo elemento da lista, porém pode passar como parâmetro o que voce deseja eliminar.
+lanche.remove(valor que quer eliminar)  - Vai eliminar o elemento, a chave se reposiciona
 
 Podemos tambem criar listas através de ranges:
 valor = list(range(4,11)) - Usamos uma função conhecida como 'lista' e podemos usar range para criar essa lista, nesse caso ele vai 
-criar uma lista de 4 a 11 - valor = 4,5,6,7,8,9,10,11.
+criar uma lista de 4 a 11 - valor = 4,5,6,7,8,9,10.
 
 É possivel ordenar os elementos de uma lista usando a função sort(). No caso da lista acima
 valor.sort() - Vai ordenar todos os valores
