@@ -30,3 +30,9 @@ for c in range(5): # Repetir 5 vezes o input
         l_n.insert(chave,n) # E inseri a chave e o numero informado pelo usuario
 print(f'Você digitou os números: {l_n}') # e imprimi na tela para o usuario
 '''
+numeros = []
+ordenados = []
+
+for c in range(5):
+    n = int(input("Digite um número: "))
+    numeros.append(n)
