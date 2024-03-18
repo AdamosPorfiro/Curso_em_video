@@ -29,6 +29,8 @@ for num in numeros:
         pares.append(num)
     else:
         impares.append(num)
+print("-"*50)
 print(f"Lista de números informados: {numeros}")
 print(f"Lista de números pares: {pares}")
 print(f"Lista de números ímpares: {impares}")
+print("-"*50)
