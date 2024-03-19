@@ -1,4 +1,8 @@
 '''
+Listas compostas
+São lsitas dentro de listas
+
+
 Variavel1 = []
 variavel2 = [['nome', idade] ['nome', idade]]
                 0        1       0       1   
@@ -19,7 +23,7 @@ print(galera_2[0][1])
 print('=' * 30)
 for p in galera_2:
     print(f'{p[0]} tem {p[1]} anos de idade')
-    '''
+    
 galera = []
 dado = []
 totalmai = totalmeno = 0
@@ -38,3 +42,29 @@ for p in galera:
         print(f'{p[0]} é menor de idade')
         totalmeno += 1
 print(f'Temos {totalmai} maiores e {totalmeno} menores de idade')
+
+
+galera = [['João', 19],['Ana', 33],['Joaquim',13],['Maria', 45]]
+for p in galera:
+    print(f"{p[0]} tem {p[1]} anos de idade")
+    '''
+galera = []
+dado = []
+total_maior = total_menor = 0
+
+#Vai armazenar e criar uma copia dos arquivos e depois limpar uma das listas
+for c in range(0,3):
+    dado.append(str(input("Nome: ")))
+    dado.append(int(input("Idade: ")))
+    galera.append(dado[:])
+    dado.clear()
+
+#Analise de maiores e menores de idade e o total de cada um
+for p in galera:
+    if p[1] >= 21:
+        print(f"{p[0]} é maior de idade")
+        total_maior += 1
+    else:
+        print(f"{p[0]} é menor de idade")
+        total_menor += 1
+print(f"Temos {total_maior} maiores e {total_menor} menores")
