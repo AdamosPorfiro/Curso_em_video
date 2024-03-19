@@ -37,11 +37,3 @@ if len(conchetes_abre) == 0 and len(conchetes_fecha) == 0:
 else:
     print("Expressão inválida!")
     print(conchetes_fecha)
-"""
-        if conchetes == 0:
-            print("Expressão válida!")
-            break
-        else:
-            print("Expressão inválida")
-            break
-        """
