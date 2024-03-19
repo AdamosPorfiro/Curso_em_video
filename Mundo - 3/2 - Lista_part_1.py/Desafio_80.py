@@ -31,19 +31,24 @@ for c in range(5): # Repetir 5 vezes o input
 print(f'Você digitou os números: {l_n}') # e imprimi na tela para o usuario
 '''
 numeros = []
-
+#Criamos um laço FOR repetindo 5 vezes
 for c in range (0,5):
     n = int(input("Digite um número: "))
+#Se for o primeiro numero ou o valor informado for maior que o último valor da lista ele adiciona um valor
     if c == 0 or n > numeros[-1]:
         numeros.append(n)
         print(f"Valor adicionar ao final da lista...")
+#Se não for o primeiro e não for o maior, então ele vai verificar a posição utilizando o while()
     else:
         pos = 0
+#Em quanto a posição for menor que a leitura feito da lista e se n for menor ou igual o número na posição dentro da lista
         while pos < len(numeros):
             if n <= numeros[pos]:
+                #È inserido um valor informado na posição
                 numeros.insert(pos, n)
                 print(f"Adicionado na posição {pos} da lista...")
                 break
             pos += 1
+            #A cada laço de while é adicionado mais 1 a posição para que o programa ande na lista
 print("-="*30)
 print(f"Os valores digitados em ordem foram {numeros}")
