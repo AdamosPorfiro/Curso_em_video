@@ -31,8 +31,19 @@ for c in range(5): # Repetir 5 vezes o input
 print(f'Você digitou os números: {l_n}') # e imprimi na tela para o usuario
 '''
 numeros = []
-ordenados = []
 
-for c in range(5):
+for c in range (0,5):
     n = int(input("Digite um número: "))
-    numeros.append(n)
+    if c == 0 or n > numeros[-1]:
+        numeros.append(n)
+        print(f"Valor adicionar ao final da lista...")
+    else:
+        pos = 0
+        while pos < len(numeros):
+            if n <= numeros[pos]:
+                numeros.insert(pos, n)
+                print(f"Adicionado na posição {pos} da lista...")
+                break
+            pos += 1
+print("-="*30)
+print(f"Os valores digitados em ordem foram {numeros}")
