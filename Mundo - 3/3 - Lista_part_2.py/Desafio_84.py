@@ -55,6 +55,7 @@ for c in copia_nomes_pesos:
         copia_menor_peso.append(c[:])
         pessoas_menor_pesos.clear()
 #=========================================================================================
+#Exibi quantidade e utiliza for para imprimir as pessoas mais pesadas e mais leves
 print("~"*30)
 print(f"{qtd_pessoas_cadastradas} foram cadastradas")
 print("-"*30)
