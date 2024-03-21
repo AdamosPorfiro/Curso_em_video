@@ -67,7 +67,7 @@ for c in copia_maior_peso:
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 print("-="*15)
 print("-"*30)
-print(f"\33[1;34mPessoa com peso abaixo de 90kg\33[m")
+print(f"\33[1;34mPessoas com peso abaixo de 90kg\33[m")
 print("-"*30)
 for c in copia_menor_peso:
     print(f"{c[0]} com {c[1]}kg")
