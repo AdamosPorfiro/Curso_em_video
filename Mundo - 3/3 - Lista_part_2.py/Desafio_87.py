@@ -56,7 +56,7 @@ for numero in matriz:
         if n % 2 == 0:
             soma += n
             pares.append(n)
-print(f"Soma dos valores pares da matriz é {soma}\nOs números pares são: {pares}")
+print(f"A Soma dos valores pares da matriz é {soma}, sendo: {pares}")
 #----------------------------------------------- Soma da terceira coluna
 soma_terceira_coluna = 0
 if matriz[2] != []:
@@ -70,5 +70,9 @@ if matriz[8] != []:
         soma_terceira_coluna += c
 print(f"A soma da terceira coluna é de {soma_terceira_coluna}")
 #----------------------------------------------- O maior valor da segunda linha
-maior_valor = 
+maior_valor = matriz[3]
+if maior_valor < matriz[4] and matriz[4] > matriz[5]:
+    maior_valor = matriz[4]
+if maior_valor < matriz[5] and matriz[5] > matriz[4]:
+    maior_valor = matriz[5]
 print(f"O maior valor da segunda coluna é {maior_valor}")
