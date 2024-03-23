@@ -59,20 +59,24 @@ for numero in matriz:
 print(f"A Soma dos valores pares da matriz é {soma}, sendo: {pares}")
 #----------------------------------------------- Soma da terceira coluna
 soma_terceira_coluna = 0
+terceira_coluna = []
 if matriz[2] != []:
     for c in matriz[2]:
         soma_terceira_coluna += c
+        terceira_coluna.append(c)
 if matriz[5] != []:
     for c in matriz[5]:
         soma_terceira_coluna += c
+        terceira_coluna.append(c)
 if matriz[8] != []:
     for c in matriz[8]:
         soma_terceira_coluna += c
-print(f"A soma da terceira coluna é de {soma_terceira_coluna}")
+        terceira_coluna.append(c)
+print(f"A soma da terceira coluna é de {soma_terceira_coluna}, sendo: {terceira_coluna}")
 #----------------------------------------------- O maior valor da segunda linha
 maior_valor = matriz[3]
 if maior_valor < matriz[4] and matriz[4] > matriz[5]:
     maior_valor = matriz[4]
 if maior_valor < matriz[5] and matriz[5] > matriz[4]:
     maior_valor = matriz[5]
-print(f"O maior valor da segunda coluna é {maior_valor}")
+print(f"O maior valor da segunda linha é {maior_valor}")
