@@ -25,5 +25,12 @@ para cada jogo, cadastrando tudo em uma lista composta.
 - No final vamos exibir o resultado para o usuario;
 
 5 - Qual a sequência de passos para alcançar o resultado?
+from radon import randint
+Numeros gerados: [[],[],[],[],[],[]]
+While True
+    n = input Quantos jogos quer gerar
+    for c in range(0, n):
+        gerados = randint(1,60)
+
 
 '''
