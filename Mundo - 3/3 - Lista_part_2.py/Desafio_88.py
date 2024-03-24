@@ -31,6 +31,32 @@ While True
     n = input Quantos jogos quer gerar
     for c in range(0, n):
         gerados = randint(1,60)
-
-
 '''
+from random import randint
+#Montagem dos jogos_______________________________________________________________
+numeros_sorteados = []
+dados_finais = []
+while True:
+    n = int(input("Quantos jogos você quer gerar: "))#Pergunta quantidade de jogos
+    for c in range(n):
+        for _ in range(6):
+            sorteio_numeros = randint(0,60)
+            numeros_sorteados.append(sorteio_numeros)
+        dados_finais.append(numeros_sorteados[:])
+        numeros_sorteados.clear()
+#Exibição dos jogos_______________________________________________________________
+    for i, jogo in enumerate(dados_finais, 1):
+        print("-="*20)
+        print(f"{i}°jogo: {jogo}") 
+    dados_finais.clear()
+#Verificação para continuar_______________________________________________________
+    while True:
+        print("-="*20)
+        continuar = str(input("Deseja continuar [S|N]: ")).upper().strip()
+        if continuar not in 'SN':
+            continue
+        elif continuar in 'SN':
+            break
+    if continuar in 'N':
+        break
+    
