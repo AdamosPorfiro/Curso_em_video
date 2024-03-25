@@ -21,8 +21,8 @@ lista_composta = []
 
 while True:
     lista_nomes_notas.append(input("Nome: "))
-    lista_nomes_notas.append(input("1° nota: "))
-    lista_nomes_notas.append(input("2° nota: "))
+    lista_nomes_notas.append(float(input("1° nota: ")))
+    lista_nomes_notas.append(float(input("2° nota: ")))
     lista_composta.append(lista_nomes_notas[:])
     lista_nomes_notas.clear()
     while True:
@@ -36,10 +36,15 @@ while True:
     if continuar in 'N':
         break
 #Calculando a média------------------------------------------------------------------
-for p,n in enumerate(lista_composta):
-    print(f"{n[1]}")
-    print(f"{n[2]}")
+for aluno in lista_composta:
+    nome = aluno[0]
+    nota = for nota in aluno[1:]
+    media = sum(nota) / len(nota)
+    
 print("-"*20)
 print(f"{'Boletim':>13}")
 print("-"*20)
+
+print(f"Nome: {nome}")
+print(f"Notas: {nota}, {','.join()}")
 
