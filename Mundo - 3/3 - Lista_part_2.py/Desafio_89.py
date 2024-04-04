@@ -16,35 +16,12 @@ while True:
     lista_composta.append(lista_1[:])
 '''
 
-lista_nomes_notas = []
-lista_composta = []
+ficha = list()
 
-while True:
-    lista_nomes_notas.append(input("Nome: "))
-    lista_nomes_notas.append(float(input("1° nota: ")))
-    lista_nomes_notas.append(float(input("2° nota: ")))
-    lista_composta.append(lista_nomes_notas[:])
-    lista_nomes_notas.clear()
-    while True:
-        continuar = str(input("Deseja continuar [S|N]: ")).strip().upper()
-        if continuar not in 'SN':
-            continue
-        elif continuar in 'S':
-            break
-        elif continuar in 'N':
-            break
-    if continuar in 'N':
-        break
-#Calculando a média------------------------------------------------------------------
-for aluno in lista_composta:
-    nome = aluno[0]
-    nota = for nota in aluno[1:]
-    media = sum(nota) / len(nota)
-    
-print("-"*20)
-print(f"{'Boletim':>13}")
-print("-"*20)
+nome = str(input("Nome: "))
+nota_1 = float(input("1° Nota: "))
+nota_2 = float(input("2° Nota: "))
+media = 2*(nota_1+nota_2)
+ficha.append((nome,(nota_1, nota_2), media))
 
-print(f"Nome: {nome}")
-print(f"Notas: {nota}, {','.join()}")
-
+print(ficha)
