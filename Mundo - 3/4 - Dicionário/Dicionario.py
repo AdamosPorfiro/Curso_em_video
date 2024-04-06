@@ -42,7 +42,7 @@ print(pessoas.values())
 print(pessoas.items())
 for k,v in pessoas.items():
     print(f"{k} = {v}")
-"""
+
 brasil = []
 estado_1 = {'uf': 'Rio de janeiro', 'sigla': 'RJ'}
 estado_2 = {'uf': 'São Paulo', 'sigla': 'SP'}
@@ -52,3 +52,14 @@ brasil.append(estado_2)
 print(estado_1)
 print(estado_2)
 print(brasil[0]['uf'])
+"""
+
+estado = dict()
+brasil = list()
+for c in range(0,3):
+    estado['uf'] = str(input("Unidade Federativa: "))
+    estado['sigla'] = str(input("Sigla do Estado: "))
+    brasil.append(estado.copy())
+for e in brasil:
+    for k, v in e.items():
+        print(f"O campo {k} tem valor {v}") 
