@@ -1,7 +1,7 @@
 """
 Crie um programa onde 4 jogadores joguem um dado e tenham
 resultados aleatórios. Guarde esses
-resultados em um dicionario. No final coloque essedicionário em ordem
+resultados em um dicionario. No final coloque esse dicionário em ordem
 sabendo que o vencedor tirou o maior número no dado.
 
 """
