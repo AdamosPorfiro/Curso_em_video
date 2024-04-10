@@ -31,6 +31,7 @@ for r in resultado_oficial: #Entro dentro da lista que existe os dicionarios
         if v > maior_2:
             maior_2 = v
         outra_lista.append(v)
+
 print(resultado_oficial)
 print(f"{sorted(outra_lista)}")
 print(f"O vencedor foi o {maior_1}° jogador que tirou: {maior_2}")
