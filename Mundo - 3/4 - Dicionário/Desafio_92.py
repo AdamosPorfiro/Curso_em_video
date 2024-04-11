@@ -8,11 +8,26 @@ a pessoa vai se aposentar.
 
 Considere que para se aposentar são 35 anos de contribuição
 """
-dados_ = dict()
-dados_copy = list()
-
+from datetime import date
+dados_ = {}
+idade = 0
 while True:
+    print("-"*17)
     dados_["nome"] = str(input("Nome: "))
+    print("-"*17)
     dados_["ano_nascimento"] = int(input("Ano de nascimento: "))
-    dados_["ctps"] = str(input("Possui carteira de trabalho assinada [S/N]"))
-
+    
+    while True:
+        print("-"*17)
+        resp = int(input("Possui carteira de trabalho assinada [0 - Não | 1 - Sim]: "))
+        if resp == 1:
+            print("-"*17)
+            dados_["ctps_ano"] = int(input("Ano de contratação: "))
+            print("-"*17)
+            dados_["ctps_salario"] = float(input("Salário: "))
+            break
+        else:
+            break
+    break
+idade = date.today().year - dados_["ano_nascimento"]
+print(f"Você possui {idade} anos")
