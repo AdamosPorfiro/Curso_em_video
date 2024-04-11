@@ -10,7 +10,7 @@ Considere que para se aposentar são 35 anos de contribuição
 """
 from datetime import date
 dados_ = {}
-idade = 0
+idade = anos_ctps = 0
 while True:
     print("-"*17)
     dados_["nome"] = str(input("Nome: "))
@@ -25,9 +25,13 @@ while True:
             dados_["ctps_ano"] = int(input("Ano de contratação: "))
             print("-"*17)
             dados_["ctps_salario"] = float(input("Salário: "))
+            print("-"*17)
             break
         else:
             break
     break
-idade = date.today().year - dados_["ano_nascimento"]
-print(f"Você possui {idade} anos")
+if resp == 1:
+    idade = date.today().year - dados_["ano_nascimento"]
+    anos_ctps = date.today().year - dados_["ctps_ano"]
+    print(f"Você possui {idade} anos.")
+    print(f"Você vai se aposentar com {(35 - anos_ctps)+idade} anos.")
