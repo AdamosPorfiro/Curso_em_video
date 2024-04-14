@@ -41,5 +41,5 @@ for c, r in enumerate(dados_finais_jogador[1:3]):
         for k,v in r.items():
             if k == "qtd_gols_partida":
                 print(f"Quantidade de gols da {c+1}° partida: {v}")
-print(f"Total de gols: {dados_finais_jogador["total_de_gols"]}")
+print(f"Total de gols: {dados_finais_jogador[3]["total_de_gols"]}")
         
