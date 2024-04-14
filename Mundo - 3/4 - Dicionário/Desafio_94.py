@@ -7,3 +7,19 @@ B) A média de idade do grupo
 C) Uma lista com todos as mulheres
 D) Uma lista com todas as pessoas com idade acima da média
 """
+dados_de_pessoas = dict()
+dados_finais_das_pessoas = list()
+total_cadastradas = 0
+
+while True:
+    dados_de_pessoas["nome"] = str(input("Nome: ")).capitalize().strip()
+    dados_de_pessoas["sexo"] = str(input("Sexo [M | F]: ")).upper().strip()
+    dados_de_pessoas["idade"] = int(input("Idade: "))
+    total_cadastradas += 1
+    dados_finais_das_pessoas.append(dados_de_pessoas.copy())
+    dados_de_pessoas.clear()
+    resp = str(input("Quer continuar [S | N]: ")).upper().strip()
+    print("-="*10)
+    if resp == "N":
+        break
+print(f"Total de pessoas cadastradas: {total_cadastradas}")
