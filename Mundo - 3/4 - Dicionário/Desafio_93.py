@@ -12,7 +12,17 @@ quantidade_de_gols = 0
 
 dados_jogador["nome"] = str(input("Nome: "))
 dados_jogador["Numero_partidas"] = int(input("Quantidade de partidas: "))
-for c in range(dados_jogador["Numero_partidas"]):
-    dados_jogador["qtd_gols_partida"] = int(input(f"Quantos gols foram feitos na {c+1}° partida: "))
-    dados_finais_jogador.append(dados_jogador["qtd_gols_partida"])
-print(f"{dados_finais_jogador}")
+dados_finais_jogador.append(dados_jogador.copy())
+dados_jogador.clear()
+
+for c in range(dados_finais_jogador[0]["Numero_partidas"]):
+    dados_jogador[f"qtd_gols_partida"] = int(input(f"Quantos gols foram feitos na {c+1}° partida: "))
+    dados_finais_jogador.append(dados_jogador.copy())
+    dados_jogador.clear()
+
+for r in dados_finais_jogador:
+    for k, v in r.items():
+        if k == "qtd_gols_partida":
+            quantidade_de_gols += v
+dados_jogador["total_de_gols"] = quantidade_de_gols
+dados_finais_jogador.append(dados_jogador.copy())
