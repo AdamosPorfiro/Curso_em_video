@@ -9,6 +9,7 @@ D) Uma lista com todas as pessoas com idade acima da média
 """
 dados_de_pessoas = dict()
 dados_finais_das_pessoas = list()
+mulheres = list()
 total_cadastradas = 0
 
 while True:
@@ -23,4 +24,10 @@ while True:
     if resp == "N":
         break
 print(f"Total de pessoas cadastradas: {total_cadastradas}")
+for r in dados_finais_das_pessoas:
+    if r["sexo"] == "F":
+        mulheres.append(r["nome"])
+print(f"Lista de mulheres cadastradas:\n{mulheres}")
+
+        
 
