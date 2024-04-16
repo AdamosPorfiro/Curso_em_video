@@ -4,7 +4,7 @@ guardando os dados de cada pessoa em um dicioario e todos os
 dicionarios em uma lista. No final, mostre: 
 A) Quatas pessoas foram cadastradas
 B) A média de idade do grupo
-C) Uma lista com todos as mulheres
+C) Uma lista com todas as mulheres
 D) Uma lista com todas as pessoas com idade acima da média
 """
 dados_de_pessoas = dict()
@@ -23,3 +23,4 @@ while True:
     if resp == "N":
         break
 print(f"Total de pessoas cadastradas: {total_cadastradas}")
+
