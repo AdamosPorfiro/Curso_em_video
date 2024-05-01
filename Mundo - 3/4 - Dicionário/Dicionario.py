@@ -2,7 +2,7 @@
 Dicionarios são estruturas de dados semelhantes as tuplas e listas porém, podemos usar  indices literais, usando letras, palavras
 
 Dicionarios são identificados por {Chaves}
-podemos declarar com chaves ou usando Função adict()
+podemos declarar com chaves ou usando Função dict()
 ex:
 
 dados = {'Pedro', 25}
