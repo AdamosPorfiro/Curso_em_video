@@ -6,14 +6,30 @@ feitos em cada partida. No final, tudo isso será guardado em um
 dicionário incluindo o total de gols feitos durante o campeonato
 """
 
-dados_jogador = dict()
-dados_finais_jogador = list()
-quantidade_de_gols = 0
+Jogador = dict()
+Partidas = list()
 
-dados_jogador["nome"] = str(input("Nome: "))
-dados_jogador["partidas"] = int(input("Quantidade de partidas: "))
 
-            
+Jogador["nome"] = str(input("Nome jogador: "))
+tot = int(input(f"Quantas partidas o jogador {Jogador["nome"]} jogou? "))
+for c in range(0, tot):
+    Partidas.append(int(input(f"Quantos gols na partida {c+1}°? ")))
+Jogador["Gols"] = Partidas[:]
+Jogador["Total"]= sum(Partidas)
+
+print("-="*30)
+print(f"{Jogador}")
+print("-="*30)
+
+for k,v in Jogador.items():
+    print(f"O campo {k} tem o valor {v}")
+print("-="*30)
+
+print(f"O jogador {Jogador["nome"]} jogou {len(Jogador["Gols"])} partidas")
+for i, v in enumerate(Jogador["Gols"]):
+    print(f"    => Na partida {i+1} fez {v} gols.")
+print(f"Foi um total de {Jogador["Total"]} gols.")
+
     
 
         
