@@ -9,7 +9,7 @@ D) Uma lista com todas as pessoas com idade acima da média
 """
 dados = dict()
 dados_completo = list()
-soma = 0
+soma = divisor = valor_final = 0
 
 while True:
     dados["nome"] = str(input("Nome: ")).capitalize().strip()
@@ -20,7 +20,11 @@ while True:
             dados["sexo"] = sexo
             break
 #------------------------------------------------------------------------
-    dados["idade"] = int(input("Idade: "))
+    while True:
+        idade = str(input("Idade: "))
+        if idade.isdigit():
+            dados["idade"] = int(idade)
+            break
     dados_completo.append(dados.copy())
 #------------------------------------------------------------------------
     while True:
@@ -32,11 +36,28 @@ while True:
     print("-="*20)
 print("-="*20)
 #------------------------------------------------------------------------
-#A) Quatas pessoas foram cadastradas
+#A) Quantas pessoas foram cadastradas
 print(f"Foram cadastradas: {len(dados_completo[0:])} pessoas")
 #------------------------------------------------------------------------
-#B) A média de idade do grupo
-
+#B) A média de idade do grupo | A soma de todos os valores dividido pela quantidade de numeros.
+for v in dados_completo:
+    for r in v.values():
+        if isinstance(r,(int)):
+            divisor += 1
+            soma += r
+valor_final += (soma)/divisor
+print(f"A média de idade do grupo é de: {valor_final:.0f} anos")
+#------------------------------------------------------------------------
+#C) Uma lista com todas as mulheres
+print("-"*25)
+print("Lista de mulheres")
+for sexo in dados_completo:
+    if sexo["sexo"] in "F":
+        print(f"{sexo["nome"]}")
+print("-"*25)
+#------------------------------------------------------------------------
+#D) Uma lista com todas as pessoas com idade acima da média
+        
             
 
 """
