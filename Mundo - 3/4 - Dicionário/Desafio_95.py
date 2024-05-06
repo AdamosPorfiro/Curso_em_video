@@ -10,10 +10,20 @@ Jogadores = list()
 
 while True:
     Jogador["nome"] = str(input("Nome jogador: "))
-    tot = int(input(f"Quantas partidas o jogador {Jogador["nome"]} jogou? "))
+    while True:
+        tot = str(input(f"Quantas partidas o jogador {Jogador["nome"]} jogou? "))
+        if tot.isdigit():
+            tot = int(tot)
+            break
 #--------------------------------------------------------------------------------------
     for c in range(0, tot):
-        Partidas.append(int(input(f"Quantos gols na partida {c+1}°? ")))
+        while True:
+            Gols = (str(input(f"Quantos gols na partida {c+1}°? ")))
+            if Gols.isdigit():
+                Gols = int(Gols)
+                Partidas.append(Gols)
+                break
+#--------------------------------------------------------------------------------------
     Jogador["Gols"] = Partidas[:]
     Jogador["Total"]= sum(Partidas)
     Jogadores.append(Jogador.copy())
