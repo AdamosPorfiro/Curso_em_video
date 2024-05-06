@@ -6,14 +6,24 @@ incluindo um sistema de visualização de detalhes do aproveitamento de cada jog
 Jogador = dict()
 Partidas = list()
 
+Jogadores = list()
 
-Jogador["nome"] = str(input("Nome jogador: "))
-tot = int(input(f"Quantas partidas o jogador {Jogador["nome"]} jogou? "))
-for c in range(0, tot):
-    Partidas.append(int(input(f"Quantos gols na partida {c+1}°? ")))
-Jogador["Gols"] = Partidas[:]
-Jogador["Total"]= sum(Partidas)
-
+while True:
+    Jogador["nome"] = str(input("Nome jogador: "))
+    tot = int(input(f"Quantas partidas o jogador {Jogador["nome"]} jogou? "))
+#--------------------------------------------------------------------------------------
+    for c in range(0, tot):
+        Partidas.append(int(input(f"Quantos gols na partida {c+1}°? ")))
+    Jogador["Gols"] = Partidas[:]
+    Jogador["Total"]= sum(Partidas)
+    Jogadores.append(Jogador.copy())
+    Jogador.clear()
+#--------------------------------------------------------------------------------------
+    print("-="*20)
+    resp = str(input("Deseja continuar? [ S | N ]: ")).upper().strip()
+    if resp == "N":
+        break
+    
 print("-="*30)
 print(f"{Jogador}")
 print("-="*30)
