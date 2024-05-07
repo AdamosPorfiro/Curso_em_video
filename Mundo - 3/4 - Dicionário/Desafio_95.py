@@ -10,6 +10,7 @@ Jogadores = list()
 
 while True:
     Jogador["nome"] = str(input("Nome jogador: "))
+#--------------------------------------------------------------------------------------
     while True:
         tot = str(input(f"Quantas partidas o jogador {Jogador["nome"]} jogou? "))
         if tot.isdigit():
@@ -29,21 +30,15 @@ while True:
     Jogadores.append(Jogador.copy())
     Jogador.clear()
 #--------------------------------------------------------------------------------------
-    print("-="*20)
+    print("-="*30)
     resp = str(input("Deseja continuar? [ S | N ]: ")).upper().strip()
+    print("-="*30)
     if resp == "N":
         break
-    
-print("-="*30)
-print(f"{Jogador}")
-print("-="*30)
 
-for k,v in Jogador.items():
-    print(f"O campo {k} tem o valor {v}")
-print("-="*30)
-
-print(f"O jogador {Jogador["nome"]} jogou {len(Jogador["Gols"])} partidas")
-for i, v in enumerate(Jogador["Gols"]):
-    print(f"    => Na partida {i+1} fez {v} gols.")
-print(f"Foi um total de {Jogador["Total"]} gols.")
-
+#--------------------------------------------------------------------------------------  
+print("-"*40)
+print(f"{"cod"}{"|":>4}{"nome":>6}{"|":>4}{"gols":>6}{"|":>4}{"total":>6}")
+print("-"*40)
+for indice,valor in enumerate(Jogadores):
+    print(f"{indice}{valor["nome"]}{valor["Gols"]}{valor["Total"]}")
