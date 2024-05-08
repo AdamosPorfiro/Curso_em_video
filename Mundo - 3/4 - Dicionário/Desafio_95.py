@@ -5,7 +5,6 @@ incluindo um sistema de visualização de detalhes do aproveitamento de cada jog
 
 Jogador = dict()
 Partidas = list()
-
 Jogadores = list()
 
 while True:
@@ -37,8 +36,10 @@ while True:
         break
 
 #--------------------------------------------------------------------------------------  
-print("-"*40)
-print(f"{"cod"}{"|":>4}{"nome":>6}{"|":>4}{"gols":>6}{"|":>4}{"total":>6}")
-print("-"*40)
+print("-"*50)
+print(f"{"cod"}{"|":>4}{"nome":>6}{"|":>6}{"gols":>9}{"|":>4}{"total":>10}")
+print("-"*50)
 for indice,valor in enumerate(Jogadores):
-    print(f"{indice}{valor["nome"]}{valor["Gols"]}{valor["Total"]}")
+    print(f"{indice}",end='')
+    for v in valor.values():
+        print(f"{str(v):>12}",end='')
