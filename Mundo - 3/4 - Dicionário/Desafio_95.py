@@ -42,12 +42,29 @@ while True:
         break
 #--------------------------------------------------------------------------------------  
 print("-"*50)
-print(f"{"cod":>4}{"|":>2}{"nome":>6}{"|":>4}{"gols":>7}{"|":>4}{"total":>10}")
+print("cod   ",end='')
+for i in Jogador.keys():
+    print(f"{i:<15}", end='')
+print()
 print("-"*50)
-
+#--------------------------------------------------------------------------------------  
 for indice,valor in enumerate(Jogadores):
     print(f"{indice:>4}  ",end='')
     for v in valor.values():
         print(f"{str(v):<15}",end='')
     print()
 print("-"*50)
+#--------------------------------------------------------------------------------------  
+while True:
+    Escolha = int(input("Mostrar dados de qual jogador? [999] para sair: "))
+    if Escolha == 999:
+        break
+    if Escolha > len(Jogadores):
+        print(f"Não existe jogador com o código {Escolha}")
+    else:
+        print(f"Levantamento do jogador {Jogadores[Escolha]["nome"]}:")
+        for indice, valor in enumerate([Jogadores[Escolha]['Gols']]):
+            print(f"       No jogo {indice+1} fez {valor} Gols")
+            print("-"*50)
+print("VOLTE SEMPRE")
+        
